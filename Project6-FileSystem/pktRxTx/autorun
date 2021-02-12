@@ -1,0 +1,2 @@
+sudo ip link set enp0s8 up
+sudo ./pktRxTx -m 1 -t 300000

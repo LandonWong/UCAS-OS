@@ -1,0 +1,51 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INCLUDE_TASK2_H_	test2.h	2;"	d
+INTERVAL	test_deadlock.c	5;"	d	file:
+LOCK2_BINSEM_KEY	test_lock2_binsem.c	11;"	d	file:
+MUTEX_LOCK	test_lock1.c	15;"	d	file:
+MUTEX_LOCK	test_lock2.c	15;"	d	file:
+blank	test_lock1.c	/^static char blank[] = {"                                             "};$/;"	v	file:
+blank	test_lock2.c	/^static char blank[] = {"                                             "};$/;"	v	file:
+blank	test_lock2_binsem.c	/^static char blank[] = {"                                             "};$/;"	v	file:
+blank	test_scheduler1.c	/^static char blank[] = {"                   "};$/;"	v	file:
+blank	test_scheduler2.c	/^static char blank[] = {"                    "};$/;"	v	file:
+blank	test_sleep.c	/^static char blank[] = {"                                                "};$/;"	v	file:
+deadlock_task	test_deadlock.c	/^void deadlock_task(void)$/;"	f
+do_sch_timer	test_scheduler2.c	/^void do_sch_timer(void)$/;"	f
+drawing_task1	test_scheduler1.c	/^void drawing_task1(void)$/;"	f
+drawing_task2	test_scheduler2.c	/^void drawing_task2(void)$/;"	f
+is_init	test_lock1.c	/^int is_init         = FALSE;$/;"	v
+is_init	test_lock2.c	/^static int is_init = FALSE;$/;"	v	file:
+lock2_task1	test_lock2.c	/^void lock2_task1(void)$/;"	f
+lock2_task1	test_lock2_binsem.c	/^void lock2_task1(void)$/;"	f
+lock2_task2	test_lock2.c	/^void lock2_task2(void)$/;"	f
+lock2_task2	test_lock2_binsem.c	/^void lock2_task2(void)$/;"	f
+lock_task1	test_lock1.c	/^void lock_task1(void)$/;"	f
+lock_task2	test_lock1.c	/^void lock_task2(void)$/;"	f
+mutex_lock	test_lock1.c	/^mutex_lock_t mutex_lock;$/;"	v
+mutex_lock	test_lock2.c	/^static mthread_mutex_t mutex_lock;$/;"	v	file:
+plane1	test_scheduler1.c	/^static char plane1[] = {"    ___         _  "};$/;"	v	file:
+plane1	test_scheduler2.c	/^static char plane1[] = {"    ___         _   "};$/;"	v	file:
+plane2	test_scheduler1.c	/^static char plane2[] = {"| __\\\\_\\\\______\/_| "};$/;"	v	file:
+plane2	test_scheduler2.c	/^static char plane2[] = {"| __\\\\_\\\\______\/_|  "};$/;"	v	file:
+plane3	test_scheduler1.c	/^static char plane3[] = {"<[___\\\\_\\\\_______| "};$/;"	v	file:
+plane3	test_scheduler2.c	/^static char plane3[] = {"<[___\\\\_\\\\_______|  "};$/;"	v	file:
+plane4	test_scheduler1.c	/^static char plane4[] = {"|  o'o             "};$/;"	v	file:
+plane4	test_scheduler2.c	/^static char plane4[] = {"|  o'o              "};$/;"	v	file:
+printf_task1	test_scheduler2.c	/^void printf_task1(void)$/;"	f
+printf_task2	test_scheduler2.c	/^void printf_task2(void)$/;"	f
+printk_task1	test_scheduler1.c	/^void printk_task1(void)$/;"	f
+printk_task2	test_scheduler1.c	/^void printk_task2(void)$/;"	f
+priority_task1	test_scheduler2.c	/^void priority_task1(void)$/;"	f
+priority_task2	test_scheduler2.c	/^void priority_task2(void)$/;"	f
+priority_task3	test_scheduler2.c	/^void priority_task3(void)$/;"	f
+priority_task4	test_scheduler2.c	/^void priority_task4(void)$/;"	f
+sleep_task	test_sleep.c	/^void sleep_task(void)$/;"	f
+spin_lock	test_lock1.c	/^spin_lock_t spin_lock;$/;"	v
+spin_lock	test_lock2.c	/^static mthread_spinlock_t spin_lock;$/;"	v	file:
+timer_task	test_timer.c	/^void timer_task(void)$/;"	f

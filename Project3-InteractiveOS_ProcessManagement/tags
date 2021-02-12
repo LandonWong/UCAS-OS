@@ -1,0 +1,958 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH = riscv$/;"	m
+ARCH_DIR	Makefile	/^ARCH_DIR = .\/arch\/$(ARCH)$/;"	m
+ARGS	tools/createimage.c	10;"	d	file:
+ASM_H	arch/riscv/include/asm.h	8;"	d
+ASSERT_H	include/assert.h	2;"	d
+ASSERT_H	tiny_libc/include/assert.h	2;"	d
+ATOMIC_H	arch/riscv/include/atomic.h	2;"	d
+AUTO_CLEANUP_ON_EXIT	include/os/sched.h	/^    AUTO_CLEANUP_ON_EXIT,$/;"	e	enum:__anon3
+BINSEM_H	include/sys/binsem.h	2;"	d
+BINSEM_OP_LOCK	include/os/lock.h	33;"	d
+BINSEM_OP_LOCK	include/sys/binsem.h	4;"	d
+BINSEM_OP_UNLOCK	include/os/lock.h	34;"	d
+BINSEM_OP_UNLOCK	include/sys/binsem.h	5;"	d
+BIN_LOCKED	include/os/lock.h	51;"	d
+BIN_UNLOCKED	include/os/lock.h	52;"	d
+BOOL	tiny_libc/include/stdbool.h	/^typedef int BOOL;$/;"	t
+BOOTLOADER_ENTRYPOINT	Makefile	/^BOOTLOADER_ENTRYPOINT = 0x50200000$/;"	m
+BOOT_LOADER_SIG_1	tools/createimage.c	15;"	d	file:
+BOOT_LOADER_SIG_2	tools/createimage.c	16;"	d	file:
+BOOT_LOADER_SIG_OFFSET	tools/createimage.c	13;"	d	file:
+BOOT_MEM_LOC	tools/createimage.c	17;"	d	file:
+CC	Makefile	/^CC = ${CROSS_PREFIX}gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -O0 -w -fno-builtin -nostdlib -T riscv.lds -Wall -mcmodel=medany -Iinclude -Idrivers -Itest -Itest\/test_project2 -Itiny_libc\/include -nostdinc -g$/;"	m
+CLOCKS_PER_SEC	tiny_libc/include/time.h	7;"	d
+CMD_MAX_LENGTH	test/test_shell.c	37;"	d	file:
+CMD_NUM	test/test_shell.c	36;"	d	file:
+COLOR_BLUE	arch/riscv/include/common.h	43;"	d
+COLOR_CYAN	arch/riscv/include/common.h	45;"	d
+COLOR_GREEN	arch/riscv/include/common.h	41;"	d
+COLOR_MAGENTA	arch/riscv/include/common.h	44;"	d
+COLOR_RED	arch/riscv/include/common.h	40;"	d
+COLOR_RESET	arch/riscv/include/common.h	46;"	d
+COLOR_YELLOW	arch/riscv/include/common.h	42;"	d
+CROSS_PREFIX	Makefile	/^CROSS_PREFIX = riscv64-unknown-linux-gnu-$/;"	m
+CSR_CYCLE	arch/riscv/include/csr.h	62;"	d
+CSR_CYCLEH	arch/riscv/include/csr.h	75;"	d
+CSR_H	arch/riscv/include/csr.h	7;"	d
+CSR_INSTRET	arch/riscv/include/csr.h	64;"	d
+CSR_INSTRETH	arch/riscv/include/csr.h	77;"	d
+CSR_MHARTID	arch/riscv/include/csr.h	79;"	d
+CSR_SATP	arch/riscv/include/csr.h	74;"	d
+CSR_SCAUSE	arch/riscv/include/csr.h	71;"	d
+CSR_SCOUNTEREN	arch/riscv/include/csr.h	68;"	d
+CSR_SEPC	arch/riscv/include/csr.h	70;"	d
+CSR_SIE	arch/riscv/include/csr.h	66;"	d
+CSR_SIP	arch/riscv/include/csr.h	73;"	d
+CSR_SSCRATCH	arch/riscv/include/csr.h	69;"	d
+CSR_SSTATUS	arch/riscv/include/csr.h	65;"	d
+CSR_STVAL	arch/riscv/include/csr.h	72;"	d
+CSR_STVEC	arch/riscv/include/csr.h	67;"	d
+CSR_TIME	arch/riscv/include/csr.h	63;"	d
+CSR_TIMEH	arch/riscv/include/csr.h	76;"	d
+CaoCao	test/test_project3/test_sanguo.c	/^void CaoCao(void)$/;"	f
+DISK	Makefile	/^DISK = \/dev\/sdb$/;"	m
+EBUSY	tiny_libc/include/mthread.h	34;"	d
+EINVAL	tiny_libc/include/mthread.h	35;"	d
+END	arch/riscv/include/asm.h	12;"	d
+ENDPROC	arch/riscv/include/asm.h	15;"	d
+ENTER_ZOMBIE_ON_EXIT	include/os/sched.h	/^    ENTER_ZOMBIE_ON_EXIT,$/;"	e	enum:__anon3
+ENTRY	arch/riscv/include/asm.h	28;"	d
+ETHERNET_ADDR	arch/riscv/include/sbi.h	/^    ETHERNET_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+EXCC_BREAKPOINT	include/os/irq.h	/^    EXCC_BREAKPOINT       = 3,$/;"	e	enum:ExcCode
+EXCC_COUNT	include/os/irq.h	/^    EXCC_COUNT$/;"	e	enum:ExcCode
+EXCC_INST_ACCESS	include/os/irq.h	/^    EXCC_INST_ACCESS      = 1,$/;"	e	enum:ExcCode
+EXCC_INST_MISALIGNED	include/os/irq.h	/^    EXCC_INST_MISALIGNED  = 0,$/;"	e	enum:ExcCode
+EXCC_INST_PAGE_FAULT	include/os/irq.h	/^    EXCC_INST_PAGE_FAULT  = 12,$/;"	e	enum:ExcCode
+EXCC_LOAD_ACCESS	include/os/irq.h	/^    EXCC_LOAD_ACCESS      = 5,$/;"	e	enum:ExcCode
+EXCC_LOAD_PAGE_FAULT	include/os/irq.h	/^    EXCC_LOAD_PAGE_FAULT  = 13,$/;"	e	enum:ExcCode
+EXCC_STORE_ACCESS	include/os/irq.h	/^    EXCC_STORE_ACCESS     = 7,$/;"	e	enum:ExcCode
+EXCC_STORE_PAGE_FAULT	include/os/irq.h	/^    EXCC_STORE_PAGE_FAULT = 15,$/;"	e	enum:ExcCode
+EXCC_SYSCALL	include/os/irq.h	/^    EXCC_SYSCALL          = 8,$/;"	e	enum:ExcCode
+EXC_BREAKPOINT	arch/riscv/include/csr.h	49;"	d
+EXC_INST_ACCESS	arch/riscv/include/csr.h	48;"	d
+EXC_INST_MISALIGNED	arch/riscv/include/csr.h	47;"	d
+EXC_INST_PAGE_FAULT	arch/riscv/include/csr.h	53;"	d
+EXC_LOAD_ACCESS	arch/riscv/include/csr.h	50;"	d
+EXC_LOAD_PAGE_FAULT	arch/riscv/include/csr.h	54;"	d
+EXC_STORE_ACCESS	arch/riscv/include/csr.h	51;"	d
+EXC_STORE_PAGE_FAULT	arch/riscv/include/csr.h	55;"	d
+EXC_SYSCALL	arch/riscv/include/csr.h	52;"	d
+EXPORT	arch/riscv/include/asm.h	19;"	d
+ExcCode	include/os/irq.h	/^enum ExcCode$/;"	g
+FALSE	include/type.h	35;"	d
+FALSE	tiny_libc/include/stdbool.h	6;"	d
+FEXPORT	arch/riscv/include/asm.h	23;"	d
+FREEMEM	include/os/mm.h	35;"	d
+FUTEX_BUCKETS	include/os/futex.h	35;"	d
+FUTEX_H	include/os/futex.h	29;"	d
+HEAP	include/os/mm.h	36;"	d
+HOST_CC	Makefile	/^HOST_CC = gcc$/;"	m
+IGNORE	include/os/syscall_number.h	31;"	d
+IMAGE_FILE	tools/createimage.c	9;"	d	file:
+INCLUDE_COMMON_H_	arch/riscv/include/common.h	25;"	d
+INCLUDE_CONSOLE_H_	drivers/screen.h	28;"	d
+INCLUDE_INTERRUPT_H_	include/os/irq.h	28;"	d
+INCLUDE_LIST_H_	include/os/list.h	38;"	d
+INCLUDE_LOCK_H_	include/os/lock.h	29;"	d
+INCLUDE_MAIL_BOX_	tiny_libc/include/mailbox.h	2;"	d
+INCLUDE_REGS_H_	arch/riscv/include/asm/regs.h	26;"	d
+INCLUDE_SCHEDULER_H_	include/os/sched.h	30;"	d
+INCLUDE_STDIO_H_	include/os/stdio.h	2;"	d
+INCLUDE_STDIO_H_	include/stdio.h	2;"	d
+INCLUDE_STDIO_H_	tiny_libc/include/stdio.h	2;"	d
+INCLUDE_STRING_H_	include/os/string.h	29;"	d
+INCLUDE_SYNC_H_	include/os/sync.h	30;"	d
+INCLUDE_SYSCALL_H_	include/sys/syscall.h	29;"	d
+INCLUDE_TASK3_H_	test/test_project3/test3.h	2;"	d
+INCLUDE_TEST_H_	test/test.h	27;"	d
+INCLUDE_TIME_H_	include/os/time.h	29;"	d
+INCLUDE_TYPE_H_	include/type.h	27;"	d
+INIT_KERNEL_STACK	include/os/mm.h	34;"	d
+INT16_C	tiny_libc/include/stdint.h	135;"	d
+INT16_MAX	include/type.h	61;"	d
+INT16_MAX	tiny_libc/include/stdint.h	75;"	d
+INT16_MIN	include/type.h	56;"	d
+INT16_MIN	tiny_libc/include/stdint.h	70;"	d
+INT32_C	tiny_libc/include/stdint.h	136;"	d
+INT32_MAX	include/type.h	62;"	d
+INT32_MAX	tiny_libc/include/stdint.h	76;"	d
+INT32_MIN	include/type.h	57;"	d
+INT32_MIN	tiny_libc/include/stdint.h	71;"	d
+INT64_C	tiny_libc/include/stdint.h	137;"	d
+INT64_MAX	include/type.h	63;"	d
+INT64_MAX	tiny_libc/include/stdint.h	77;"	d
+INT64_MIN	include/type.h	58;"	d
+INT64_MIN	tiny_libc/include/stdint.h	72;"	d
+INT8_C	tiny_libc/include/stdint.h	134;"	d
+INT8_MAX	include/type.h	60;"	d
+INT8_MAX	tiny_libc/include/stdint.h	74;"	d
+INT8_MIN	include/type.h	55;"	d
+INT8_MIN	tiny_libc/include/stdint.h	69;"	d
+INTEGER_TEST_CHUNK	test/test_project3/test_affinity.c	9;"	d	file:
+INTEGER_TEST_NUM	test/test_project3/test_affinity.c	10;"	d	file:
+INTMAX_C	tiny_libc/include/stdint.h	146;"	d
+INTMAX_MAX	tiny_libc/include/stdint.h	128;"	d
+INTMAX_MIN	tiny_libc/include/stdint.h	126;"	d
+INTPTR_MAX	tiny_libc/include/stdint.h	122;"	d
+INTPTR_MIN	tiny_libc/include/stdint.h	121;"	d
+INT_FAST16_MAX	tiny_libc/include/stdint.h	109;"	d
+INT_FAST16_MIN	tiny_libc/include/stdint.h	104;"	d
+INT_FAST32_MAX	tiny_libc/include/stdint.h	110;"	d
+INT_FAST32_MIN	tiny_libc/include/stdint.h	105;"	d
+INT_FAST64_MAX	tiny_libc/include/stdint.h	111;"	d
+INT_FAST64_MIN	tiny_libc/include/stdint.h	106;"	d
+INT_FAST8_MAX	tiny_libc/include/stdint.h	108;"	d
+INT_FAST8_MIN	tiny_libc/include/stdint.h	103;"	d
+INT_LEAST16_MAX	tiny_libc/include/stdint.h	92;"	d
+INT_LEAST16_MIN	tiny_libc/include/stdint.h	87;"	d
+INT_LEAST32_MAX	tiny_libc/include/stdint.h	93;"	d
+INT_LEAST32_MIN	tiny_libc/include/stdint.h	88;"	d
+INT_LEAST64_MAX	tiny_libc/include/stdint.h	94;"	d
+INT_LEAST64_MIN	tiny_libc/include/stdint.h	89;"	d
+INT_LEAST8_MAX	tiny_libc/include/stdint.h	91;"	d
+INT_LEAST8_MIN	tiny_libc/include/stdint.h	86;"	d
+IRQC_COUNT	include/os/irq.h	/^    IRQC_COUNT$/;"	e	enum:IrqCode
+IRQC_M_EXT	include/os/irq.h	/^    IRQC_M_EXT   = 11,$/;"	e	enum:IrqCode
+IRQC_M_SOFT	include/os/irq.h	/^    IRQC_M_SOFT  = 3,$/;"	e	enum:IrqCode
+IRQC_M_TIMER	include/os/irq.h	/^    IRQC_M_TIMER = 7,$/;"	e	enum:IrqCode
+IRQC_S_EXT	include/os/irq.h	/^    IRQC_S_EXT   = 9,$/;"	e	enum:IrqCode
+IRQC_S_SOFT	include/os/irq.h	/^    IRQC_S_SOFT  = 1,$/;"	e	enum:IrqCode
+IRQC_S_TIMER	include/os/irq.h	/^    IRQC_S_TIMER = 5,$/;"	e	enum:IrqCode
+IRQC_U_EXT	include/os/irq.h	/^    IRQC_U_EXT   = 8,$/;"	e	enum:IrqCode
+IRQC_U_SOFT	include/os/irq.h	/^    IRQC_U_SOFT  = 0,$/;"	e	enum:IrqCode
+IRQC_U_TIMER	include/os/irq.h	/^    IRQC_U_TIMER = 4,$/;"	e	enum:IrqCode
+IRQ_M_EXT	arch/riscv/include/csr.h	45;"	d
+IRQ_M_SOFT	arch/riscv/include/csr.h	39;"	d
+IRQ_M_TIMER	arch/riscv/include/csr.h	42;"	d
+IRQ_S_EXT	arch/riscv/include/csr.h	44;"	d
+IRQ_S_SOFT	arch/riscv/include/csr.h	38;"	d
+IRQ_S_TIMER	arch/riscv/include/csr.h	41;"	d
+IRQ_U_EXT	arch/riscv/include/csr.h	43;"	d
+IRQ_U_SOFT	arch/riscv/include/csr.h	37;"	d
+IRQ_U_TIMER	arch/riscv/include/csr.h	40;"	d
+IrqCode	include/os/irq.h	/^enum IrqCode$/;"	g
+KERNEL_ENTRYPOINT	Makefile	/^KERNEL_ENTRYPOINT = 0x50201000$/;"	m
+KERNEL_PROCESS	include/os/sched.h	/^    KERNEL_PROCESS,$/;"	e	enum:__anon6
+KERNEL_THREAD	include/os/sched.h	/^    KERNEL_THREAD,$/;"	e	enum:__anon6
+LIST_HEAD	include/os/list.h	58;"	d
+LOCKED	include/os/lock.h	/^    LOCKED,$/;"	e	enum:__anon7
+LiuBei	test/test_project3/test_sanguo.c	/^void LiuBei(void)$/;"	f
+MAX_BINSEM	kernel/locking/lock.c	5;"	d	file:
+MAX_ITERATION	test/test_project3/test_affinity.c	8;"	d	file:
+MAX_MBOX	include/os/lock.h	90;"	d
+MAX_MBOX_LENGTH	include/os/lock.h	89;"	d
+MAX_NUM	kernel/locking/lock.c	6;"	d	file:
+MAX_NUM	tiny_libc/mailbox.c	3;"	d	file:
+MAX_RANGE	test/test_project3/test_multicore.c	8;"	d	file:
+MEM_SIZE	include/os/mm.h	32;"	d
+MM_H	include/os/mm.h	2;"	d
+MOD	test/test_project3/test_multicore.c	9;"	d	file:
+MSG	Makefile	/^MSG ?= Temporary commit$/;"	m
+MSG_MAX_SIZE	include/os/lock.h	88;"	d
+MTHREAD_H_	tiny_libc/include/mthread.h	28;"	d
+NR_IRQS	arch/riscv/include/sbi.h	/^    NR_IRQS$/;"	e	enum:SBI_READY_FDT_TYPE
+NULL	include/type.h	30;"	d
+NULL	tiny_libc/include/stddef.h	10;"	d
+NUM_CONSUMER	test/test_project3/test_condition.c	8;"	d	file:
+NUM_CPUS	test/test_project3/test_multicore.c	10;"	d	file:
+NUM_MAX_TASK	include/os/sched.h	37;"	d
+NUM_SYSCALLS	include/os/syscall_number.h	32;"	d
+NUM_TB	test/test_project3/test_barrier.c	8;"	d	file:
+OBJDUMP	Makefile	/^OBJDUMP = ${CROSS_PREFIX}objdump$/;"	m
+OFFSET_REG_A0	arch/riscv/include/asm/regs.h	57;"	d
+OFFSET_REG_A1	arch/riscv/include/asm/regs.h	58;"	d
+OFFSET_REG_A2	arch/riscv/include/asm/regs.h	59;"	d
+OFFSET_REG_A3	arch/riscv/include/asm/regs.h	60;"	d
+OFFSET_REG_A4	arch/riscv/include/asm/regs.h	61;"	d
+OFFSET_REG_A5	arch/riscv/include/asm/regs.h	62;"	d
+OFFSET_REG_A6	arch/riscv/include/asm/regs.h	63;"	d
+OFFSET_REG_A7	arch/riscv/include/asm/regs.h	64;"	d
+OFFSET_REG_GP	arch/riscv/include/asm/regs.h	44;"	d
+OFFSET_REG_RA	arch/riscv/include/asm/regs.h	40;"	d
+OFFSET_REG_S0	arch/riscv/include/asm/regs.h	53;"	d
+OFFSET_REG_S1	arch/riscv/include/asm/regs.h	54;"	d
+OFFSET_REG_S10	arch/riscv/include/asm/regs.h	75;"	d
+OFFSET_REG_S11	arch/riscv/include/asm/regs.h	76;"	d
+OFFSET_REG_S2	arch/riscv/include/asm/regs.h	67;"	d
+OFFSET_REG_S3	arch/riscv/include/asm/regs.h	68;"	d
+OFFSET_REG_S4	arch/riscv/include/asm/regs.h	69;"	d
+OFFSET_REG_S5	arch/riscv/include/asm/regs.h	70;"	d
+OFFSET_REG_S6	arch/riscv/include/asm/regs.h	71;"	d
+OFFSET_REG_S7	arch/riscv/include/asm/regs.h	72;"	d
+OFFSET_REG_S8	arch/riscv/include/asm/regs.h	73;"	d
+OFFSET_REG_S9	arch/riscv/include/asm/regs.h	74;"	d
+OFFSET_REG_SBADADDR	arch/riscv/include/asm/regs.h	87;"	d
+OFFSET_REG_SCAUSE	arch/riscv/include/asm/regs.h	88;"	d
+OFFSET_REG_SEPC	arch/riscv/include/asm/regs.h	86;"	d
+OFFSET_REG_SP	arch/riscv/include/asm/regs.h	43;"	d
+OFFSET_REG_SSTATUS	arch/riscv/include/asm/regs.h	85;"	d
+OFFSET_REG_T0	arch/riscv/include/asm/regs.h	48;"	d
+OFFSET_REG_T1	arch/riscv/include/asm/regs.h	49;"	d
+OFFSET_REG_T2	arch/riscv/include/asm/regs.h	50;"	d
+OFFSET_REG_T3	arch/riscv/include/asm/regs.h	79;"	d
+OFFSET_REG_T4	arch/riscv/include/asm/regs.h	80;"	d
+OFFSET_REG_T5	arch/riscv/include/asm/regs.h	81;"	d
+OFFSET_REG_T6	arch/riscv/include/asm/regs.h	82;"	d
+OFFSET_REG_TP	arch/riscv/include/asm/regs.h	45;"	d
+OFFSET_REG_ZERO	arch/riscv/include/asm/regs.h	37;"	d
+OFFSET_SIZE	arch/riscv/include/asm/regs.h	91;"	d
+OS_H	tiny_libc/include/os.h	2;"	d
+OS_MEM_LOC	tools/createimage.c	18;"	d	file:
+OS_SIZE_LOC	tools/createimage.c	14;"	d	file:
+OS_SYSCALL_H_	include/os/syscall.h	29;"	d
+OS_SYSCALL_NUMBER_H_	include/os/syscall_number.h	29;"	d
+PAGE_SIZE	include/os/mm.h	33;"	d
+PCB_KERNEL_SP	arch/riscv/include/asm/regs.h	93;"	d
+PCB_PREEMPT_COUNT	arch/riscv/include/asm/regs.h	95;"	d
+PCB_USER_SP	arch/riscv/include/asm/regs.h	94;"	d
+PLIC_ADDR	arch/riscv/include/sbi.h	/^    PLIC_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+P_1	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon4
+P_2	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon4
+P_3	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon4
+P_4	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon4
+QEMU_PATH	Makefile	/^QEMU_PATH = \/home\/stu\/OSLab-RISC-V$/;"	m
+RAND_MAX	tiny_libc/include/stdlib.h	7;"	d
+REG_CR	arch/riscv/include/common.h	37;"	d
+REG_DAT	arch/riscv/include/common.h	29;"	d
+REG_FCR	arch/riscv/include/common.h	32;"	d
+REG_IER	arch/riscv/include/common.h	30;"	d
+REG_IIR	arch/riscv/include/common.h	31;"	d
+REG_LCR	arch/riscv/include/common.h	33;"	d
+REG_LSR	arch/riscv/include/common.h	35;"	d
+REG_MCR	arch/riscv/include/common.h	34;"	d
+REG_MR	arch/riscv/include/common.h	38;"	d
+REG_MSR	arch/riscv/include/common.h	36;"	d
+RISCV_LGPTR	arch/riscv/include/asm.h	35;"	d
+RISCV_PTR	arch/riscv/include/asm.h	33;"	d
+RISCV_SZPTR	arch/riscv/include/asm.h	34;"	d
+ROUND	include/os/mm.h	38;"	d
+ROUNDDOWN	include/os/mm.h	39;"	d
+RR	kernel/sched/sched.c	10;"	d	file:
+SATP_MODE	arch/riscv/include/csr.h	32;"	d
+SATP_MODE_39	arch/riscv/include/csr.h	31;"	d
+SATP_PPN	arch/riscv/include/csr.h	30;"	d
+SBI_CALL	arch/riscv/include/sbi.h	20;"	d
+SBI_CALL_0	arch/riscv/include/sbi.h	34;"	d
+SBI_CALL_1	arch/riscv/include/sbi.h	35;"	d
+SBI_CALL_2	arch/riscv/include/sbi.h	36;"	d
+SBI_CALL_3	arch/riscv/include/sbi.h	38;"	d
+SBI_CLEAR_IPI	arch/riscv/include/asm/sbidef.h	7;"	d
+SBI_CONSOLE_GETCHAR	arch/riscv/include/asm/sbidef.h	6;"	d
+SBI_CONSOLE_PUTCHAR	arch/riscv/include/asm/sbidef.h	5;"	d
+SBI_CONSOLE_PUTSTR	arch/riscv/include/asm/sbidef.h	13;"	d
+SBI_FDT_READ	arch/riscv/include/asm/sbidef.h	16;"	d
+SBI_READY_FDT_TYPE	arch/riscv/include/sbi.h	/^enum SBI_READY_FDT_TYPE {$/;"	g
+SBI_REMOTE_FENCE_I	arch/riscv/include/asm/sbidef.h	9;"	d
+SBI_REMOTE_SFENCE_VMA	arch/riscv/include/asm/sbidef.h	10;"	d
+SBI_REMOTE_SFENCE_VMA_ASID	arch/riscv/include/asm/sbidef.h	11;"	d
+SBI_SD_READ	arch/riscv/include/asm/sbidef.h	15;"	d
+SBI_SD_WRITE	arch/riscv/include/asm/sbidef.h	14;"	d
+SBI_SEND_IPI	arch/riscv/include/asm/sbidef.h	8;"	d
+SBI_SET_TIMER	arch/riscv/include/asm/sbidef.h	4;"	d
+SBI_SHUTDOWN	arch/riscv/include/asm/sbidef.h	12;"	d
+SCAUSE_IRQ_FLAG	arch/riscv/include/csr.h	35;"	d
+SCREEN_HEIGHT	drivers/screen.c	10;"	d	file:
+SCREEN_WIDTH	drivers/screen.c	9;"	d	file:
+SECTOR_SIZE	tools/createimage.c	12;"	d	file:
+SHELL_BEGIN	test/test_shell.c	35;"	d	file:
+SIE_SEIE	arch/riscv/include/csr.h	60;"	d
+SIE_SSIE	arch/riscv/include/csr.h	58;"	d
+SIE_STIE	arch/riscv/include/csr.h	59;"	d
+SLCR_BADE_ADDR	arch/riscv/include/sbi.h	/^    SLCR_BADE_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+SMP_H	include/os/smp.h	2;"	d
+SRC_ARCH	Makefile	/^SRC_ARCH	= $(ARCH_DIR)\/kernel\/smp.S $(ARCH_DIR)\/kernel\/trap.S $(ARCH_DIR)\/kernel\/entry.S $(ARCH_DIR)\/kernel\/head.S $(ARCH_DIR)\/sbi\/common.c$/;"	m
+SRC_BOOT	Makefile	/^SRC_BOOT 	= $(ARCH_DIR)\/boot\/bootblock.S$/;"	m
+SRC_DRIVER	Makefile	/^SRC_DRIVER	= .\/drivers\/screen.c$/;"	m
+SRC_IMAGE	Makefile	/^SRC_IMAGE	= .\/tools\/createimage.c$/;"	m
+SRC_INIT	Makefile	/^SRC_INIT 	= .\/init\/main.c$/;"	m
+SRC_INT	Makefile	/^SRC_INT		= .\/kernel\/irq\/irq.c$/;"	m
+SRC_LIBC	Makefile	/^SRC_LIBC	= .\/tiny_libc\/mailbox.c .\/tiny_libc\/rand.c .\/tiny_libc\/printf.c .\/tiny_libc\/string.c .\/tiny_libc\/mthread.c .\/tiny_libc\/syscall.c .\/tiny_libc\/syscall.S .\/tiny_libc\/time.c$/;"	m
+SRC_LIBS	Makefile	/^SRC_LIBS	= .\/libs\/string.c .\/libs\/printk.c$/;"	m
+SRC_LOCK	Makefile	/^SRC_LOCK	= .\/kernel\/locking\/lock.c .\/kernel\/locking\/futex.c .\/kernel\/locking\/cond.c$/;"	m
+SRC_MAIN	Makefile	/^SRC_MAIN	= ${SRC_ARCH} ${SRC_INIT} ${SRC_INT} ${SRC_DRIVER} ${SRC_LOCK} ${SRC_SCHED} ${SRC_MM} ${SRC_SYSCALL} ${SRC_LIBS} ${SRC_LIBC} ${SRC_TEST} ${SRC_TEST2}$/;"	m
+SRC_MM	Makefile	/^SRC_MM	= .\/kernel\/mm\/mm.c$/;"	m
+SRC_SCHED	Makefile	/^SRC_SCHED	= .\/kernel\/sched\/sched.c .\/kernel\/sched\/smp.c .\/kernel\/sched\/time.c$/;"	m
+SRC_SYSCALL	Makefile	/^SRC_SYSCALL	= .\/kernel\/syscall\/syscall.c$/;"	m
+SRC_TEST	Makefile	/^SRC_TEST	= .\/test\/test_shell.c$/;"	m
+SRC_TEST2	Makefile	/^SRC_TEST2	= .\/test\/test_project3\/test_wait.c .\/test\/test_project3\/test_semaphore.c .\/test\/test_project3\/test_sanguo.c .\/test\/test_project3\/test_multicore.c .\/test\/test_project3\/test_kill.c .\/test\/test_project3\/test_condition.c .\/test\/test_project3\/test_affinity.c .\/test\/test_project3\/test_barrier.c $/;"	m
+SR_FS	arch/riscv/include/csr.h	15;"	d
+SR_FS_CLEAN	arch/riscv/include/csr.h	18;"	d
+SR_FS_DIRTY	arch/riscv/include/csr.h	19;"	d
+SR_FS_INITIAL	arch/riscv/include/csr.h	17;"	d
+SR_FS_OFF	arch/riscv/include/csr.h	16;"	d
+SR_SD	arch/riscv/include/csr.h	27;"	d
+SR_SIE	arch/riscv/include/csr.h	10;"	d
+SR_SPIE	arch/riscv/include/csr.h	11;"	d
+SR_SPP	arch/riscv/include/csr.h	12;"	d
+SR_SUM	arch/riscv/include/csr.h	13;"	d
+SR_XS	arch/riscv/include/csr.h	21;"	d
+SR_XS_CLEAN	arch/riscv/include/csr.h	24;"	d
+SR_XS_DIRTY	arch/riscv/include/csr.h	25;"	d
+SR_XS_INITIAL	arch/riscv/include/csr.h	23;"	d
+SR_XS_OFF	arch/riscv/include/csr.h	22;"	d
+STDATOMIC_H	tiny_libc/include/stdatomic.h	2;"	d
+STDBOOL_H	tiny_libc/include/stdbool.h	2;"	d
+STDDEF_H	tiny_libc/include/stddef.h	2;"	d
+STDLIB_H	tiny_libc/include/stdlib.h	2;"	d
+STRING_H	tiny_libc/include/string.h	2;"	d
+SWITCH_TO_RA	arch/riscv/include/asm/regs.h	98;"	d
+SWITCH_TO_S0	arch/riscv/include/asm/regs.h	100;"	d
+SWITCH_TO_S1	arch/riscv/include/asm/regs.h	101;"	d
+SWITCH_TO_S10	arch/riscv/include/asm/regs.h	110;"	d
+SWITCH_TO_S11	arch/riscv/include/asm/regs.h	111;"	d
+SWITCH_TO_S2	arch/riscv/include/asm/regs.h	102;"	d
+SWITCH_TO_S3	arch/riscv/include/asm/regs.h	103;"	d
+SWITCH_TO_S4	arch/riscv/include/asm/regs.h	104;"	d
+SWITCH_TO_S5	arch/riscv/include/asm/regs.h	105;"	d
+SWITCH_TO_S6	arch/riscv/include/asm/regs.h	106;"	d
+SWITCH_TO_S7	arch/riscv/include/asm/regs.h	107;"	d
+SWITCH_TO_S8	arch/riscv/include/asm/regs.h	108;"	d
+SWITCH_TO_S9	arch/riscv/include/asm/regs.h	109;"	d
+SWITCH_TO_SIZE	arch/riscv/include/asm/regs.h	113;"	d
+SWITCH_TO_SP	arch/riscv/include/asm/regs.h	99;"	d
+SYSCALL_BARRIERWAIT	include/os/syscall_number.h	67;"	d
+SYSCALL_BINSEMOP	include/os/syscall_number.h	44;"	d
+SYSCALL_CURSOR	include/os/syscall_number.h	54;"	d
+SYSCALL_DOBLOCK	include/os/syscall_number.h	49;"	d
+SYSCALL_DOUNBLOCK	include/os/syscall_number.h	50;"	d
+SYSCALL_EXIT	include/os/syscall_number.h	36;"	d
+SYSCALL_FUTEX_WAIT	include/os/syscall_number.h	46;"	d
+SYSCALL_FUTEX_WAKEUP	include/os/syscall_number.h	47;"	d
+SYSCALL_GETPID	include/os/syscall_number.h	41;"	d
+SYSCALL_GET_CHAR	include/os/syscall_number.h	62;"	d
+SYSCALL_GET_TICK	include/os/syscall_number.h	61;"	d
+SYSCALL_GET_TIMEBASE	include/os/syscall_number.h	60;"	d
+SYSCALL_KILL	include/os/syscall_number.h	38;"	d
+SYSCALL_MBOX_CLOSE	include/os/syscall_number.h	69;"	d
+SYSCALL_MBOX_OPEN	include/os/syscall_number.h	68;"	d
+SYSCALL_MBOX_RECV	include/os/syscall_number.h	71;"	d
+SYSCALL_MBOX_SEND	include/os/syscall_number.h	70;"	d
+SYSCALL_PS	include/os/syscall_number.h	40;"	d
+SYSCALL_READ	include/os/syscall_number.h	53;"	d
+SYSCALL_READ_SHELL_BUFF	include/os/syscall_number.h	58;"	d
+SYSCALL_REFLUSH	include/os/syscall_number.h	55;"	d
+SYSCALL_SCREENSCROLL	include/os/syscall_number.h	72;"	d
+SYSCALL_SCREEN_CLEAR	include/os/syscall_number.h	59;"	d
+SYSCALL_SEMBROADCAST	include/os/syscall_number.h	66;"	d
+SYSCALL_SEMGET	include/os/syscall_number.h	43;"	d
+SYSCALL_SEMSIGNAL	include/os/syscall_number.h	65;"	d
+SYSCALL_SEMWAIT	include/os/syscall_number.h	64;"	d
+SYSCALL_SERIAL_READ	include/os/syscall_number.h	56;"	d
+SYSCALL_SERIAL_WRITE	include/os/syscall_number.h	57;"	d
+SYSCALL_SLEEP	include/os/syscall_number.h	37;"	d
+SYSCALL_SPAWN	include/os/syscall_number.h	35;"	d
+SYSCALL_TASKSET	include/os/syscall_number.h	73;"	d
+SYSCALL_WAITPID	include/os/syscall_number.h	39;"	d
+SYSCALL_WRITE	include/os/syscall_number.h	52;"	d
+SYSCALL_YIELD	include/os/syscall_number.h	42;"	d
+SunQuan	test/test_project3/test_sanguo.c	/^void SunQuan(void)$/;"	f
+TASK_BLOCKED	include/os/sched.h	/^    TASK_BLOCKED,$/;"	e	enum:__anon5
+TASK_EXITED	include/os/sched.h	/^    TASK_EXITED,$/;"	e	enum:__anon5
+TASK_READY	include/os/sched.h	/^    TASK_READY,$/;"	e	enum:__anon5
+TASK_RUNNING	include/os/sched.h	/^    TASK_RUNNING,$/;"	e	enum:__anon5
+TIMEBASE	arch/riscv/include/sbi.h	/^    TIMEBASE,$/;"	e	enum:SBI_READY_FDT_TYPE
+TIMEIN	init/main.c	40;"	d	file:
+TIMER_INTERVAL	include/os/irq.h	63;"	d
+TIME_H	tiny_libc/include/time.h	2;"	d
+TRUE	include/type.h	34;"	d
+TRUE	tiny_libc/include/stdbool.h	5;"	d
+TestMultiCoreArg	test/test_project3/test_multicore.c	/^struct TestMultiCoreArg$/;"	s	file:
+TimerCallback	include/os/time.h	/^typedef void (*TimerCallback)(void *parameter);$/;"	t
+UINT16_C	tiny_libc/include/stdint.h	141;"	d
+UINT16_MAX	include/type.h	67;"	d
+UINT16_MAX	tiny_libc/include/stdint.h	81;"	d
+UINT32_C	tiny_libc/include/stdint.h	142;"	d
+UINT32_MAX	include/type.h	68;"	d
+UINT32_MAX	tiny_libc/include/stdint.h	82;"	d
+UINT64_C	tiny_libc/include/stdint.h	143;"	d
+UINT64_MAX	include/type.h	69;"	d
+UINT64_MAX	tiny_libc/include/stdint.h	83;"	d
+UINT8_C	tiny_libc/include/stdint.h	140;"	d
+UINT8_MAX	include/type.h	66;"	d
+UINT8_MAX	tiny_libc/include/stdint.h	80;"	d
+UINTMAX_C	tiny_libc/include/stdint.h	147;"	d
+UINTMAX_MAX	tiny_libc/include/stdint.h	131;"	d
+UINTPTR_MAX	tiny_libc/include/stdint.h	123;"	d
+UINT_FAST16_MAX	tiny_libc/include/stdint.h	115;"	d
+UINT_FAST32_MAX	tiny_libc/include/stdint.h	116;"	d
+UINT_FAST64_MAX	tiny_libc/include/stdint.h	117;"	d
+UINT_FAST8_MAX	tiny_libc/include/stdint.h	114;"	d
+UINT_LEAST16_MAX	tiny_libc/include/stdint.h	98;"	d
+UINT_LEAST32_MAX	tiny_libc/include/stdint.h	99;"	d
+UINT_LEAST64_MAX	tiny_libc/include/stdint.h	100;"	d
+UINT_LEAST8_MAX	tiny_libc/include/stdint.h	97;"	d
+UNLOCKED	include/os/lock.h	/^    UNLOCKED,$/;"	e	enum:__anon7
+USER_PROCESS	include/os/sched.h	/^    USER_PROCESS,$/;"	e	enum:__anon6
+USER_THREAD	include/os/sched.h	/^    USER_THREAD,$/;"	e	enum:__anon6
+_ASM_RISCV_SBI_H	arch/riscv/include/sbi.h	15;"	d
+_ASM_SBI_DEF_H	arch/riscv/include/asm/sbidef.h	2;"	d
+_SBI_ASM_H	arch/riscv/include/asm/sbiasm.h	2;"	d
+_STDINT_H_	tiny_libc/include/stdint.h	26;"	d
+_VA_LIST	include/stdarg.h	31;"	d
+_VA_LIST	tiny_libc/include/stdarg.h	31;"	d
+__GNUC_VA_LIST	include/stdarg.h	48;"	d
+__GNUC_VA_LIST	tiny_libc/include/stdarg.h	48;"	d
+__INT64_C	tiny_libc/include/stdint.h	63;"	d
+__STDARG_H	include/stdarg.h	27;"	d
+__STDARG_H	tiny_libc/include/stdarg.h	27;"	d
+__UINT64_C	tiny_libc/include/stdint.h	64;"	d
+__gnuc_va_list	include/stdarg.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
+__gnuc_va_list	tiny_libc/include/stdarg.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
+__va_copy	include/stdarg.h	40;"	d
+__va_copy	tiny_libc/include/stdarg.h	40;"	d
+_list_add	include/os/list.h	/^static inline void _list_add($/;"	f
+_list_del	include/os/list.h	/^static inline void _list_del(list_node_t *prev, list_node_t *next)$/;"	f
+_panic	include/assert.h	/^static inline void _panic(const char* file_name,int lineno, const char* func_name)$/;"	f
+_panic	tiny_libc/include/assert.h	/^static inline void _panic(const char* file_name,int lineno, const char* func_name)$/;"	f
+_putc	libs/printk.c	/^static int _putc(int ch, struct mini_buff *b)$/;"	f	file:
+_putc	tiny_libc/printf.c	/^static int _putc(int ch, struct mini_buff *b)$/;"	f	file:
+_puts	libs/printk.c	/^static int _puts(char *s, unsigned int len, struct mini_buff *b)$/;"	f	file:
+_puts	tiny_libc/printf.c	/^static int _puts(char *s, unsigned int len, struct mini_buff *b)$/;"	f	file:
+_vprint	libs/printk.c	/^static int _vprint(const char* fmt, va_list _va,$/;"	f	file:
+add_task	test/test_project3/test_multicore.c	/^void add_task(struct TestMultiCoreArg* args)$/;"	f
+add_tick	include/os/sched.h	/^    uint64_t add_tick;$/;"	m	struct:pcb
+allocPage	kernel/mm/mm.c	/^ptr_t allocPage(int numPage)$/;"	f
+arg_num	test/test_shell.c	/^    int arg_num;$/;"	m	struct:__anon2	file:
+assert	include/assert.h	13;"	d
+assert	tiny_libc/include/assert.h	13;"	d
+atoi	tiny_libc/string.c	/^int atoi(char *s)$/;"	f
+atomic_cmpxchg	arch/riscv/include/atomic.h	/^static inline uint32_t atomic_cmpxchg(uint32_t old_val, uint32_t new_val, ptr_t mem_addr)$/;"	f
+atomic_cmpxchg_d	arch/riscv/include/atomic.h	/^static inline uint64_t atomic_cmpxchg_d(uint64_t old_val, uint64_t new_val, ptr_t mem_addr)$/;"	f
+atomic_compare_exchange	tiny_libc/include/stdatomic.h	/^static inline int atomic_compare_exchange(volatile void* obj, int expected, int desired)$/;"	f
+atomic_compare_exchange_d	tiny_libc/include/stdatomic.h	/^static inline long atomic_compare_exchange_d(volatile void* obj, long expected, long desired)$/;"	f
+atomic_exchange	tiny_libc/include/stdatomic.h	/^static inline int atomic_exchange(volatile void* obj, int desired)$/;"	f
+atomic_exchange_d	tiny_libc/include/stdatomic.h	/^static inline long atomic_exchange_d(volatile void* obj, long desired)$/;"	f
+atomic_int	tiny_libc/include/stdatomic.h	/^typedef volatile int atomic_int;$/;"	t
+atomic_load	tiny_libc/include/stdatomic.h	/^static inline uint32_t atomic_load(volatile uint32_t* obj)$/;"	f
+atomic_load_d	tiny_libc/include/stdatomic.h	/^static inline uint64_t atomic_load_d(volatile uint64_t* obj)$/;"	f
+atomic_long	tiny_libc/include/stdatomic.h	/^typedef volatile long atomic_long;$/;"	t
+atomic_swap	arch/riscv/include/atomic.h	/^static inline uint32_t atomic_swap(uint32_t val, ptr_t mem_addr)$/;"	f
+atomic_swap_d	arch/riscv/include/atomic.h	/^static inline uint64_t atomic_swap_d(uint64_t val, ptr_t mem_addr)$/;"	f
+atomic_uint	tiny_libc/include/stdatomic.h	/^typedef volatile unsigned int atomic_uint;$/;"	t
+atomic_uint32_t	tiny_libc/include/stdatomic.h	/^typedef volatile uint32_t atomic_uint32_t;$/;"	t
+atomic_uint64_t	tiny_libc/include/stdatomic.h	/^typedef volatile uint64_t atomic_uint64_t;$/;"	t
+atomic_ulong	tiny_libc/include/stdatomic.h	/^typedef volatile unsigned long atomic_ulong;$/;"	t
+barrier	test/test_project3/test_barrier.c	/^static mthread_barrier_t barrier;$/;"	v	file:
+barrier_t	include/os/lock.h	/^typedef sem_t barrier_t;$/;"	t
+barrier_task	test/test_project3/test_barrier.c	/^void barrier_task(int print_location)$/;"	f
+barrier_wait	tiny_libc/syscall.c	/^void barrier_wait(int id, int count)$/;"	f
+binsem_t	include/os/lock.h	/^typedef sem_t binsem_t;$/;"	t
+binsemget	tiny_libc/syscall.c	/^int binsemget(int key)$/;"	f
+binsemop	tiny_libc/syscall.c	/^int binsemop(int binsem_id, int op)$/;"	f
+block_queue	include/os/futex.h	/^    list_head block_queue;$/;"	m	struct:futex_node
+block_queue	include/os/lock.h	/^    list_head block_queue;$/;"	m	struct:mutex_lock
+block_queue	include/os/lock.h	/^    list_head block_queue;$/;"	m	struct:sem
+bool	tiny_libc/include/stdbool.h	/^typedef int bool;$/;"	t
+buffer	include/os/lock.h	/^    char buffer[MSG_MAX_SIZE];$/;"	m	struct:mailbox
+buffer	libs/printk.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+buffer	tiny_libc/printf.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+buffer_len	libs/printk.c	/^    unsigned int buffer_len;$/;"	m	struct:mini_buff	file:
+buffer_len	tiny_libc/printf.c	/^    unsigned int buffer_len;$/;"	m	struct:mini_buff	file:
+bzero	tiny_libc/string.c	/^void bzero(void *dest, uint32_t len) { memset(dest, 0, len); }$/;"	f
+callback_func	include/os/time.h	/^    TimerCallback callback_func;$/;"	m	struct:timer
+cc_task	test/test_project3/test_sanguo.c	/^static struct task_info cc_task = {(uintptr_t)&CaoCao, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+cited	include/os/lock.h	/^    int  cited;$/;"	m	struct:mailbox
+clear_bss	arch/riscv/kernel/head.S	/^clear_bss:$/;"	l
+clear_bss_done	arch/riscv/kernel/head.S	/^clear_bss_done:$/;"	l
+clock	tiny_libc/time.c	/^clock_t clock()$/;"	f
+clock_t	tiny_libc/include/time.h	/^typedef uint64_t clock_t;$/;"	t
+cmd_table	test/test_shell.c	/^} cmd_table [] = {$/;"	v	typeref:struct:__anon2	file:
+cond	arch/riscv/kernel/trap.S	/^cond:$/;"	l
+cond_t	include/os/lock.h	/^typedef sem_t cond_t;$/;"	t
+condition	test/test_project3/test_condition.c	/^static mthread_cond_t condition;$/;"	v	file:
+consumer_task	test/test_project3/test_condition.c	/^void consumer_task(int print_location)$/;"	f
+count	tiny_libc/include/mthread.h	/^    int count;$/;"	m	struct:mthread_barrier
+create_image	tools/createimage.c	/^static void create_image(int nfiles, char *files[])$/;"	f	file:
+curr_linenum	test/test_shell.c	/^int curr_linenum;$/;"	v
+current_running	kernel/sched/sched.c	/^pcb_t ** volatile current_running;$/;"	v
+current_running_core0	init/main.c	/^pcb_t * volatile current_running_core0;$/;"	v
+current_running_core1	init/main.c	/^pcb_t * volatile current_running_core1;$/;"	v
+cursor_x	include/os/sched.h	/^    int cursor_x;$/;"	m	struct:pcb
+cursor_y	include/os/sched.h	/^    int cursor_y;$/;"	m	struct:pcb
+dequeue	kernel/sched/sched.c	/^pcb_t *dequeue(list_head* queue)$/;"	f
+description	test/test_shell.c	/^    char *description;$/;"	m	struct:__anon2	file:
+disable_core1	arch/riscv/kernel/entry.S	/^disable_core1:$/;"	l
+disable_pre	arch/riscv/kernel/entry.S	/^disable_pre:$/;"	l
+do_block	kernel/sched/sched.c	/^void do_block(pcb_t *pcb_node, list_head *queue)$/;"	f
+do_enable	arch/riscv/kernel/entry.S	/^do_enable:$/;"	l
+do_exit	kernel/sched/sched.c	/^void do_exit()$/;"	f
+do_getpid	kernel/sched/sched.c	/^pid_t do_getpid()$/;"	f
+do_kill	kernel/sched/sched.c	/^int do_kill(pid_t pid)$/;"	f
+do_mutex_lock_acquire	kernel/locking/lock.c	/^void do_mutex_lock_acquire(mutex_lock_t *lock)$/;"	f
+do_mutex_lock_init	kernel/locking/lock.c	/^void do_mutex_lock_init(mutex_lock_t *lock)$/;"	f
+do_mutex_lock_release	kernel/locking/lock.c	/^void do_mutex_lock_release(mutex_lock_t *lock)$/;"	f
+do_process_show	kernel/sched/sched.c	/^void do_process_show()$/;"	f
+do_scheduler	kernel/sched/sched.c	/^void do_scheduler(void)$/;"	f
+do_sleep	kernel/sched/sched.c	/^void do_sleep(uint32_t sleep_time)$/;"	f
+do_unblock	kernel/sched/sched.c	/^void do_unblock(list_node_t *item)$/;"	f
+do_waitpid	kernel/sched/sched.c	/^int do_waitpid(pid_t pid)$/;"	f
+empty_id	include/os/lock.h	/^    int  empty_id;$/;"	m	struct:mailbox
+enable_core1	arch/riscv/kernel/entry.S	/^enable_core1:$/;"	l
+enable_pre	arch/riscv/kernel/entry.S	/^enable_pre:$/;"	l
+enqueue	kernel/sched/sched.c	/^void enqueue(list_head* queue, pcb_t* item)$/;"	f
+enqueue_timer	kernel/sched/time.c	/^void enqueue_timer(list_head* queue, pcb_t* item)$/;"	f
+entry_point	include/os/sched.h	/^    ptr_t entry_point;$/;"	m	struct:task_info
+error	tools/createimage.c	/^static void error(char *fmt, ...)$/;"	f	file:
+error_syscall	init/main.c	/^void error_syscall(void){$/;"	f
+exc_table	kernel/irq/irq.c	/^handler_t exc_table[EXCC_COUNT];$/;"	v
+extended	tools/createimage.c	/^    int extended;$/;"	m	struct:__anon1	file:
+f	Makefile	/^	sudo dd if=image of=${DISK}2 conv=notrunc$/;"	m
+false	tiny_libc/include/stdbool.h	10;"	d
+fetch_add	tiny_libc/include/stdatomic.h	/^static inline int fetch_add(volatile void* obj, int arg)$/;"	f
+fetch_sub	tiny_libc/include/stdatomic.h	/^static inline int fetch_sub(volatile void* obj, int arg)$/;"	f
+findnext	kernel/sched/sched.c	/^pcb_t *findnext(list_head *queue){$/;"	f
+findnext_core	kernel/sched/sched.c	/^pcb_t *findnext_core()$/;"	f
+findpid	init/main.c	/^int findpid()$/;"	f
+from	test/test_project3/test_multicore.c	/^    int from;$/;"	m	struct:TestMultiCoreArg	file:
+full_id	include/os/lock.h	/^    int  full_id;$/;"	m	struct:mailbox
+func	test/test_shell.c	/^    function func;$/;"	m	struct:__anon2	file:
+function	test/test_shell.c	/^typedef void (*function)(void *arg0, void *arg1, void *arg2);$/;"	t	file:
+futex_bucket_t	include/os/futex.h	/^typedef list_head futex_bucket_t;$/;"	t
+futex_buckets	kernel/locking/futex.c	/^futex_bucket_t futex_buckets[FUTEX_BUCKETS];$/;"	v
+futex_hash	kernel/locking/futex.c	/^static int futex_hash(uint64_t x)$/;"	f	file:
+futex_key	include/os/futex.h	/^    futex_key_t futex_key;$/;"	m	struct:futex_node
+futex_key_t	include/os/futex.h	/^typedef uint64_t futex_key_t;$/;"	t
+futex_node	include/os/futex.h	/^typedef struct futex_node$/;"	s
+futex_node_t	include/os/futex.h	/^}futex_node_t;$/;"	t	typeref:struct:futex_node
+futex_wait	kernel/locking/futex.c	/^void futex_wait(volatile uint64_t *val_addr, uint64_t val)$/;"	f
+futex_wakeup	kernel/locking/futex.c	/^void futex_wakeup(volatile uint64_t *val_addr, int num_wakeup)$/;"	f
+get_node	kernel/locking/futex.c	/^static futex_node_t* get_node(volatile uint64_t *val_addr, int create)$/;"	f	file:
+get_ticks	kernel/sched/time.c	/^uint64_t get_ticks()$/;"	f
+get_time_base	kernel/sched/time.c	/^uint64_t get_time_base()$/;"	f
+get_timer	kernel/sched/time.c	/^uint64_t get_timer()$/;"	f
+getchar	tiny_libc/syscall.c	/^int getchar(){$/;"	f
+gethead_timer	kernel/sched/time.c	/^pcb_t *gethead_timer(list_head* queue)$/;"	f
+global_count	test/test_project3/test_semaphore.c	/^static int global_count = 0;$/;"	v	file:
+global_key	kernel/locking/lock.c	/^int global_key = 0;$/;"	v
+global_time	include/os/sched.h	/^int global_time;$/;"	v
+handle_int	kernel/irq/irq.c	/^void handle_int(regs_context_t *regs, uint64_t interrupt, uint64_t cause)$/;"	f
+handle_other	kernel/irq/irq.c	/^void handle_other(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+handle_syscall	kernel/syscall/syscall.c	/^void handle_syscall(regs_context_t *regs, uint64_t interrupt, uint64_t cause)$/;"	f
+handler_t	include/os/irq.h	/^typedef void (*handler_t)(regs_context_t*, uint64_t, uint64_t);$/;"	t
+head	include/os/lock.h	/^    int  head, tail;$/;"	m	struct:mailbox
+heapCurr	kernel/mm/mm.c	/^ptr_t heapCurr = HEAP;$/;"	v
+id	include/os/lock.h	/^    int  id;$/;"	m	struct:mailbox
+id	include/os/lock.h	/^    int id;$/;"	m	struct:sem
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_barrier
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_cond
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_mutex
+id_gen	kernel/locking/lock.c	/^int id_gen()$/;"	f
+init_all_stack	init/main.c	/^void init_all_stack()$/;"	f
+init_exception	kernel/irq/irq.c	/^void init_exception()$/;"	f
+init_list_head	include/os/list.h	/^static inline void init_list_head(list_head *list)$/;"	f
+init_pcb	init/main.c	/^pid_t init_pcb(task_info_t *task, void *arg, spawn_mode_t mode, uint8_t mask)$/;"	f
+init_pcb_stack	init/main.c	/^static void init_pcb_stack($/;"	f	file:
+init_screen	drivers/screen.c	/^void init_screen(void)$/;"	f
+init_shell	init/main.c	/^static void init_shell()$/;"	f	file:
+init_syscall	init/main.c	/^static void init_syscall(void)$/;"	f	file:
+init_system_futex	kernel/locking/futex.c	/^void init_system_futex()$/;"	f
+int16_t	include/type.h	/^typedef int      __attribute__((__mode__(HI))) int16_t;$/;"	t
+int16_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(HI))) int16_t;$/;"	t
+int32_t	include/type.h	/^typedef int      __attribute__((__mode__(SI))) int32_t;$/;"	t
+int32_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(SI))) int32_t;$/;"	t
+int64_t	include/type.h	/^typedef int      __attribute__((__mode__(DI))) int64_t;$/;"	t
+int64_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(DI))) int64_t;$/;"	t
+int8_t	include/type.h	/^typedef unsigned __attribute__((__mode__(QI))) int8_t;$/;"	t
+int8_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(QI))) int8_t;$/;"	t
+int_fast16_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast16_t;$/;"	t
+int_fast32_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast32_t;$/;"	t
+int_fast64_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast64_t;$/;"	t
+int_fast8_t	tiny_libc/include/stdint.h	/^typedef int8_t int_fast8_t;$/;"	t
+int_least16_t	tiny_libc/include/stdint.h	/^typedef int16_t int_least16_t;$/;"	t
+int_least32_t	tiny_libc/include/stdint.h	/^typedef int32_t int_least32_t;$/;"	t
+int_least64_t	tiny_libc/include/stdint.h	/^typedef int64_t int_least64_t;$/;"	t
+int_least8_t	tiny_libc/include/stdint.h	/^typedef int8_t int_least8_t;$/;"	t
+integer_test_task	test/test_project3/test_affinity.c	/^void integer_test_task(int print_location)$/;"	f
+interrupt_helper	kernel/irq/irq.c	/^void interrupt_helper(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+intmax_t	tiny_libc/include/stdint.h	/^typedef int64_t intmax_t;$/;"	t
+intptr_t	include/type.h	/^typedef int64_t intptr_t;$/;"	t
+intptr_t	tiny_libc/include/stdint.h	/^typedef int64_t intptr_t;$/;"	t
+irq_table	kernel/irq/irq.c	/^handler_t irq_table[IRQC_COUNT];$/;"	v
+kbzero	libs/string.c	/^void kbzero(void *dest, uint32_t len) { kmemset(dest, 0, len); }$/;"	f
+kernel_barrier_wait	kernel/locking/lock.c	/^int kernel_barrier_wait(int id, int count)$/;"	f
+kernel_binsemop	kernel/locking/lock.c	/^int kernel_binsemop(int binsem_id, int op)$/;"	f
+kernel_keygen	kernel/locking/lock.c	/^int kernel_keygen()$/;"	f
+kernel_lock	kernel/irq/irq.c	/^spin_lock_t kernel_lock;$/;"	v
+kernel_mbox_close	kernel/locking/lock.c	/^void kernel_mbox_close(mailbox_t mailbox)$/;"	f
+kernel_mbox_open	kernel/locking/lock.c	/^mailbox_t kernel_mbox_open(char *name)$/;"	f
+kernel_mbox_recv	kernel/locking/lock.c	/^void kernel_mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+kernel_mbox_send	kernel/locking/lock.c	/^void kernel_mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+kernel_screen_scroll_check	drivers/screen.c	/^void kernel_screen_scroll_check()$/;"	f
+kernel_sem_broadcast	kernel/locking/lock.c	/^int kernel_sem_broadcast(int sem_id)$/;"	f
+kernel_sem_signal	kernel/locking/lock.c	/^int kernel_sem_signal(int sem_id)$/;"	f
+kernel_sem_wait	kernel/locking/lock.c	/^int kernel_sem_wait(int sem_id, int lock_id)$/;"	f
+kernel_semget	kernel/locking/lock.c	/^int kernel_semget(int key)$/;"	f
+kernel_sp	include/os/sched.h	/^    reg_t kernel_sp;$/;"	m	struct:pcb
+kernel_stack	init/main.c	/^uint64_t kernel_stack[NUM_MAX_TASK];$/;"	v
+kernel_taskset	init/main.c	/^void kernel_taskset(uint8_t mask, pid_t pid)$/;"	f
+key	include/os/lock.h	/^    int key;$/;"	m	struct:sem
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_barrier
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_cond
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_mutex
+key_global	tiny_libc/mthread.c	/^int key_global = 4097;$/;"	v
+kmalloc	kernel/mm/mm.c	/^void* kmalloc(size_t size)$/;"	f
+kmemcpy	libs/string.c	/^void kmemcpy(uint8_t *dest, const uint8_t *src, uint32_t len)$/;"	f
+kmemset	libs/string.c	/^void kmemset(void *dest, uint8_t val, uint32_t len)$/;"	f
+kstrcat	libs/string.c	/^char *kstrcat(char *dest, const char *src)$/;"	f
+kstrcmp	libs/string.c	/^int kstrcmp(const char *str1, const char *str2)$/;"	f
+kstrcpy	libs/string.c	/^char *kstrcpy(char *dest, const char *src)$/;"	f
+kstrlen	libs/string.c	/^int kstrlen(const char *src)$/;"	f
+latency	kernel/sched/time.c	/^void latency(uint64_t time)$/;"	f
+lb_task	test/test_project3/test_sanguo.c	/^static struct task_info lb_task = {(uintptr_t)&LiuBei, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+list	include/os/futex.h	/^    list_node_t list;$/;"	m	struct:futex_node
+list	include/os/sched.h	/^    list_node_t list;$/;"	m	struct:pcb
+list_add	include/os/list.h	/^static inline void list_add(list_node_t *node, list_node_t *head)$/;"	f
+list_add_tail	include/os/list.h	/^static inline void list_add_tail($/;"	f
+list_del	include/os/list.h	/^static inline void list_del(list_node_t *entry)$/;"	f
+list_empty	include/os/list.h	/^static inline int list_empty(const list_head *head)$/;"	f
+list_entry	include/os/list.h	51;"	d
+list_head	include/os/list.h	/^typedef list_node_t list_head;$/;"	t
+list_move	include/os/list.h	/^static inline void list_move(list_node_t *node, list_head *head)$/;"	f
+list_node	include/os/list.h	/^typedef struct list_node$/;"	s
+list_node_t	include/os/list.h	/^} list_node_t;$/;"	t	typeref:struct:list_node
+lock	include/os/lock.h	/^    spin_lock_t lock;$/;"	m	struct:mutex_lock
+lock	include/os/sched.h	/^    int lock[16];$/;"	m	struct:pcb
+lock1	test/test_project3/test_kill.c	/^mthread_mutex_t lock1;$/;"	v
+lock2	test/test_project3/test_kill.c	/^mthread_mutex_t lock2;$/;"	v
+lock_id	include/os/lock.h	/^    int  lock_id;$/;"	m	struct:mailbox
+lock_kernel	kernel/sched/smp.c	/^void lock_kernel()$/;"	f
+lock_num	include/os/sched.h	/^    int lock_num;$/;"	m	struct:pcb
+lock_status_t	include/os/lock.h	/^} lock_status_t;$/;"	t	typeref:enum:__anon7
+loop	arch/riscv/kernel/head.S	/^loop:$/;"	l
+mailbox	include/os/lock.h	/^typedef struct mailbox$/;"	s
+mailbox_t	include/os/lock.h	/^typedef int mailbox_t;$/;"	t
+mailbox_t	tiny_libc/include/mailbox.h	/^typedef int mailbox_t;$/;"	t
+main	arch/riscv/boot/bootblock.S	/^main:$/;"	l
+main	init/main.c	/^int main()$/;"	f
+main	tools/createimage.c	/^int main(int argc, char **argv)$/;"	f
+man_match	test/test_shell.c	/^static int man_match(char *arg, int arg_num){$/;"	f	file:
+mask	include/os/sched.h	/^    uint8_t mask;$/;"	m	struct:pcb
+mbox_close	tiny_libc/mailbox.c	/^void mbox_close(mailbox_t mailbox)$/;"	f
+mbox_list	kernel/locking/lock.c	/^mbox_t *mbox_list[MAX_NUM];$/;"	v
+mbox_open	tiny_libc/mailbox.c	/^mailbox_t mbox_open(char *name)$/;"	f
+mbox_recv	tiny_libc/mailbox.c	/^void mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+mbox_send	tiny_libc/mailbox.c	/^void mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+mbox_t	include/os/lock.h	/^}mbox_t;$/;"	t	typeref:struct:mailbox
+memCurr	kernel/mm/mm.c	/^ptr_t memCurr = FREEMEM;$/;"	v
+memcpy	tiny_libc/string.c	/^void memcpy(uint8_t *dest, const uint8_t *src, uint32_t len)$/;"	f
+memset	tiny_libc/string.c	/^void memset(void *dest, uint8_t val, size_t len)$/;"	f
+mini_buff	libs/printk.c	/^struct mini_buff$/;"	s	file:
+mini_buff	tiny_libc/printf.c	/^struct mini_buff$/;"	s	file:
+mini_itoa	libs/printk.c	/^static unsigned int mini_itoa($/;"	f	file:
+mini_itoa	tiny_libc/printf.c	/^static unsigned int mini_itoa($/;"	f	file:
+mini_strlen	libs/printk.c	/^static unsigned int mini_strlen(const char *s)$/;"	f	file:
+mini_vsnprintf	libs/printk.c	/^static int mini_vsnprintf($/;"	f	file:
+mini_vsnprintf	tiny_libc/printf.c	/^static int mini_vsnprintf($/;"	f	file:
+mode	include/os/sched.h	/^    spawn_mode_t mode;$/;"	m	struct:pcb
+msg	arch/riscv/boot/bootblock.S	/^msg : .string "INFO: CORE 0 STARTED\\n\\r"$/;"	l
+msg2	arch/riscv/boot/bootblock.S	/^msg2: .string "INFO: CORE 1 STARTED\\n\\r"$/;"	l
+mthread_barrier	tiny_libc/include/mthread.h	/^typedef struct mthread_barrier$/;"	s
+mthread_barrier_destroy	tiny_libc/mthread.c	/^int mthread_barrier_destroy(mthread_barrier_t *barrier)$/;"	f
+mthread_barrier_init	tiny_libc/mthread.c	/^int mthread_barrier_init(mthread_barrier_t * barrier, unsigned count)$/;"	f
+mthread_barrier_t	tiny_libc/include/mthread.h	/^} mthread_barrier_t;$/;"	t	typeref:struct:mthread_barrier
+mthread_barrier_wait	tiny_libc/mthread.c	/^int mthread_barrier_wait(mthread_barrier_t *barrier)$/;"	f
+mthread_cond	tiny_libc/include/mthread.h	/^typedef struct mthread_cond$/;"	s
+mthread_cond_broadcast	tiny_libc/mthread.c	/^int mthread_cond_broadcast(mthread_cond_t *cond)$/;"	f
+mthread_cond_destroy	tiny_libc/mthread.c	/^int mthread_cond_destroy(mthread_cond_t *cond) $/;"	f
+mthread_cond_init	tiny_libc/mthread.c	/^int mthread_cond_init(mthread_cond_t *cond)$/;"	f
+mthread_cond_signal	tiny_libc/mthread.c	/^int mthread_cond_signal(mthread_cond_t *cond)$/;"	f
+mthread_cond_t	tiny_libc/include/mthread.h	/^} mthread_cond_t;$/;"	t	typeref:struct:mthread_cond
+mthread_cond_wait	tiny_libc/mthread.c	/^int mthread_cond_wait(mthread_cond_t *cond, mthread_mutex_t *mutex)$/;"	f
+mthread_mutex	tiny_libc/include/mthread.h	/^typedef struct mthread_mutex$/;"	s
+mthread_mutex_destroy	tiny_libc/mthread.c	/^int mthread_mutex_destroy(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_init	tiny_libc/mthread.c	/^int mthread_mutex_init(mthread_mutex_t *lock)$/;"	f
+mthread_mutex_lock	tiny_libc/mthread.c	/^int mthread_mutex_lock(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_t	tiny_libc/include/mthread.h	/^} mthread_mutex_t;$/;"	t	typeref:struct:mthread_mutex
+mthread_mutex_trylock	tiny_libc/mthread.c	/^int mthread_mutex_trylock(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_unlock	tiny_libc/mthread.c	/^int mthread_mutex_unlock(mthread_mutex_t *lock)$/;"	f
+mthread_semaphore	tiny_libc/include/mthread.h	/^typedef struct mthread_semaphore$/;"	s
+mthread_semaphore_destroy	tiny_libc/mthread.c	/^int mthread_semaphore_destroy(mthread_semaphore_t *sem)$/;"	f
+mthread_semaphore_down	tiny_libc/mthread.c	/^int mthread_semaphore_down(mthread_semaphore_t *sem)$/;"	f
+mthread_semaphore_init	tiny_libc/mthread.c	/^int mthread_semaphore_init(mthread_semaphore_t *sem, int val)$/;"	f
+mthread_semaphore_t	tiny_libc/include/mthread.h	/^} mthread_semaphore_t;$/;"	t	typeref:struct:mthread_semaphore
+mthread_semaphore_up	tiny_libc/mthread.c	/^int mthread_semaphore_up(mthread_semaphore_t *sem)$/;"	f
+mthread_spin_destroy	tiny_libc/mthread.c	/^int mthread_spin_destroy(mthread_spinlock_t *lock) {$/;"	f
+mthread_spin_init	tiny_libc/mthread.c	/^int mthread_spin_init(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_lock	tiny_libc/mthread.c	/^int mthread_spin_lock(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_trylock	tiny_libc/mthread.c	/^int mthread_spin_trylock(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_unlock	tiny_libc/mthread.c	/^int mthread_spin_unlock(mthread_spinlock_t *lock)$/;"	f
+mthread_spinlock_t	tiny_libc/include/mthread.h	/^typedef atomic_int mthread_spinlock_t;$/;"	t
+mutex	test/test_project3/test_condition.c	/^static mthread_mutex_t mutex;$/;"	v	file:
+mutex_lock	include/os/lock.h	/^typedef struct mutex_lock$/;"	s
+mutex_lock_t	include/os/lock.h	/^} mutex_lock_t;$/;"	t	typeref:struct:mutex_lock
+name	include/os/lock.h	/^    char name[64];$/;"	m	struct:mailbox
+name	test/test_shell.c	/^    char *name;$/;"	m	struct:__anon2	file:
+new_screen	drivers/screen.c	/^char new_screen[SCREEN_HEIGHT * SCREEN_WIDTH] = {0};$/;"	v
+next	include/os/list.h	/^    struct list_node *next, *prev;$/;"	m	struct:list_node	typeref:struct:list_node::list_node
+num_staff	test/test_project3/test_condition.c	/^static int num_staff = 0;$/;"	v	file:
+num_test_tasks	test/test_shell.c	/^static int num_test_tasks = 8;$/;"	v	file:
+offsetof	include/os/list.h	50;"	d
+offsetof	tiny_libc/include/stddef.h	9;"	d
+old_screen	drivers/screen.c	/^char old_screen[SCREEN_HEIGHT * SCREEN_WIDTH] = {0};$/;"	v
+options	tools/createimage.c	/^} options;$/;"	v	typeref:struct:__anon1	file:
+parameter	include/os/time.h	/^    void *parameter;$/;"	m	struct:timer
+parent	include/os/sched.h	/^    pid_t parent;$/;"	m	struct:pcb
+pbuffer	libs/printk.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+pbuffer	tiny_libc/printf.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+pcb	include/os/sched.h	/^typedef struct pcb$/;"	s
+pcb	kernel/sched/sched.c	/^pcb_t pcb[NUM_MAX_TASK];$/;"	v
+pcb_t	include/os/sched.h	/^} pcb_t;$/;"	t	typeref:struct:pcb
+pid	include/os/sched.h	/^    pid_t pid;$/;"	m	struct:pcb
+pid0_pcb_core0	kernel/sched/sched.c	/^pcb_t pid0_pcb_core0 = {$/;"	v
+pid0_pcb_core1	kernel/sched/sched.c	/^pcb_t pid0_pcb_core1 = {$/;"	v
+pid0_stack_0	kernel/sched/sched.c	/^const ptr_t pid0_stack_0 = INIT_KERNEL_STACK + 2 * PAGE_SIZE;$/;"	v
+pid0_stack_1	kernel/sched/sched.c	/^const ptr_t pid0_stack_1 = INIT_KERNEL_STACK + 4 * PAGE_SIZE;$/;"	v
+pid_t	include/type.h	/^typedef int32_t pid_t;$/;"	t
+port_write	arch/riscv/sbi/common.c	/^void port_write(char *str)$/;"	f
+port_write_ch	arch/riscv/sbi/common.c	/^void port_write_ch(char ch)$/;"	f
+preempt_count	include/os/sched.h	/^    reg_t preempt_count;$/;"	m	struct:pcb
+prev	include/os/list.h	/^    struct list_node *next, *prev;$/;"	m	struct:list_node	typeref:struct:list_node::
+print_location	test/test_project3/test_multicore.c	/^    int print_location;$/;"	m	struct:TestMultiCoreArg	file:
+printf	tiny_libc/printf.c	/^int printf(const char *fmt, ...)$/;"	f
+printk	libs/printk.c	/^int printk(const char *fmt, ...)$/;"	f
+prints	libs/printk.c	/^int prints(const char *fmt, ...)$/;"	f
+priority	include/os/sched.h	/^    priority_t priority;$/;"	m	struct:pcb
+priority_t	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	t	typeref:enum:__anon4
+process_id	kernel/sched/sched.c	/^pid_t process_id = 1;$/;"	v
+producer_task	test/test_project3/test_condition.c	/^void producer_task(void)$/;"	f
+ptr_t	include/type.h	/^typedef uint64_t ptr_t;$/;"	t
+ptrdiff_t	tiny_libc/include/stddef.h	/^typedef int64_t ptrdiff_t;$/;"	t
+putchar	tiny_libc/syscall.c	/^void putchar(int ch)$/;"	f
+rand	tiny_libc/rand.c	/^int rand()$/;"	f
+read_ehdr	tools/createimage.c	/^static void read_ehdr(Elf64_Ehdr * ehdr, FILE * fp)$/;"	f	file:
+read_phdr	tools/createimage.c	/^static void read_phdr(Elf64_Phdr * phdr, FILE * fp, int ph,$/;"	f	file:
+ready_queue	kernel/sched/sched.c	/^LIST_HEAD(ready_queue);$/;"	v
+ready_to_exit_task	test/test_project3/test_kill.c	/^void ready_to_exit_task()$/;"	f
+reg_t	include/type.h	/^typedef uint64_t reg_t;$/;"	t
+regs	include/os/sched.h	/^    reg_t regs[14];$/;"	m	struct:switchto_context
+regs	include/os/sched.h	/^    reg_t regs[32];$/;"	m	struct:regs_context
+regs_context	include/os/sched.h	/^typedef struct regs_context$/;"	s
+regs_context_t	include/os/sched.h	/^} regs_context_t;$/;"	t	typeref:struct:regs_context
+reset_irq_timer	kernel/irq/irq.c	/^void reset_irq_timer()$/;"	f
+result	test/test_project3/test_multicore.c	/^    int* result;$/;"	m	struct:TestMultiCoreArg	file:
+riscv_dtb	kernel/irq/irq.c	/^uintptr_t riscv_dtb;$/;"	v
+sbadaddr	include/os/sched.h	/^    reg_t sbadaddr;$/;"	m	struct:regs_context
+sbi_clear_ipi	arch/riscv/include/sbi.h	/^static inline void sbi_clear_ipi(void)$/;"	f
+sbi_console_getchar	arch/riscv/include/sbi.h	/^static inline int sbi_console_getchar(void)$/;"	f
+sbi_console_putchar	arch/riscv/include/sbi.h	/^static inline void sbi_console_putchar(int ch)$/;"	f
+sbi_console_putstr	arch/riscv/include/sbi.h	/^static inline void sbi_console_putstr(char *str)$/;"	f
+sbi_read_fdt	arch/riscv/include/sbi.h	/^static inline uint32_t sbi_read_fdt(enum SBI_READY_FDT_TYPE type)$/;"	f
+sbi_remote_fence_i	arch/riscv/include/sbi.h	/^static inline void sbi_remote_fence_i($/;"	f
+sbi_remote_sfence_vma	arch/riscv/include/sbi.h	/^static inline void sbi_remote_sfence_vma($/;"	f
+sbi_remote_sfence_vma_asid	arch/riscv/include/sbi.h	/^static inline void sbi_remote_sfence_vma_asid($/;"	f
+sbi_sd_read	arch/riscv/include/sbi.h	/^static inline uintptr_t sbi_sd_read($/;"	f
+sbi_sd_write	arch/riscv/include/sbi.h	/^static inline uintptr_t sbi_sd_write($/;"	f
+sbi_send_ipi	arch/riscv/include/sbi.h	/^static inline void sbi_send_ipi(const unsigned long *hart_mask)$/;"	f
+sbi_set_timer	arch/riscv/include/sbi.h	/^static inline void sbi_set_timer(uint64_t stime_value)$/;"	f
+sbi_shutdown	arch/riscv/include/sbi.h	/^static inline void sbi_shutdown(void) { SBI_CALL_0(SBI_SHUTDOWN); }$/;"	f
+scause	include/os/sched.h	/^    reg_t scause;$/;"	m	struct:regs_context
+score	kernel/sched/sched.c	/^uint16_t score(priority_t p, uint64_t time){$/;"	f
+screen_clear	drivers/screen.c	/^void screen_clear(void)$/;"	f
+screen_move_cursor	drivers/screen.c	/^void screen_move_cursor(int x, int y)$/;"	f
+screen_reflush	drivers/screen.c	/^void screen_reflush(void)$/;"	f
+screen_scroll	drivers/screen.c	/^void screen_scroll(int line1, int line2)$/;"	f
+screen_write	drivers/screen.c	/^void screen_write(char *buff)$/;"	f
+screen_write_ch	drivers/screen.c	/^void screen_write_ch(char ch)$/;"	f
+secondary	arch/riscv/boot/bootblock.S	/^secondary:$/;"	l
+sem	include/os/lock.h	/^typedef struct sem {$/;"	s
+sem_broadcast	tiny_libc/syscall.c	/^void sem_broadcast(int id)$/;"	f
+sem_list	kernel/locking/lock.c	/^sem_t *sem_list[MAX_BINSEM];$/;"	v
+sem_signal	tiny_libc/syscall.c	/^void sem_signal(int id)$/;"	f
+sem_t	include/os/lock.h	/^} sem_t;$/;"	t	typeref:struct:sem
+sem_wait	tiny_libc/syscall.c	/^void sem_wait(int id, int lock_id)$/;"	f
+semaphore	test/test_project3/test_semaphore.c	/^static mthread_semaphore_t semaphore;$/;"	v	file:
+semaphore_add_task1	test/test_project3/test_semaphore.c	/^void semaphore_add_task1(void)$/;"	f
+semaphore_add_task2	test/test_project3/test_semaphore.c	/^void semaphore_add_task2(void)$/;"	f
+semaphore_add_task3	test/test_project3/test_semaphore.c	/^void semaphore_add_task3(void)$/;"	f
+sepc	include/os/sched.h	/^    reg_t sepc;$/;"	m	struct:regs_context
+serial_getchar	drivers/screen.c	/^int serial_getchar()$/;"	f
+serial_putchar	drivers/screen.c	/^void serial_putchar(int ch)$/;"	f
+set_secondary_stack	arch/riscv/kernel/head.S	/^set_secondary_stack:$/;"	l
+set_stack_finish	arch/riscv/kernel/head.S	/^set_stack_finish:$/;"	l
+shell_clear	test/test_shell.c	/^static void shell_clear()$/;"	f	file:
+shell_exec	test/test_shell.c	/^static pid_t shell_exec(char *task_id, char *mode)$/;"	f	file:
+shell_exit	test/test_shell.c	/^static void shell_exit()$/;"	f	file:
+shell_help	test/test_shell.c	/^static void shell_help()$/;"	f	file:
+shell_kill	test/test_shell.c	/^static void shell_kill(char *pid)$/;"	f	file:
+shell_ps	test/test_shell.c	/^static void shell_ps()$/;"	f	file:
+shell_taskset	test/test_shell.c	/^static void shell_taskset(char *arg0, char *arg1, char *arg2)$/;"	f	file:
+size_t	include/type.h	/^typedef uint64_t size_t;$/;"	t
+size_t	tiny_libc/include/stddef.h	/^typedef uint64_t size_t;$/;"	t
+sleep_add_core	include/os/sched.h	/^    uint8_t sleep_add_core;$/;"	m	struct:pcb
+sleep_queue	kernel/sched/time.c	/^LIST_HEAD(sleep_queue);$/;"	v
+smp_init	kernel/sched/smp.c	/^void smp_init()$/;"	f
+spawn_mode_t	include/os/sched.h	/^} spawn_mode_t;$/;"	t	typeref:enum:__anon3
+spin_lock	include/os/lock.h	/^typedef struct spin_lock$/;"	s
+spin_lock_acquire	kernel/locking/lock.c	/^volatile void spin_lock_acquire(spin_lock_t *lock)$/;"	f
+spin_lock_init	kernel/locking/lock.c	/^void spin_lock_init(spin_lock_t *lock)$/;"	f
+spin_lock_release	kernel/locking/lock.c	/^void spin_lock_release(spin_lock_t *lock)$/;"	f
+spin_lock_t	include/os/lock.h	/^} spin_lock_t;$/;"	t	typeref:struct:spin_lock
+spin_lock_try_acquire	kernel/locking/lock.c	/^int spin_lock_try_acquire(spin_lock_t *lock)$/;"	f
+sq_task	test/test_project3/test_sanguo.c	/^static struct task_info sq_task = {(uintptr_t)&SunQuan, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+srand	tiny_libc/rand.c	/^void srand(unsigned seed)$/;"	f
+sstatus	include/os/sched.h	/^    reg_t sstatus;$/;"	m	struct:regs_context
+status	include/os/lock.h	/^    int status;$/;"	m	struct:sem
+status	include/os/lock.h	/^    volatile lock_status_t status;$/;"	m	struct:spin_lock
+status	include/os/sched.h	/^    task_status_t status;$/;"	m	struct:pcb
+stop	arch/riscv/boot/bootblock.S	/^stop:$/;"	l
+strcat	tiny_libc/string.c	/^char *strcat(char *dest, const char *src)$/;"	f
+strcmp	tiny_libc/string.c	/^int strcmp(const char *str1, const char *str2)$/;"	f
+strcpy	tiny_libc/string.c	/^char *strcpy(char *dest, const char *src)$/;"	f
+strlen	tiny_libc/string.c	/^int strlen(const char *src)$/;"	f
+strtok	tiny_libc/string.c	/^char *strtok(char *substr, char *str, const char delim)$/;"	f
+switchto_context	include/os/sched.h	/^typedef struct switchto_context$/;"	s
+switchto_context_t	include/os/sched.h	/^} switchto_context_t;$/;"	t	typeref:struct:switchto_context
+sys_block	tiny_libc/syscall.c	/^void sys_block(pcb_t *pcb_node, list_head *queue)$/;"	f
+sys_clear	tiny_libc/syscall.c	/^void sys_clear(){$/;"	f
+sys_exit	tiny_libc/syscall.c	/^void sys_exit()$/;"	f
+sys_get_tick	tiny_libc/syscall.c	/^long sys_get_tick()$/;"	f
+sys_get_timebase	tiny_libc/syscall.c	/^long sys_get_timebase()$/;"	f
+sys_getpid	tiny_libc/syscall.c	/^pid_t sys_getpid()$/;"	f
+sys_kill	tiny_libc/syscall.c	/^int sys_kill(pid_t pid)$/;"	f
+sys_mbox_close	tiny_libc/syscall.c	/^void sys_mbox_close(mailbox_t mailbox)$/;"	f
+sys_mbox_open	tiny_libc/syscall.c	/^mailbox_t sys_mbox_open(char *name)$/;"	f
+sys_mbox_recv	tiny_libc/syscall.c	/^void sys_mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+sys_mbox_send	tiny_libc/syscall.c	/^void sys_mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+sys_move_cursor	tiny_libc/syscall.c	/^void sys_move_cursor(int x, int y)$/;"	f
+sys_ps	tiny_libc/syscall.c	/^void sys_ps(){$/;"	f
+sys_reflush	tiny_libc/syscall.c	/^void sys_reflush()$/;"	f
+sys_scheduler	tiny_libc/syscall.c	/^void sys_scheduler()$/;"	f
+sys_scroll	tiny_libc/syscall.c	/^void sys_scroll()$/;"	f
+sys_sleep	tiny_libc/syscall.c	/^void sys_sleep(uint32_t time)$/;"	f
+sys_spawn	tiny_libc/syscall.c	/^pid_t sys_spawn(task_info_t *info, void* arg, spawn_mode_t mode,uint8_t mask){$/;"	f
+sys_taskset	tiny_libc/syscall.c	/^void sys_taskset(uint8_t mask, pid_t pid)$/;"	f
+sys_unblock	tiny_libc/syscall.c	/^void sys_unblock(list_node_t *item)$/;"	f
+sys_waitpid	tiny_libc/syscall.c	/^int sys_waitpid(pid_t pid)$/;"	f
+sys_write	tiny_libc/syscall.c	/^void sys_write(char *buff)$/;"	f
+syscall	kernel/syscall/syscall.c	/^long (*syscall[NUM_SYSCALLS])();$/;"	v
+tail	include/os/lock.h	/^    int  head, tail;$/;"	m	struct:mailbox
+task13	test/test_shell.c	/^struct task_info task13 = {(uintptr_t)&SunQuan, USER_PROCESS};$/;"	v	typeref:struct:task_info
+task14	test/test_shell.c	/^struct task_info task14 = {(uintptr_t)&LiuBei, USER_PROCESS};$/;"	v	typeref:struct:task_info
+task15	test/test_shell.c	/^struct task_info task15 = {(uintptr_t)&CaoCao, USER_PROCESS};$/;"	v	typeref:struct:task_info
+task_info	include/os/sched.h	/^typedef struct task_info$/;"	s
+task_info_t	include/os/sched.h	/^} task_info_t;$/;"	t	typeref:struct:task_info
+task_status_t	include/os/sched.h	/^} task_status_t;$/;"	t	typeref:enum:__anon5
+task_test_barrier	test/test_shell.c	/^struct task_info task_test_barrier = {$/;"	v	typeref:struct:task_info
+task_test_condition	test/test_shell.c	/^struct task_info task_test_condition = {$/;"	v	typeref:struct:task_info
+task_test_multicore	test/test_shell.c	/^struct task_info task_test_multicore = {(uintptr_t)&test_multicore, USER_PROCESS};$/;"	v	typeref:struct:task_info
+task_test_semaphore	test/test_shell.c	/^struct task_info task_test_semaphore = {$/;"	v	typeref:struct:task_info
+task_test_waitpid	test/test_shell.c	/^struct task_info task_test_waitpid = {$/;"	v	typeref:struct:task_info
+task_type_t	include/os/sched.h	/^} task_type_t;$/;"	t	typeref:enum:__anon6
+test_affinity	test/test_project3/test_affinity.c	/^void test_affinity(void)$/;"	f
+test_barrier	test/test_project3/test_barrier.c	/^void test_barrier(void)$/;"	f
+test_condition	test/test_project3/test_condition.c	/^void test_condition(void)$/;"	f
+test_multicore	test/test_project3/test_multicore.c	/^void test_multicore(void)$/;"	f
+test_shell	test/test_shell.c	/^void test_shell()$/;"	f
+test_tasks	test/test_shell.c	/^static struct task_info *test_tasks[16] = {&task_test_waitpid,$/;"	v	typeref:struct:task_info	file:
+time_base	kernel/sched/time.c	/^uint32_t time_base = 0;$/;"	v
+time_elapsed	kernel/sched/time.c	/^uint64_t time_elapsed = 0;$/;"	v
+timeout_tick	include/os/time.h	/^    uint64_t timeout_tick;$/;"	m	struct:timer
+timer	include/os/sched.h	/^    timer_t timer;$/;"	m	struct:pcb
+timer	include/os/time.h	/^typedef struct timer$/;"	s
+timer_check	kernel/sched/time.c	/^void timer_check()$/;"	f
+timer_create	kernel/sched/time.c	/^void timer_create(TimerCallback func, void* parameter, uint64_t tick)$/;"	f
+timer_t	include/os/time.h	/^}timer_t;$/;"	t	typeref:struct:timer
+to	test/test_project3/test_multicore.c	/^    int to;$/;"	m	struct:TestMultiCoreArg	file:
+true	tiny_libc/include/stdbool.h	9;"	d
+type	include/os/sched.h	/^    task_type_t type;$/;"	m	struct:pcb
+type	include/os/sched.h	/^    task_type_t type;$/;"	m	struct:task_info
+uint16_t	include/type.h	/^typedef unsigned __attribute__((__mode__(HI))) uint16_t;$/;"	t
+uint16_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(HI))) uint16_t;$/;"	t
+uint32_t	include/type.h	/^typedef unsigned __attribute__((__mode__(SI))) uint32_t;$/;"	t
+uint32_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(SI))) uint32_t;$/;"	t
+uint64_t	include/type.h	/^typedef unsigned __attribute__((__mode__(DI))) uint64_t;$/;"	t
+uint64_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(DI))) uint64_t;$/;"	t
+uint8_t	include/type.h	/^typedef unsigned __attribute__((__mode__(QI))) uint8_t;$/;"	t
+uint8_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(QI))) uint8_t;$/;"	t
+uint_fast16_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast16_t;$/;"	t
+uint_fast32_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast32_t;$/;"	t
+uint_fast64_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast64_t;$/;"	t
+uint_fast8_t	tiny_libc/include/stdint.h	/^typedef uint8_t  uint_fast8_t;$/;"	t
+uint_least16_t	tiny_libc/include/stdint.h	/^typedef uint16_t uint_least16_t;$/;"	t
+uint_least32_t	tiny_libc/include/stdint.h	/^typedef uint32_t uint_least32_t;$/;"	t
+uint_least64_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_least64_t;$/;"	t
+uint_least8_t	tiny_libc/include/stdint.h	/^typedef uint8_t uint_least8_t;$/;"	t
+uintmax_t	tiny_libc/include/stdint.h	/^typedef uint64_t uintmax_t;$/;"	t
+uintptr_t	include/type.h	/^typedef uint64_t uintptr_t;$/;"	t
+uintptr_t	tiny_libc/include/stdint.h	/^typedef uint64_t uintptr_t;$/;"	t
+unlock_kernel	kernel/sched/smp.c	/^void unlock_kernel()$/;"	f
+usage	test/test_shell.c	/^    char *usage;$/;"	m	struct:__anon2	file:
+used_size	include/os/lock.h	/^    int  used_size;$/;"	m	struct:mailbox
+user_sp	include/os/sched.h	/^    reg_t user_sp;$/;"	m	struct:pcb
+user_stack	init/main.c	/^uint64_t user_stack[NUM_MAX_TASK];$/;"	v
+va_arg	include/stdarg.h	35;"	d
+va_arg	tiny_libc/include/stdarg.h	35;"	d
+va_copy	include/stdarg.h	43;"	d
+va_copy	tiny_libc/include/stdarg.h	43;"	d
+va_end	include/stdarg.h	34;"	d
+va_end	tiny_libc/include/stdarg.h	34;"	d
+va_list	include/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_list	tiny_libc/include/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_start	include/stdarg.h	33;"	d
+va_start	tiny_libc/include/stdarg.h	33;"	d
+vm	tools/createimage.c	/^    int vm;$/;"	m	struct:__anon1	file:
+vprintf	tiny_libc/printf.c	/^int vprintf(const char *fmt, va_list _va)$/;"	f
+vprintk	libs/printk.c	/^int vprintk(const char *fmt, va_list _va)$/;"	f
+vprints	libs/printk.c	/^int vprints(const char *fmt, va_list _va)$/;"	f
+vt100_clear	drivers/screen.c	/^static void vt100_clear()$/;"	f	file:
+vt100_hidden_cursor	drivers/screen.c	/^static void vt100_hidden_cursor()$/;"	f	file:
+vt100_move_cursor	drivers/screen.c	/^void vt100_move_cursor(int x, int y)$/;"	f
+wait_exit_task	test/test_project3/test_kill.c	/^void wait_exit_task()$/;"	f
+wait_for_wakeup	arch/riscv/boot/bootblock.S	/^wait_for_wakeup:$/;"	l
+wait_lock_task	test/test_project3/test_kill.c	/^void wait_lock_task(long other_pid)$/;"	f
+wait_queue	kernel/sched/sched.c	/^LIST_HEAD(wait_queue);$/;"	v
+waited_task	test/test_project3/test_wait.c	/^void waited_task(void)$/;"	f
+waiting_task1	test/test_project3/test_wait.c	/^void waiting_task1(void)$/;"	f
+waiting_task2	test/test_project3/test_wait.c	/^void waiting_task2(void)$/;"	f
+wakeup_other_hart	kernel/sched/smp.c	/^void wakeup_other_hart()$/;"	f
+write_os_size	tools/createimage.c	/^static void write_os_size(int nbytes, FILE * img)$/;"	f	file:
+write_segment	tools/createimage.c	/^static void write_segment(Elf64_Ehdr ehdr, Elf64_Phdr phdr, FILE * fp,$/;"	f	file:
+x	tiny_libc/rand.c	/^int x;$/;"	v
+zombie_check	kernel/sched/sched.c	/^void zombie_check(pid_t pid)$/;"	f

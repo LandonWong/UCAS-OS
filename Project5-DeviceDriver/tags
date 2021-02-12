@@ -1,0 +1,2224 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AR	Makefile	/^AR = ${CROSS_PREFIX}ar$/;"	m
+ARCH	Makefile	/^ARCH = riscv$/;"	m
+ARCH_DIR	Makefile	/^ARCH_DIR = .\/arch\/$(ARCH)$/;"	m
+ARCH_IO_H	arch/riscv/include/io.h	2;"	d
+ARGS	tools/createimage.c	10;"	d	file:
+ASM_H	arch/riscv/include/asm.h	8;"	d
+ASSERT_H	include/assert.h	2;"	d
+ASSERT_H	tiny_libc/include/assert.h	2;"	d
+ATOMIC_H	arch/riscv/include/atomic.h	2;"	d
+AUTO_CLEANUP_ON_EXIT	include/os/sched.h	/^    AUTO_CLEANUP_ON_EXIT,$/;"	e	enum:__anon10
+AllCnt	drivers/emacps/xemacps_bdring.h	/^	u32 AllCnt;     \/**< Total Number of BDs for channel *\/$/;"	m	struct:__anon3
+BINSEM_H	include/sys/binsem.h	2;"	d
+BINSEM_OP_LOCK	include/os/lock.h	33;"	d
+BINSEM_OP_LOCK	include/sys/binsem.h	4;"	d
+BINSEM_OP_UNLOCK	include/os/lock.h	34;"	d
+BINSEM_OP_UNLOCK	include/sys/binsem.h	5;"	d
+BIN_LOCKED	include/os/lock.h	51;"	d
+BIN_UNLOCKED	include/os/lock.h	52;"	d
+BOARD	init/main.c	49;"	d	file:
+BOOL	tiny_libc/include/stdbool.h	/^typedef int BOOL;$/;"	t
+BOOTLOADER_ENTRYPOINT	Makefile	/^BOOTLOADER_ENTRYPOINT = 0x50200000$/;"	m
+BOOT_ASID	arch/riscv/include/pgtable.h	10;"	d
+BOOT_LOADER_SIG_1	tools/createimage.c	15;"	d	file:
+BOOT_LOADER_SIG_2	tools/createimage.c	16;"	d	file:
+BOOT_LOADER_SIG_OFFSET	tools/createimage.c	13;"	d	file:
+BOOT_MEM_LOC	tools/createimage.c	17;"	d	file:
+BaseAddress	drivers/emacps/xemacps.h	/^	UINTPTR BaseAddress;\/**< Physical base address of IPIF registers *\/$/;"	m	struct:__anon6
+BaseBdAddr	drivers/emacps/xemacps_bdring.h	/^	UINTPTR BaseBdAddr;	 \/**< Virtual address of 1st BD in list *\/$/;"	m	struct:__anon3
+BdRxTerminate	drivers/emacps/xemacps_main.c	/^XEmacPs_Bd BdRxTerminate __attribute__((aligned(64)));$/;"	v
+BdTxTerminate	drivers/emacps/xemacps_main.c	/^XEmacPs_Bd BdTxTerminate __attribute__((aligned(64)));$/;"	v
+BdaRestart	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *BdaRestart;$/;"	m	struct:__anon3
+BroadcastMAC	drivers/emacps/xemacps_example_util.c	/^char BroadcastMAC[] = { 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };$/;"	v
+CC	Makefile	/^CC = ${CROSS_PREFIX}gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -w -O0 -nostdlib -T riscv.lds -Wall -mcmodel=medany -Iinclude -Idrivers -nostdinc -g -fvar-tracking -ffreestanding$/;"	m
+CLOCKS_PER_SEC	tiny_libc/include/time.h	7;"	d
+CMD_MAX_LENGTH	test/test_shell.c	38;"	d	file:
+CMD_NUM	test/test_shell.c	37;"	d	file:
+COLOR_BLUE	arch/riscv/include/common.h	43;"	d
+COLOR_CYAN	arch/riscv/include/common.h	45;"	d
+COLOR_GREEN	arch/riscv/include/common.h	41;"	d
+COLOR_MAGENTA	arch/riscv/include/common.h	44;"	d
+COLOR_RED	arch/riscv/include/common.h	40;"	d
+COLOR_RESET	arch/riscv/include/common.h	46;"	d
+COLOR_YELLOW	arch/riscv/include/common.h	42;"	d
+CONTEXT_BASE	drivers/plic.c	49;"	d	file:
+CONTEXT_CLAIM	drivers/plic.c	52;"	d	file:
+CONTEXT_H	arch/riscv/include/context.h	2;"	d
+CONTEXT_PER_HART	drivers/plic.c	50;"	d	file:
+CONTEXT_THRESHOLD	drivers/plic.c	51;"	d	file:
+CRL_GEM_1G_DIV0	drivers/emacps/xemacps_main.c	150;"	d	file:
+CRL_GEM_1G_DIV1	drivers/emacps/xemacps_main.c	151;"	d	file:
+CRL_GEM_DIV_MASK	drivers/emacps/xemacps_main.c	149;"	d	file:
+CROSS_PREFIX	Makefile	/^CROSS_PREFIX = riscv64-unknown-linux-gnu-$/;"	m
+CSR_CYCLE	arch/riscv/include/csr.h	62;"	d
+CSR_CYCLEH	arch/riscv/include/csr.h	75;"	d
+CSR_H	arch/riscv/include/csr.h	7;"	d
+CSR_INSTRET	arch/riscv/include/csr.h	64;"	d
+CSR_INSTRETH	arch/riscv/include/csr.h	77;"	d
+CSR_MHARTID	arch/riscv/include/csr.h	79;"	d
+CSR_SATP	arch/riscv/include/csr.h	74;"	d
+CSR_SCAUSE	arch/riscv/include/csr.h	71;"	d
+CSR_SCOUNTEREN	arch/riscv/include/csr.h	68;"	d
+CSR_SEPC	arch/riscv/include/csr.h	70;"	d
+CSR_SIE	arch/riscv/include/csr.h	66;"	d
+CSR_SIP	arch/riscv/include/csr.h	73;"	d
+CSR_SSCRATCH	arch/riscv/include/csr.h	69;"	d
+CSR_SSTATUS	arch/riscv/include/csr.h	65;"	d
+CSR_STVAL	arch/riscv/include/csr.h	72;"	d
+CSR_STVEC	arch/riscv/include/csr.h	67;"	d
+CSR_TIME	arch/riscv/include/csr.h	63;"	d
+CSR_TIMEH	arch/riscv/include/csr.h	76;"	d
+CSU_VERSION	drivers/emacps/xemacps_example.h	76;"	d
+CaoCao	test/test_project3/test_sanguo.c	/^void CaoCao(void)$/;"	f
+ClearRXSR	drivers/emacps/xemacps_main.c	/^LONG ClearRXSR(XEmacPs *EmacPsInstancePtr)$/;"	f
+ClearTXSR	drivers/emacps/xemacps_main.c	/^LONG ClearTXSR(XEmacPs *EmacPsInstancePtr)$/;"	f
+Config	drivers/emacps/xemacps.h	/^	XEmacPs_Config Config;	\/* Hardware configuration *\/$/;"	m	struct:XEmacPs_Instance
+DISK	Makefile	/^DISK = \/dev\/sdb$/;"	m
+DestMAC	drivers/emacps/xemacps_example_util.c	/^char DestMAC[] = { 0xec,0x8e,0xb5,0x59,0x38,0xfb };$/;"	v
+DeviceErrors	drivers/emacps/xemacps_main.c	/^volatile s32 DeviceErrors; \/* Number of errors detected in the device *\/$/;"	v
+DeviceId	drivers/emacps/xemacps.h	/^	u16 DeviceId;	\/**< Unique ID  of device *\/$/;"	m	struct:__anon6
+EBUSY	tiny_libc/include/mthread.h	34;"	d
+EINVAL	tiny_libc/include/mthread.h	35;"	d
+EI_CLASS	include/os/elf.h	25;"	d
+EI_DATA	include/os/elf.h	26;"	d
+EI_MAG0	include/os/elf.h	21;"	d
+EI_MAG1	include/os/elf.h	22;"	d
+EI_MAG2	include/os/elf.h	23;"	d
+EI_MAG3	include/os/elf.h	24;"	d
+EI_NIDENT	include/os/elf.h	58;"	d
+EI_OSABI	include/os/elf.h	28;"	d
+EI_PAD	include/os/elf.h	29;"	d
+EI_VERSION	include/os/elf.h	27;"	d
+ELFCLASS32	include/os/elf.h	39;"	d
+ELFCLASS64	include/os/elf.h	40;"	d
+ELFCLASSNONE	include/os/elf.h	38;"	d
+ELFCLASSNUM	include/os/elf.h	41;"	d
+ELFDATA2LSB	include/os/elf.h	44;"	d
+ELFDATA2MSB	include/os/elf.h	45;"	d
+ELFDATANONE	include/os/elf.h	43;"	d
+ELFMAG	include/os/elf.h	35;"	d
+ELFMAG0	include/os/elf.h	31;"	d
+ELFMAG1	include/os/elf.h	32;"	d
+ELFMAG2	include/os/elf.h	33;"	d
+ELFMAG3	include/os/elf.h	34;"	d
+ELFOSABI_LINUX	include/os/elf.h	52;"	d
+ELFOSABI_NONE	include/os/elf.h	51;"	d
+ELF_FILE_NUM	include/user_programs.h	24;"	d
+ELF_OSABI	include/os/elf.h	55;"	d
+EMACPS_LOOPBACK_SPEED	drivers/emacps/xemacps_example.h	70;"	d
+EMACPS_LOOPBACK_SPEED_1G	drivers/emacps/xemacps_example.h	71;"	d
+EMACPS_PHY_DELAY_SEC	drivers/emacps/xemacps_example.h	72;"	d
+EMACPS_SLCR_DIV_MASK	drivers/emacps/xemacps_example.h	74;"	d
+ENABLE_BASE	drivers/plic.c	41;"	d	file:
+ENABLE_PER_HART	drivers/plic.c	42;"	d	file:
+END	arch/riscv/include/asm.h	12;"	d
+ENDPROC	arch/riscv/include/asm.h	15;"	d
+ENTER_ZOMBIE_ON_EXIT	include/os/sched.h	/^    ENTER_ZOMBIE_ON_EXIT,$/;"	e	enum:__anon10
+ENTRY	arch/riscv/include/asm.h	28;"	d
+ETHERNET_ADDR	arch/riscv/include/sbi.h	/^    ETHERNET_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+EV_CURRENT	include/os/elf.h	48;"	d
+EV_NONE	include/os/elf.h	47;"	d
+EV_NUM	include/os/elf.h	49;"	d
+EXCC_BREAKPOINT	include/os/irq.h	/^    EXCC_BREAKPOINT       = 3,$/;"	e	enum:ExcCode
+EXCC_COUNT	include/os/irq.h	/^    EXCC_COUNT$/;"	e	enum:ExcCode
+EXCC_INST_ACCESS	include/os/irq.h	/^    EXCC_INST_ACCESS      = 1,$/;"	e	enum:ExcCode
+EXCC_INST_MISALIGNED	include/os/irq.h	/^    EXCC_INST_MISALIGNED  = 0,$/;"	e	enum:ExcCode
+EXCC_INST_PAGE_FAULT	include/os/irq.h	/^    EXCC_INST_PAGE_FAULT  = 12,$/;"	e	enum:ExcCode
+EXCC_LOAD_ACCESS	include/os/irq.h	/^    EXCC_LOAD_ACCESS      = 5,$/;"	e	enum:ExcCode
+EXCC_LOAD_PAGE_FAULT	include/os/irq.h	/^    EXCC_LOAD_PAGE_FAULT  = 13,$/;"	e	enum:ExcCode
+EXCC_STORE_ACCESS	include/os/irq.h	/^    EXCC_STORE_ACCESS     = 7,$/;"	e	enum:ExcCode
+EXCC_STORE_PAGE_FAULT	include/os/irq.h	/^    EXCC_STORE_PAGE_FAULT = 15,$/;"	e	enum:ExcCode
+EXCC_SYSCALL	include/os/irq.h	/^    EXCC_SYSCALL          = 8,$/;"	e	enum:ExcCode
+EXC_BREAKPOINT	arch/riscv/include/csr.h	49;"	d
+EXC_INST_ACCESS	arch/riscv/include/csr.h	48;"	d
+EXC_INST_MISALIGNED	arch/riscv/include/csr.h	47;"	d
+EXC_INST_PAGE_FAULT	arch/riscv/include/csr.h	53;"	d
+EXC_LOAD_ACCESS	arch/riscv/include/csr.h	50;"	d
+EXC_LOAD_PAGE_FAULT	arch/riscv/include/csr.h	54;"	d
+EXC_STORE_ACCESS	arch/riscv/include/csr.h	51;"	d
+EXC_STORE_PAGE_FAULT	arch/riscv/include/csr.h	55;"	d
+EXC_SYSCALL	arch/riscv/include/csr.h	52;"	d
+EXPORT	arch/riscv/include/asm.h	19;"	d
+Elf64_Addr	include/os/elf.h	/^typedef uint64_t Elf64_Addr;$/;"	t
+Elf64_Ehdr	include/os/elf.h	/^} Elf64_Ehdr;$/;"	t	typeref:struct:elf64_hdr
+Elf64_Half	include/os/elf.h	/^typedef uint16_t Elf64_Half;$/;"	t
+Elf64_Off	include/os/elf.h	/^typedef uint64_t Elf64_Off;$/;"	t
+Elf64_Phdr	include/os/elf.h	/^} Elf64_Phdr;$/;"	t	typeref:struct:elf64_phdr
+Elf64_SHalf	include/os/elf.h	/^typedef int16_t Elf64_SHalf;$/;"	t
+Elf64_Section	include/os/elf.h	/^typedef uint16_t Elf64_Section;$/;"	t
+Elf64_Sword	include/os/elf.h	/^typedef int32_t Elf64_Sword;$/;"	t
+Elf64_Sxword	include/os/elf.h	/^typedef int64_t Elf64_Sxword;$/;"	t
+Elf64_Versym	include/os/elf.h	/^typedef Elf64_Half Elf64_Versym;$/;"	t
+Elf64_Word	include/os/elf.h	/^typedef uint32_t Elf64_Word;$/;"	t
+Elf64_Xword	include/os/elf.h	/^typedef uint64_t Elf64_Xword;$/;"	t
+ElfFile	include/user_programs.h	/^typedef struct ElfFile {$/;"	s
+ElfFile	include/user_programs.h	/^} ElfFile;$/;"	t	typeref:struct:ElfFile
+EmacPsDmaIntrExample	drivers/emacps/xemacps_main.c	/^LONG EmacPsDmaIntrExample($/;"	f
+EmacPsDmaSingleFrameIntrExample	drivers/emacps/xemacps_main.c	/^LONG EmacPsDmaSingleFrameIntrExample(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsInit	drivers/emacps/xemacps_main.c	/^LONG EmacPsInit(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsInitPhy	drivers/emacps/xemacps_main.c	/^LONG EmacPsInitPhy(XEmacPs * EmacPsInstancePtr, u32 *Speed)$/;"	f
+EmacPsInstance	drivers/emacps/xemacps_example_util.c	/^XEmacPs EmacPsInstance;	\/* XEmacPs instance used throughout examples *\/$/;"	v
+EmacPsMAC	drivers/emacps/xemacps_example_util.c	/^char EmacPsMAC[] = { 0x00, 0x0a, 0x35, 0x01, 0x02, 0x03 };$/;"	v
+EmacPsRecv	drivers/emacps/xemacps_main.c	/^LONG EmacPsRecv(XEmacPs *EmacPsInstancePtr, EthernetFrame *RxFrame, int num_packet)$/;"	f
+EmacPsResetDevice	drivers/emacps/xemacps_main.c	/^static LONG EmacPsResetDevice(XEmacPs *EmacPsInstancePtr)$/;"	f	file:
+EmacPsSend	drivers/emacps/xemacps_main.c	/^LONG EmacPsSend(XEmacPs *EmacPsInstancePtr, EthernetFrame *TxFrame, size_t length)$/;"	f
+EmacPsSetupBD	drivers/emacps/xemacps_main.c	/^LONG EmacPsSetupBD(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsSetupDevice	drivers/emacps/xemacps_main.c	/^LONG EmacPsSetupDevice(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsSetupRxBD	drivers/emacps/xemacps_main.c	/^LONG EmacPsSetupRxBD(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsSetupTxBD	drivers/emacps/xemacps_main.c	/^LONG EmacPsSetupTxBD(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacPsUtilEnterLocalLoopback	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilEnterLocalLoopback(XEmacPs * EmacPsInstancePtr)$/;"	f
+EmacPsUtilEnterLoopback	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilEnterLoopback(XEmacPs * EmacPsInstancePtr, u32 Speed)$/;"	f
+EmacPsUtilErrorTrap	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilErrorTrap(const char *Message)$/;"	f
+EmacPsUtilFrameHdrFormatMAC	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilFrameHdrFormatMAC(EthernetFrame * FramePtr, char *DestAddr)$/;"	f
+EmacPsUtilFrameHdrFormatType	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilFrameHdrFormatType(EthernetFrame * FramePtr, u16 FrameType)$/;"	f
+EmacPsUtilFrameMemClear	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilFrameMemClear(EthernetFrame * FramePtr)$/;"	f
+EmacPsUtilFrameSetPayloadData	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilFrameSetPayloadData(EthernetFrame * FramePtr, u32 PayloadSize)$/;"	f
+EmacPsUtilFrameVerify	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilFrameVerify(EthernetFrame * CheckFrame,$/;"	f
+EmacPsUtilMarvellPhyLoopback	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilMarvellPhyLoopback(XEmacPs * EmacPsInstancePtr,$/;"	f
+EmacPsUtilRtlPhyInit	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilRtlPhyInit(XEmacPs * EmacPsInstancePtr,$/;"	f
+EmacPsUtilRtlPhyLoopback	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilRtlPhyLoopback(XEmacPs * EmacPsInstancePtr,$/;"	f
+EmacPsUtilTiPhyLoopback	drivers/emacps/xemacps_example_util.c	/^LONG EmacPsUtilTiPhyLoopback(XEmacPs * EmacPsInstancePtr,$/;"	f
+EmacPsUtilstrncpy	drivers/emacps/xemacps_example_util.c	/^void EmacPsUtilstrncpy(char *Destination, const char *Source, u32 n)$/;"	f
+EmacPsWaitRecv	drivers/emacps/xemacps_main.c	/^LONG EmacPsWaitRecv(XEmacPs *EmacPsInstancePtr, int num_packet, u32* RxFrLen)$/;"	f
+EmacPsWaitSend	drivers/emacps/xemacps_main.c	/^LONG EmacPsWaitSend(XEmacPs *EmacPsInstancePtr)$/;"	f
+EmacpsDelay	drivers/emacps/xemacps_example_util.c	/^void EmacpsDelay(u32 delay)$/;"	f
+ErrorHandler	drivers/emacps/xemacps.h	/^	XEmacPs_ErrHandler ErrorHandler;$/;"	m	struct:XEmacPs_Instance
+ErrorRef	drivers/emacps/xemacps.h	/^	void *ErrorRef;$/;"	m	struct:XEmacPs_Instance
+EthernetFrame	drivers/emacps/xemacps_example.h	/^typedef char EthernetFrame[ROUND(XEMACPS_MAX_FRAME_SIZE,64)] __attribute__ ((aligned(64)));$/;"	t
+EthernetFrame	tiny_libc/include/os.h	/^typedef char EthernetFrame[XEMACPS_MAX_FRAME_SIZE]$/;"	t
+ExcCode	include/os/irq.h	/^enum ExcCode$/;"	g
+FALSE	drivers/emacps/xbasic_types.h	80;"	d
+FALSE	drivers/emacps/xil_types.h	199;"	d
+FALSE	drivers/emacps/xil_types.h	69;"	d
+FALSE	include/type.h	35;"	d
+FALSE	tiny_libc/include/stdbool.h	6;"	d
+FEXPORT	arch/riscv/include/asm.h	23;"	d
+FIFO_BUF_MAX	test/echo.c	11;"	d	file:
+FIRST_FRAGMENT_SIZE	drivers/emacps/xemacps_main.c	190;"	d	file:
+FRAME_HDR_SIZE	drivers/emacps/xemacps_main.c	154;"	d	file:
+FREEHEAP	include/os/mm.h	36;"	d
+FREEMEM	include/os/mm.h	35;"	d
+FUTEX_BUCKETS	include/os/futex.h	35;"	d
+FUTEX_H	include/os/futex.h	29;"	d
+FramesRx	drivers/emacps/xemacps_main.c	/^volatile s32 FramesRx;     \/* Frames have been received *\/$/;"	v
+FramesTx	drivers/emacps/xemacps_main.c	/^volatile s32 FramesTx;     \/* Frames have been sent *\/$/;"	v
+FreeCnt	drivers/emacps/xemacps_bdring.h	/^	u32 FreeCnt;    \/**< Number of allocatable BDs in the free group *\/$/;"	m	struct:__anon3
+FreeHead	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *FreeHead;$/;"	m	struct:__anon3
+GEMVERSION_VERSAL	drivers/emacps/xemacps_main.c	156;"	d	file:
+GemVersion	drivers/emacps/xemacps_main.c	/^u32 GemVersion;$/;"	v
+HDR_OFFSET	test/echo.c	8;"	d	file:
+HOST_CC	Makefile	/^HOST_CC = gcc$/;"	m
+HighBdAddr	drivers/emacps/xemacps_bdring.h	/^	UINTPTR HighBdAddr;	 \/**< Virtual address of last BD in the list *\/$/;"	m	struct:__anon3
+HwCnt	drivers/emacps/xemacps_bdring.h	/^	volatile u32 HwCnt;    \/**< Number of BDs in work group *\/$/;"	m	struct:__anon3
+HwHead	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *HwHead; \/**< First BD in the work group *\/$/;"	m	struct:__anon3
+HwTail	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *HwTail; \/**< Last BD in the work group *\/$/;"	m	struct:__anon3
+IGNORE	include/os/syscall_number.h	31;"	d
+IMAGE_FILE	tools/createimage.c	9;"	d	file:
+INCLUDE_COMMON_H_	arch/riscv/include/common.h	25;"	d
+INCLUDE_CONSOLE_H_	drivers/screen.h	28;"	d
+INCLUDE_INTERRUPT_H_	include/os/irq.h	28;"	d
+INCLUDE_LIST_H_	include/os/list.h	38;"	d
+INCLUDE_LOCK_H_	include/os/lock.h	29;"	d
+INCLUDE_MAIL_BOX_	tiny_libc/include/mailbox.h	2;"	d
+INCLUDE_REGS_H_	arch/riscv/include/asm/regs.h	26;"	d
+INCLUDE_SCHEDULER_H_	include/os/sched.h	30;"	d
+INCLUDE_STDIO_H_	include/os/stdio.h	2;"	d
+INCLUDE_STDIO_H_	include/stdio.h	2;"	d
+INCLUDE_STDIO_H_	tiny_libc/include/stdio.h	2;"	d
+INCLUDE_STRING_H_	include/os/string.h	29;"	d
+INCLUDE_SYNC_H_	include/os/sync.h	30;"	d
+INCLUDE_SYSCALL_H_	include/sys/syscall.h	29;"	d
+INCLUDE_TASK3_H_	test/test_project3/test3.h	2;"	d
+INCLUDE_TEST_H_	test/test.h	27;"	d
+INCLUDE_TIME_H_	include/os/time.h	29;"	d
+INCLUDE_TYPE_H_	include/type.h	27;"	d
+INIT_KERNEL_STACK	include/os/mm.h	34;"	d
+INT16_C	tiny_libc/include/stdint.h	135;"	d
+INT16_MAX	include/type.h	72;"	d
+INT16_MAX	tiny_libc/include/stdint.h	75;"	d
+INT16_MIN	include/type.h	67;"	d
+INT16_MIN	tiny_libc/include/stdint.h	70;"	d
+INT32_C	tiny_libc/include/stdint.h	136;"	d
+INT32_MAX	include/type.h	73;"	d
+INT32_MAX	tiny_libc/include/stdint.h	76;"	d
+INT32_MIN	include/type.h	68;"	d
+INT32_MIN	tiny_libc/include/stdint.h	71;"	d
+INT64_C	tiny_libc/include/stdint.h	137;"	d
+INT64_MAX	include/type.h	74;"	d
+INT64_MAX	tiny_libc/include/stdint.h	77;"	d
+INT64_MIN	include/type.h	69;"	d
+INT64_MIN	tiny_libc/include/stdint.h	72;"	d
+INT8_C	tiny_libc/include/stdint.h	134;"	d
+INT8_MAX	include/type.h	71;"	d
+INT8_MAX	tiny_libc/include/stdint.h	74;"	d
+INT8_MIN	include/type.h	66;"	d
+INT8_MIN	tiny_libc/include/stdint.h	69;"	d
+INTEGER_TEST_CHUNK	test/test_project3/test_affinity.c	9;"	d	file:
+INTEGER_TEST_NUM	test/test_project3/test_affinity.c	10;"	d	file:
+INTMAX_C	tiny_libc/include/stdint.h	146;"	d
+INTMAX_MAX	tiny_libc/include/stdint.h	128;"	d
+INTMAX_MIN	tiny_libc/include/stdint.h	126;"	d
+INTPTR	drivers/emacps/xil_types.h	/^typedef intptr_t INTPTR;$/;"	t
+INTPTR_MAX	tiny_libc/include/stdint.h	122;"	d
+INTPTR_MIN	tiny_libc/include/stdint.h	121;"	d
+INT_FAST16_MAX	tiny_libc/include/stdint.h	109;"	d
+INT_FAST16_MIN	tiny_libc/include/stdint.h	104;"	d
+INT_FAST32_MAX	tiny_libc/include/stdint.h	110;"	d
+INT_FAST32_MIN	tiny_libc/include/stdint.h	105;"	d
+INT_FAST64_MAX	tiny_libc/include/stdint.h	111;"	d
+INT_FAST64_MIN	tiny_libc/include/stdint.h	106;"	d
+INT_FAST8_MAX	tiny_libc/include/stdint.h	108;"	d
+INT_FAST8_MIN	tiny_libc/include/stdint.h	103;"	d
+INT_LEAST16_MAX	tiny_libc/include/stdint.h	92;"	d
+INT_LEAST16_MIN	tiny_libc/include/stdint.h	87;"	d
+INT_LEAST32_MAX	tiny_libc/include/stdint.h	93;"	d
+INT_LEAST32_MIN	tiny_libc/include/stdint.h	88;"	d
+INT_LEAST64_MAX	tiny_libc/include/stdint.h	94;"	d
+INT_LEAST64_MIN	tiny_libc/include/stdint.h	89;"	d
+INT_LEAST8_MAX	tiny_libc/include/stdint.h	91;"	d
+INT_LEAST8_MIN	tiny_libc/include/stdint.h	86;"	d
+IOREMAP_H	include/os/ioremap.h	2;"	d
+IO_ADDR_START	include/os/ioremap.h	5;"	d
+IRQC_COUNT	include/os/irq.h	/^    IRQC_COUNT$/;"	e	enum:IrqCode
+IRQC_M_EXT	include/os/irq.h	/^    IRQC_M_EXT   = 11,$/;"	e	enum:IrqCode
+IRQC_M_SOFT	include/os/irq.h	/^    IRQC_M_SOFT  = 3,$/;"	e	enum:IrqCode
+IRQC_M_TIMER	include/os/irq.h	/^    IRQC_M_TIMER = 7,$/;"	e	enum:IrqCode
+IRQC_S_EXT	include/os/irq.h	/^    IRQC_S_EXT   = 9,$/;"	e	enum:IrqCode
+IRQC_S_SOFT	include/os/irq.h	/^    IRQC_S_SOFT  = 1,$/;"	e	enum:IrqCode
+IRQC_S_TIMER	include/os/irq.h	/^    IRQC_S_TIMER = 5,$/;"	e	enum:IrqCode
+IRQC_U_EXT	include/os/irq.h	/^    IRQC_U_EXT   = 8,$/;"	e	enum:IrqCode
+IRQC_U_SOFT	include/os/irq.h	/^    IRQC_U_SOFT  = 0,$/;"	e	enum:IrqCode
+IRQC_U_TIMER	include/os/irq.h	/^    IRQC_U_TIMER = 4,$/;"	e	enum:IrqCode
+IRQ_M_EXT	arch/riscv/include/csr.h	45;"	d
+IRQ_M_SOFT	arch/riscv/include/csr.h	39;"	d
+IRQ_M_TIMER	arch/riscv/include/csr.h	42;"	d
+IRQ_S_EXT	arch/riscv/include/csr.h	44;"	d
+IRQ_S_SOFT	arch/riscv/include/csr.h	38;"	d
+IRQ_S_TIMER	arch/riscv/include/csr.h	41;"	d
+IRQ_U_EXT	arch/riscv/include/csr.h	43;"	d
+IRQ_U_SOFT	arch/riscv/include/csr.h	37;"	d
+IRQ_U_TIMER	arch/riscv/include/csr.h	40;"	d
+IrqCode	include/os/irq.h	/^enum IrqCode$/;"	g
+IsCacheCoherent	drivers/emacps/xemacps.h	/^	u8 IsCacheCoherent; \/**< Applicable only to A53 in EL1 mode;$/;"	m	struct:__anon6
+IsReady	drivers/emacps/xemacps.h	/^	u32 IsReady;		\/* Device is initialized and ready *\/$/;"	m	struct:XEmacPs_Instance
+IsStarted	drivers/emacps/xemacps.h	/^	u32 IsStarted;		\/* Device is currently started *\/$/;"	m	struct:XEmacPs_Instance
+JUMBO_FRAME_SIZE	drivers/emacps/xemacps_main.c	153;"	d	file:
+JudgeIntr	drivers/emacps/xemacps_main.c	/^LONG JudgeIntr(XEmacPs *InstancePtr)$/;"	f
+KERNEL_ENTRYPOINT	Makefile	/^KERNEL_ENTRYPOINT = 0xffffffc050400000$/;"	m
+KERNEL_PROCESS	include/os/sched.h	/^    KERNEL_PROCESS,$/;"	e	enum:__anon13
+KERNEL_STACK_ADDR	include/os/mm.h	39;"	d
+KERNEL_THREAD	include/os/sched.h	/^    KERNEL_THREAD,$/;"	e	enum:__anon13
+KPA_OFFSET	arch/riscv/include/pgtable.h	97;"	d
+KPA_OFFSET	include/os/mm.h	37;"	d
+LARGE_PAGE_SHIFT	arch/riscv/include/pgtable.h	17;"	d
+LARGE_PAGE_SIZE	arch/riscv/include/pgtable.h	18;"	d
+LIST_HEAD	include/os/list.h	58;"	d
+LOCKED	include/os/lock.h	/^    LOCKED,$/;"	e	enum:__anon14
+LONG	drivers/emacps/xil_types.h	/^typedef long LONG;$/;"	t
+LOWER_32_BITS	drivers/emacps/xil_types.h	187;"	d
+Length	drivers/emacps/xemacps_bdring.h	/^	u32 Length;	 \/**< Total size of ring in bytes *\/$/;"	m	struct:__anon3
+LiuBei	test/test_project3/test_sanguo.c	/^void LiuBei(void)$/;"	f
+Lower	drivers/emacps/xbasic_types.h	/^	Xuint32 Lower;$/;"	m	struct:__anon4
+Lower	drivers/emacps/xil_types.h	/^	u32 Lower;$/;"	m	struct:__anon7
+MACB_ADDR_REMAP	drivers/emacps/xemacps.h	848;"	d
+MAGIC	test/consensus.c	10;"	d	file:
+MAGIC	test/echo.c	10;"	d	file:
+MAGIC	test/swap.c	3;"	d	file:
+MAX_BINSEM	kernel/locking/lock.c	5;"	d	file:
+MAX_CONTEXTS	drivers/plic.c	28;"	d	file:
+MAX_DEVICES	drivers/plic.c	27;"	d	file:
+MAX_ITERATION	test/test_project3/test_affinity.c	8;"	d	file:
+MAX_LINE_BUFF	tools/generateMapping.c	6;"	d	file:
+MAX_MBOX	include/os/lock.h	90;"	d
+MAX_MBOX_LENGTH	include/os/lock.h	89;"	d
+MAX_NUM	kernel/locking/lock.c	6;"	d	file:
+MAX_NUM	tiny_libc/mailbox.c	3;"	d	file:
+MAX_PNUM	kernel/irq/irq.c	15;"	d	file:
+MAX_RANGE	test/test_project3/test_multicore.c	8;"	d	file:
+MAX_RECV_CNT	test/echo.c	13;"	d	file:
+MAX_RECV_CNT	test/recv-s.c	4;"	d	file:
+MAX_RECV_CNT	test/recv.c	8;"	d	file:
+MDC_DIV_128	drivers/emacps/xemacps_hw.h	/^	MDC_DIV_64, MDC_DIV_96, MDC_DIV_128, MDC_DIV_224$/;"	e	enum:__anon5
+MDC_DIV_16	drivers/emacps/xemacps_hw.h	/^typedef enum { MDC_DIV_8 = 0U, MDC_DIV_16, MDC_DIV_32, MDC_DIV_48,$/;"	e	enum:__anon5
+MDC_DIV_224	drivers/emacps/xemacps_hw.h	/^	MDC_DIV_64, MDC_DIV_96, MDC_DIV_128, MDC_DIV_224$/;"	e	enum:__anon5
+MDC_DIV_32	drivers/emacps/xemacps_hw.h	/^typedef enum { MDC_DIV_8 = 0U, MDC_DIV_16, MDC_DIV_32, MDC_DIV_48,$/;"	e	enum:__anon5
+MDC_DIV_48	drivers/emacps/xemacps_hw.h	/^typedef enum { MDC_DIV_8 = 0U, MDC_DIV_16, MDC_DIV_32, MDC_DIV_48,$/;"	e	enum:__anon5
+MDC_DIV_64	drivers/emacps/xemacps_hw.h	/^	MDC_DIV_64, MDC_DIV_96, MDC_DIV_128, MDC_DIV_224$/;"	e	enum:__anon5
+MDC_DIV_8	drivers/emacps/xemacps_hw.h	/^typedef enum { MDC_DIV_8 = 0U, MDC_DIV_16, MDC_DIV_32, MDC_DIV_48,$/;"	e	enum:__anon5
+MDC_DIV_96	drivers/emacps/xemacps_hw.h	/^	MDC_DIV_64, MDC_DIV_96, MDC_DIV_128, MDC_DIV_224$/;"	e	enum:__anon5
+MEM_SIZE	include/os/mm.h	32;"	d
+MIN	include/os/elf.h	124;"	d
+MM_H	include/os/mm.h	2;"	d
+MOD	test/test_project3/test_multicore.c	9;"	d	file:
+MSG_MAX_SIZE	include/os/lock.h	88;"	d
+MTHREAD_H_	tiny_libc/include/mthread.h	28;"	d
+MaxFrameSize	drivers/emacps/xemacps.h	/^	u32 MaxFrameSize;$/;"	m	struct:XEmacPs_Instance
+MaxMtuSize	drivers/emacps/xemacps.h	/^	u32 MaxMtuSize;$/;"	m	struct:XEmacPs_Instance
+MaxVlanFrameSize	drivers/emacps/xemacps.h	/^	u32 MaxVlanFrameSize;$/;"	m	struct:XEmacPs_Instance
+NET_H	drivers/net.h	2;"	d
+NORMAL_PAGE_SHIFT	arch/riscv/include/pgtable.h	15;"	d
+NORMAL_PAGE_SIZE	arch/riscv/include/pgtable.h	16;"	d
+NR_IRQS	arch/riscv/include/sbi.h	/^    NR_IRQS$/;"	e	enum:SBI_READY_FDT_TYPE
+NULL	drivers/emacps/xbasic_types.h	84;"	d
+NULL	drivers/emacps/xil_types.h	203;"	d
+NULL	drivers/emacps/xil_types.h	73;"	d
+NULL	include/type.h	30;"	d
+NULL	tiny_libc/include/stddef.h	10;"	d
+NUM_CONSENSUS	test/consensus.c	12;"	d	file:
+NUM_CONSUMER	test/test_project3/test_condition.c	8;"	d	file:
+NUM_CPUS	test/test_project3/test_multicore.c	10;"	d	file:
+NUM_MAX_TASK	include/os/sched.h	37;"	d
+NUM_PTE_ENTRY	arch/riscv/include/pgtable.h	96;"	d
+NUM_SYSCALLS	include/os/syscall_number.h	32;"	d
+NUM_TB	test/test_project3/test_barrier.c	8;"	d	file:
+OBJDUMP	Makefile	/^OBJDUMP = ${CROSS_PREFIX}objdump$/;"	m
+OFFSET_REG_A0	arch/riscv/include/asm/regs.h	57;"	d
+OFFSET_REG_A1	arch/riscv/include/asm/regs.h	58;"	d
+OFFSET_REG_A2	arch/riscv/include/asm/regs.h	59;"	d
+OFFSET_REG_A3	arch/riscv/include/asm/regs.h	60;"	d
+OFFSET_REG_A4	arch/riscv/include/asm/regs.h	61;"	d
+OFFSET_REG_A5	arch/riscv/include/asm/regs.h	62;"	d
+OFFSET_REG_A6	arch/riscv/include/asm/regs.h	63;"	d
+OFFSET_REG_A7	arch/riscv/include/asm/regs.h	64;"	d
+OFFSET_REG_GP	arch/riscv/include/asm/regs.h	44;"	d
+OFFSET_REG_RA	arch/riscv/include/asm/regs.h	40;"	d
+OFFSET_REG_S0	arch/riscv/include/asm/regs.h	53;"	d
+OFFSET_REG_S1	arch/riscv/include/asm/regs.h	54;"	d
+OFFSET_REG_S10	arch/riscv/include/asm/regs.h	75;"	d
+OFFSET_REG_S11	arch/riscv/include/asm/regs.h	76;"	d
+OFFSET_REG_S2	arch/riscv/include/asm/regs.h	67;"	d
+OFFSET_REG_S3	arch/riscv/include/asm/regs.h	68;"	d
+OFFSET_REG_S4	arch/riscv/include/asm/regs.h	69;"	d
+OFFSET_REG_S5	arch/riscv/include/asm/regs.h	70;"	d
+OFFSET_REG_S6	arch/riscv/include/asm/regs.h	71;"	d
+OFFSET_REG_S7	arch/riscv/include/asm/regs.h	72;"	d
+OFFSET_REG_S8	arch/riscv/include/asm/regs.h	73;"	d
+OFFSET_REG_S9	arch/riscv/include/asm/regs.h	74;"	d
+OFFSET_REG_SBADADDR	arch/riscv/include/asm/regs.h	87;"	d
+OFFSET_REG_SCAUSE	arch/riscv/include/asm/regs.h	88;"	d
+OFFSET_REG_SEPC	arch/riscv/include/asm/regs.h	86;"	d
+OFFSET_REG_SP	arch/riscv/include/asm/regs.h	43;"	d
+OFFSET_REG_SSTATUS	arch/riscv/include/asm/regs.h	85;"	d
+OFFSET_REG_T0	arch/riscv/include/asm/regs.h	48;"	d
+OFFSET_REG_T1	arch/riscv/include/asm/regs.h	49;"	d
+OFFSET_REG_T2	arch/riscv/include/asm/regs.h	50;"	d
+OFFSET_REG_T3	arch/riscv/include/asm/regs.h	79;"	d
+OFFSET_REG_T4	arch/riscv/include/asm/regs.h	80;"	d
+OFFSET_REG_T5	arch/riscv/include/asm/regs.h	81;"	d
+OFFSET_REG_T6	arch/riscv/include/asm/regs.h	82;"	d
+OFFSET_REG_TP	arch/riscv/include/asm/regs.h	45;"	d
+OFFSET_REG_ZERO	arch/riscv/include/asm/regs.h	37;"	d
+OFFSET_SIZE	arch/riscv/include/asm/regs.h	91;"	d
+OS_H	tiny_libc/include/os.h	2;"	d
+OS_MEM_LOC	tools/createimage.c	18;"	d	file:
+OS_SIZE_LOC	tools/createimage.c	14;"	d	file:
+OS_SYSCALL_H_	include/os/syscall.h	29;"	d
+OS_SYSCALL_NUMBER_H_	include/os/syscall_number.h	29;"	d
+Options	drivers/emacps/xemacps.h	/^	u32 Options;		\/* Current options word *\/$/;"	m	struct:XEmacPs_Instance
+PAGE_SIZE	include/os/mm.h	33;"	d
+PCB_KERNEL_SP	arch/riscv/include/asm/regs.h	93;"	d
+PCB_PREEMPT_COUNT	arch/riscv/include/asm/regs.h	95;"	d
+PCB_USER_SP	arch/riscv/include/asm/regs.h	94;"	d
+PF_MASKOS	include/os/elf.h	82;"	d
+PF_MASKPROC	include/os/elf.h	83;"	d
+PF_R	include/os/elf.h	81;"	d
+PF_W	include/os/elf.h	80;"	d
+PF_X	include/os/elf.h	79;"	d
+PGDIR	arch/riscv/kernel/boot.c	6;"	d	file:
+PGDIR_PA	arch/riscv/include/pgtable.h	70;"	d
+PGTABLE_H	arch/riscv/include/pgtable.h	2;"	d
+PHY_ADDAR	drivers/emacps/xemacps_example_util.c	402;"	d	file:
+PHY_DETECT_REG1	drivers/emacps/xemacps_example_util.c	346;"	d	file:
+PHY_DETECT_REG1	drivers/emacps/xemacps_main.c	437;"	d	file:
+PHY_DETECT_REG2	drivers/emacps/xemacps_example_util.c	347;"	d	file:
+PHY_DETECT_REG2	drivers/emacps/xemacps_main.c	438;"	d	file:
+PHY_ID_MARVELL	drivers/emacps/xemacps_example_util.c	349;"	d	file:
+PHY_ID_RTL	drivers/emacps/xemacps_example_util.c	351;"	d	file:
+PHY_ID_RTL	drivers/emacps/xemacps_main.c	439;"	d	file:
+PHY_ID_TI	drivers/emacps/xemacps_example_util.c	350;"	d	file:
+PHY_LOOPCR	drivers/emacps/xemacps_example_util.c	400;"	d	file:
+PHY_REG0_10	drivers/emacps/xemacps_example_util.c	394;"	d	file:
+PHY_REG0_100	drivers/emacps/xemacps_example_util.c	395;"	d	file:
+PHY_REG0_1000	drivers/emacps/xemacps_example_util.c	396;"	d	file:
+PHY_REG0_1000M_SPEED0	drivers/emacps/xemacps_example_util.c	660;"	d	file:
+PHY_REG0_1000M_SPEED1	drivers/emacps/xemacps_example_util.c	661;"	d	file:
+PHY_REG0_100M_SPEED0	drivers/emacps/xemacps_example_util.c	662;"	d	file:
+PHY_REG0_100M_SPEED1	drivers/emacps/xemacps_example_util.c	663;"	d	file:
+PHY_REG0_10M_SPEED0	drivers/emacps/xemacps_example_util.c	664;"	d	file:
+PHY_REG0_10M_SPEED1	drivers/emacps/xemacps_example_util.c	665;"	d	file:
+PHY_REG0_ANE	drivers/emacps/xemacps_example_util.c	657;"	d	file:
+PHY_REG0_FULL_DUPLEX	drivers/emacps/xemacps_example_util.c	659;"	d	file:
+PHY_REG0_LOOPBACK	drivers/emacps/xemacps_example_util.c	393;"	d	file:
+PHY_REG0_RESET	drivers/emacps/xemacps_example_util.c	392;"	d	file:
+PHY_REG0_RestartAN	drivers/emacps/xemacps_example_util.c	658;"	d	file:
+PHY_REG21_10	drivers/emacps/xemacps_example_util.c	397;"	d	file:
+PHY_REG21_100	drivers/emacps/xemacps_example_util.c	398;"	d	file:
+PHY_REG21_1000	drivers/emacps/xemacps_example_util.c	399;"	d	file:
+PHY_REGCR	drivers/emacps/xemacps_example_util.c	401;"	d	file:
+PHY_REGCR_ADDR	drivers/emacps/xemacps_example_util.c	406;"	d	file:
+PHY_REGCR_DATA	drivers/emacps/xemacps_example_util.c	407;"	d	file:
+PHY_RGMIICTL	drivers/emacps/xemacps_example_util.c	404;"	d	file:
+PHY_RGMIIDCTL	drivers/emacps/xemacps_example_util.c	403;"	d	file:
+PHY_TI_RGMII_VERSALEMU	drivers/emacps/xemacps_example_util.c	411;"	d	file:
+PHY_TI_RGMII_ZCU102	drivers/emacps/xemacps_example_util.c	410;"	d	file:
+PLATFORM_MASK	drivers/emacps/xemacps_example.h	77;"	d
+PLATFORM_SILICON	drivers/emacps/xemacps_example.h	78;"	d
+PLATFORM_VERSALEMU	drivers/emacps/xemacps_example.h	81;"	d
+PLIC_ADDR	arch/riscv/include/sbi.h	/^    PLIC_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+PLIC_H	drivers/plic.h	2;"	d
+PPN_BITS	arch/riscv/include/pgtable.h	95;"	d
+PRIORITY_BASE	drivers/plic.c	34;"	d	file:
+PRIORITY_PER_ID	drivers/plic.c	35;"	d	file:
+PTE	arch/riscv/include/pgtable.h	/^typedef uint64_t PTE;$/;"	t
+PTE	include/os/sched.h	/^typedef uint64_t PTE;$/;"	t
+PTRDIFF	drivers/emacps/xil_types.h	/^typedef ptrdiff_t PTRDIFF;$/;"	t
+PT_DYNAMIC	include/os/elf.h	89;"	d
+PT_GNU_EH_FRAME	include/os/elf.h	97;"	d
+PT_GNU_RELRO	include/os/elf.h	103;"	d
+PT_GNU_STACK	include/os/elf.h	100;"	d
+PT_HIOS	include/os/elf.h	108;"	d
+PT_HIPROC	include/os/elf.h	110;"	d
+PT_HISUNW	include/os/elf.h	107;"	d
+PT_INTERP	include/os/elf.h	90;"	d
+PT_LOAD	include/os/elf.h	88;"	d
+PT_LOOS	include/os/elf.h	96;"	d
+PT_LOPROC	include/os/elf.h	109;"	d
+PT_LOSUNW	include/os/elf.h	104;"	d
+PT_NOTE	include/os/elf.h	91;"	d
+PT_NULL	include/os/elf.h	87;"	d
+PT_NUM	include/os/elf.h	95;"	d
+PT_PHDR	include/os/elf.h	93;"	d
+PT_SHLIB	include/os/elf.h	92;"	d
+PT_SUNWBSS	include/os/elf.h	105;"	d
+PT_SUNWSTACK	include/os/elf.h	106;"	d
+PT_TLS	include/os/elf.h	94;"	d
+P_1	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon11
+P_2	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon11
+P_3	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon11
+P_4	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	e	enum:__anon11
+PhysBaseAddr	drivers/emacps/xemacps_bdring.h	/^	UINTPTR PhysBaseAddr;\/**< Physical address of 1st BD in list *\/$/;"	m	struct:__anon3
+Platform	drivers/emacps/xemacps_main.c	/^u32 Platform;$/;"	v
+PostCnt	drivers/emacps/xemacps_bdring.h	/^	u32 PostCnt;    \/**< Number of BDs in post-work group *\/$/;"	m	struct:__anon3
+PostHead	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *PostHead;$/;"	m	struct:__anon3
+PreCnt	drivers/emacps/xemacps_bdring.h	/^	u32 PreCnt;     \/**< Number of BDs in pre-work group *\/$/;"	m	struct:__anon3
+PreHead	drivers/emacps/xemacps_bdring.h	/^	XEmacPs_Bd *PreHead;\/**< First BD in the pre-work group *\/$/;"	m	struct:__anon3
+Ptr	drivers/emacps/xemacps_main.c	/^XEmacPs_Bd *Ptr;$/;"	v
+QEMU_PATH	Makefile	/^QEMU_PATH = \/home\/stu\/OSLab-RISC-V$/;"	m
+RAND_MAX	tiny_libc/include/stdlib.h	6;"	d
+RECORDS_INIT_SIZE	tools/generateMapping.c	7;"	d	file:
+REG_CR	arch/riscv/include/common.h	37;"	d
+REG_DAT	arch/riscv/include/common.h	29;"	d
+REG_FCR	arch/riscv/include/common.h	32;"	d
+REG_IER	arch/riscv/include/common.h	30;"	d
+REG_IIR	arch/riscv/include/common.h	31;"	d
+REG_LCR	arch/riscv/include/common.h	33;"	d
+REG_LSR	arch/riscv/include/common.h	35;"	d
+REG_MCR	arch/riscv/include/common.h	34;"	d
+REG_MR	arch/riscv/include/common.h	38;"	d
+REG_MSR	arch/riscv/include/common.h	36;"	d
+RISCV_FENCE	arch/riscv/include/io.h	4;"	d
+RISCV_LGPTR	arch/riscv/include/asm.h	35;"	d
+RISCV_PTR	arch/riscv/include/asm.h	33;"	d
+RISCV_SZPTR	arch/riscv/include/asm.h	34;"	d
+ROUND	drivers/emacps/xemacps_example.h	92;"	d
+ROUND	include/os/mm.h	41;"	d
+ROUNDDOWN	include/os/mm.h	42;"	d
+RR	kernel/sched/sched.c	11;"	d	file:
+RTL8211E_AUTO_NEGOTIATION_COMPLETE	drivers/emacps/xemacps_example_util.c	688;"	d	file:
+RTL8211E_MAGIC	drivers/emacps/xemacps_example_util.c	671;"	d	file:
+RTL8211E_PHYSR_DUPLEX_MASK	drivers/emacps/xemacps_example_util.c	684;"	d	file:
+RTL8211E_PHYSR_FULL_DUPLEX	drivers/emacps/xemacps_example_util.c	686;"	d	file:
+RTL8211E_PHYSR_HALF_DUPLEX	drivers/emacps/xemacps_example_util.c	685;"	d	file:
+RTL8211E_PHYSR_LINK_STATUS	drivers/emacps/xemacps_example_util.c	679;"	d	file:
+RTL8211E_PHYSR_SPEED_100M	drivers/emacps/xemacps_example_util.c	682;"	d	file:
+RTL8211E_PHYSR_SPEED_10M	drivers/emacps/xemacps_example_util.c	683;"	d	file:
+RTL8211E_PHYSR_SPEED_1G	drivers/emacps/xemacps_example_util.c	681;"	d	file:
+RTL8211E_PHYSR_SPEED_MASK	drivers/emacps/xemacps_example_util.c	680;"	d	file:
+RTL8211E_RX_DELAY	drivers/emacps/xemacps_example_util.c	670;"	d	file:
+RTL8211E_TX_DELAY	drivers/emacps/xemacps_example_util.c	669;"	d	file:
+RTL8211x_PHY_INER	drivers/emacps/xemacps_example_util.c	672;"	d	file:
+RTL8211x_PHY_INSR	drivers/emacps/xemacps_example_util.c	676;"	d	file:
+RTL8211x_PHY_INTR_DIS	drivers/emacps/xemacps_example_util.c	674;"	d	file:
+RTL8211x_PHY_INTR_ENA	drivers/emacps/xemacps_example_util.c	673;"	d	file:
+RTL821x_EXT_PAGE_SELECT	drivers/emacps/xemacps_example_util.c	667;"	d	file:
+RTL821x_PAGE_SELECT	drivers/emacps/xemacps_example_util.c	668;"	d	file:
+RXBD_CNT	drivers/emacps/xemacps_example.h	97;"	d
+RXBD_CNT	drivers/emacps/xemacps_main.c	129;"	d	file:
+RXBD_SPACE_BYTES	drivers/emacps/xemacps_main.c	170;"	d	file:
+ReadRXSR	drivers/emacps/xemacps_main.c	/^LONG ReadRXSR(XEmacPs *EmacPsInstancePtr)$/;"	f
+ReadTXSR	drivers/emacps/xemacps_main.c	/^LONG ReadTXSR(XEmacPs *EmacPsInstancePtr)$/;"	f
+Records	tools/generateMapping.c	/^typedef struct Records$/;"	s	file:
+Records	tools/generateMapping.c	/^} Records;$/;"	t	typeref:struct:Records	file:
+RecvHandler	drivers/emacps/xemacps.h	/^	XEmacPs_Handler RecvHandler;$/;"	m	struct:XEmacPs_Instance
+RecvRef	drivers/emacps/xemacps.h	/^	void *RecvRef;$/;"	m	struct:XEmacPs_Instance
+RunState	drivers/emacps/xemacps_bdring.h	/^	u32 RunState;	 \/**< Flag to indicate DMA is started *\/$/;"	m	struct:__anon3
+RxBdRing	drivers/emacps/xemacps.h	/^	XEmacPs_BdRing RxBdRing;	\/* Receive BD ring *\/$/;"	m	struct:XEmacPs_Instance
+RxBdSpacePtr	drivers/emacps/xemacps_main.c	/^u8 *RxBdSpacePtr;$/;"	v
+RxBufMask	drivers/emacps/xemacps.h	/^	u32 RxBufMask;$/;"	m	struct:XEmacPs_Instance
+RxFrame	drivers/emacps/xemacps_main.c	/^EthernetFrame RxFrame; \/* Receive buffer *\/$/;"	v
+SATP_ASID_SHIFT	arch/riscv/include/pgtable.h	12;"	d
+SATP_MODE	arch/riscv/include/csr.h	32;"	d
+SATP_MODE_39	arch/riscv/include/csr.h	31;"	d
+SATP_MODE_SHIFT	arch/riscv/include/pgtable.h	13;"	d
+SATP_MODE_SV39	arch/riscv/include/pgtable.h	7;"	d
+SATP_MODE_SV48	arch/riscv/include/pgtable.h	8;"	d
+SATP_PPN	arch/riscv/include/csr.h	30;"	d
+SBI_CALL	arch/riscv/include/sbi.h	20;"	d
+SBI_CALL_0	arch/riscv/include/sbi.h	34;"	d
+SBI_CALL_1	arch/riscv/include/sbi.h	35;"	d
+SBI_CALL_2	arch/riscv/include/sbi.h	36;"	d
+SBI_CALL_3	arch/riscv/include/sbi.h	38;"	d
+SBI_CLEAR_IPI	arch/riscv/include/asm/sbidef.h	7;"	d
+SBI_CONSOLE_GETCHAR	arch/riscv/include/asm/sbidef.h	6;"	d
+SBI_CONSOLE_PUTCHAR	arch/riscv/include/asm/sbidef.h	5;"	d
+SBI_CONSOLE_PUTSTR	arch/riscv/include/asm/sbidef.h	13;"	d
+SBI_FDT_READ	arch/riscv/include/asm/sbidef.h	16;"	d
+SBI_READY_FDT_TYPE	arch/riscv/include/sbi.h	/^enum SBI_READY_FDT_TYPE {$/;"	g
+SBI_REMOTE_FENCE_I	arch/riscv/include/asm/sbidef.h	9;"	d
+SBI_REMOTE_SFENCE_VMA	arch/riscv/include/asm/sbidef.h	10;"	d
+SBI_REMOTE_SFENCE_VMA_ASID	arch/riscv/include/asm/sbidef.h	11;"	d
+SBI_SD_READ	arch/riscv/include/asm/sbidef.h	15;"	d
+SBI_SD_WRITE	arch/riscv/include/asm/sbidef.h	14;"	d
+SBI_SEND_IPI	arch/riscv/include/asm/sbidef.h	8;"	d
+SBI_SET_TIMER	arch/riscv/include/asm/sbidef.h	4;"	d
+SBI_SHUTDOWN	arch/riscv/include/asm/sbidef.h	12;"	d
+SCAUSE_IRQ_FLAG	arch/riscv/include/csr.h	35;"	d
+SCREEN_HEIGHT	drivers/screen.c	11;"	d	file:
+SCREEN_WIDTH	drivers/screen.c	10;"	d	file:
+SECTOR_SIZE	tools/createimage.c	12;"	d	file:
+SELFMAG	include/os/elf.h	36;"	d
+SHELL	Makefile	/^SHELL := \/bin\/bash$/;"	m
+SHELL_BEGIN	test/test_shell.c	36;"	d	file:
+SHMP_KEY	test/consensus.c	11;"	d	file:
+SHMP_KEY	test/echo.c	9;"	d	file:
+SHM_H	include/sys/shm.h	2;"	d
+SIE_SEIE	arch/riscv/include/csr.h	60;"	d
+SIE_SSIE	arch/riscv/include/csr.h	58;"	d
+SIE_STIE	arch/riscv/include/csr.h	59;"	d
+SLCR_ADDR_GEM_RST_CTRL	drivers/emacps/xemacps_main.c	147;"	d	file:
+SLCR_BADE_ADDR	arch/riscv/include/sbi.h	/^    SLCR_BADE_ADDR,$/;"	e	enum:SBI_READY_FDT_TYPE
+SLCR_GEM0_CLK_CTRL_ADDR	drivers/emacps/xemacps_main.c	142;"	d	file:
+SLCR_GEM1_CLK_CTRL_ADDR	drivers/emacps/xemacps_main.c	143;"	d	file:
+SLCR_LOCK_ADDR	drivers/emacps/xemacps_main.c	140;"	d	file:
+SLCR_LOCK_KEY_VALUE	drivers/emacps/xemacps_main.c	145;"	d	file:
+SLCR_UNLOCK_ADDR	drivers/emacps/xemacps_main.c	141;"	d	file:
+SLCR_UNLOCK_KEY_VALUE	drivers/emacps/xemacps_main.c	146;"	d	file:
+SMP_H	include/os/smp.h	2;"	d
+SRC_ARCH	Makefile	/^SRC_ARCH	= $(ARCH_DIR)\/kernel\/trap.S $(ARCH_DIR)\/kernel\/entry.S $(ARCH_DIR)\/kernel\/start.S $(ARCH_DIR)\/sbi\/common.c $(ARCH_DIR)\/kernel\/smp.S$/;"	m
+SRC_BOOT	Makefile	/^SRC_BOOT 	= $(ARCH_DIR)\/boot\/bootblock.S$/;"	m
+SRC_DRIVER	Makefile	/^SRC_DRIVER	= .\/drivers\/screen.c .\/drivers\/net.c .\/drivers\/plic.c .\/drivers\/emacps\/xemacps.c .\/drivers\/emacps\/xemacps_bdring.c .\/drivers\/emacps\/xemacps_control.c .\/drivers\/emacps\/xemacps_example_util.c .\/drivers\/emacps\/xemacps_g.c .\/drivers\/emacps\/xemacps_hw.c .\/drivers\/emacps\/xemacps_intr.c .\/drivers\/emacps\/xemacps_main.c$/;"	m
+SRC_ELF2CHAR	Makefile	/^SRC_ELF2CHAR	= .\/tools\/elf2char.c$/;"	m
+SRC_GENMAP	Makefile	/^SRC_GENMAP	= .\/tools\/generateMapping.c$/;"	m
+SRC_HEAD	Makefile	/^SRC_HEAD    = $(ARCH_DIR)\/kernel\/head.S $(ARCH_DIR)\/kernel\/boot.c payload.c .\/libs\/string.c$/;"	m
+SRC_IMAGE	Makefile	/^SRC_IMAGE	= .\/tools\/createimage.c$/;"	m
+SRC_INIT	Makefile	/^SRC_INIT 	= .\/init\/main.c$/;"	m
+SRC_INT	Makefile	/^SRC_INT		= .\/kernel\/irq\/irq.c$/;"	m
+SRC_LIBC	Makefile	/^SRC_LIBC	= .\/tiny_libc\/printf.c .\/tiny_libc\/string.c .\/tiny_libc\/mthread.c .\/tiny_libc\/syscall.c .\/tiny_libc\/invoke_syscall.S \\$/;"	m
+SRC_LIBC_ASM	Makefile	/^SRC_LIBC_ASM	= $(filter %.S %.s,$(SRC_LIBC))$/;"	m
+SRC_LIBC_C	Makefile	/^SRC_LIBC_C	= $(filter %.c,$(SRC_LIBC))$/;"	m
+SRC_LIBS	Makefile	/^SRC_LIBS	= .\/libs\/string.c .\/libs\/printk.c$/;"	m
+SRC_LOCK	Makefile	/^SRC_LOCK	= .\/kernel\/locking\/lock.c .\/kernel\/locking\/futex.c$/;"	m
+SRC_MAIN	Makefile	/^SRC_MAIN	= ${SRC_ARCH} ${SRC_INIT} ${SRC_INT} ${SRC_DRIVER} ${SRC_LOCK} ${SRC_SCHED} ${SRC_MM} ${SRC_SYSCALL} ${SRC_LIBS}$/;"	m
+SRC_MM	Makefile	/^SRC_MM	= .\/kernel\/mm\/mm.c .\/kernel\/mm\/ioremap.c$/;"	m
+SRC_SCHED	Makefile	/^SRC_SCHED	= .\/kernel\/sched\/sched.c .\/kernel\/sched\/time.c .\/kernel\/sched\/smp.c$/;"	m
+SRC_SYSCALL	Makefile	/^SRC_SYSCALL	= .\/kernel\/syscall\/syscall.c$/;"	m
+SRC_USER	Makefile	/^SRC_USER	= .\/test\/test_shell.elf .\/test\/rw.elf .\/test\/fly.elf .\/test\/consensus.elf .\/test\/swap.elf .\/test\/echo.elf .\/test\/recv.elf .\/test\/send.elf #.\/test\/send-s.elf .\/test\/recv-s.elf$/;"	m
+SR_FS	arch/riscv/include/csr.h	15;"	d
+SR_FS_CLEAN	arch/riscv/include/csr.h	18;"	d
+SR_FS_DIRTY	arch/riscv/include/csr.h	19;"	d
+SR_FS_INITIAL	arch/riscv/include/csr.h	17;"	d
+SR_FS_OFF	arch/riscv/include/csr.h	16;"	d
+SR_SD	arch/riscv/include/csr.h	27;"	d
+SR_SIE	arch/riscv/include/csr.h	10;"	d
+SR_SPIE	arch/riscv/include/csr.h	11;"	d
+SR_SPP	arch/riscv/include/csr.h	12;"	d
+SR_SUM	arch/riscv/include/csr.h	13;"	d
+SR_XS	arch/riscv/include/csr.h	21;"	d
+SR_XS_CLEAN	arch/riscv/include/csr.h	24;"	d
+SR_XS_DIRTY	arch/riscv/include/csr.h	25;"	d
+SR_XS_INITIAL	arch/riscv/include/csr.h	23;"	d
+SR_XS_OFF	arch/riscv/include/csr.h	22;"	d
+START_ENTRYPOINT	Makefile	/^START_ENTRYPOINT = 0x50301000$/;"	m
+STDATOMIC_H	tiny_libc/include/stdatomic.h	2;"	d
+STDBOOL_H	tiny_libc/include/stdbool.h	2;"	d
+STDDEF_H	tiny_libc/include/stddef.h	2;"	d
+STDLIB_H	tiny_libc/include/stdlib.h	2;"	d
+STRING_H	tiny_libc/include/string.h	2;"	d
+SWITCH_TO_RA	arch/riscv/include/asm/regs.h	98;"	d
+SWITCH_TO_S0	arch/riscv/include/asm/regs.h	100;"	d
+SWITCH_TO_S1	arch/riscv/include/asm/regs.h	101;"	d
+SWITCH_TO_S10	arch/riscv/include/asm/regs.h	110;"	d
+SWITCH_TO_S11	arch/riscv/include/asm/regs.h	111;"	d
+SWITCH_TO_S2	arch/riscv/include/asm/regs.h	102;"	d
+SWITCH_TO_S3	arch/riscv/include/asm/regs.h	103;"	d
+SWITCH_TO_S4	arch/riscv/include/asm/regs.h	104;"	d
+SWITCH_TO_S5	arch/riscv/include/asm/regs.h	105;"	d
+SWITCH_TO_S6	arch/riscv/include/asm/regs.h	106;"	d
+SWITCH_TO_S7	arch/riscv/include/asm/regs.h	107;"	d
+SWITCH_TO_S8	arch/riscv/include/asm/regs.h	108;"	d
+SWITCH_TO_S9	arch/riscv/include/asm/regs.h	109;"	d
+SWITCH_TO_SIZE	arch/riscv/include/asm/regs.h	113;"	d
+SWITCH_TO_SP	arch/riscv/include/asm/regs.h	99;"	d
+SYSCALL_BARRIERWAIT	include/os/syscall_number.h	71;"	d
+SYSCALL_BINSEMOP	include/os/syscall_number.h	44;"	d
+SYSCALL_CURSOR	include/os/syscall_number.h	58;"	d
+SYSCALL_DOBLOCK	include/os/syscall_number.h	49;"	d
+SYSCALL_DOUNBLOCK	include/os/syscall_number.h	50;"	d
+SYSCALL_EXEC	include/os/syscall_number.h	78;"	d
+SYSCALL_EXIT	include/os/syscall_number.h	36;"	d
+SYSCALL_FUTEX_WAIT	include/os/syscall_number.h	46;"	d
+SYSCALL_FUTEX_WAKEUP	include/os/syscall_number.h	47;"	d
+SYSCALL_GETPID	include/os/syscall_number.h	41;"	d
+SYSCALL_GET_CHAR	include/os/syscall_number.h	66;"	d
+SYSCALL_GET_TICK	include/os/syscall_number.h	65;"	d
+SYSCALL_GET_TIMEBASE	include/os/syscall_number.h	64;"	d
+SYSCALL_KILL	include/os/syscall_number.h	38;"	d
+SYSCALL_MBOX_CLOSE	include/os/syscall_number.h	73;"	d
+SYSCALL_MBOX_OPEN	include/os/syscall_number.h	72;"	d
+SYSCALL_MBOX_RECV	include/os/syscall_number.h	75;"	d
+SYSCALL_MBOX_SEND	include/os/syscall_number.h	74;"	d
+SYSCALL_NET_IRQ_MODE	include/os/syscall_number.h	83;"	d
+SYSCALL_NET_RECV	include/os/syscall_number.h	81;"	d
+SYSCALL_NET_SEND	include/os/syscall_number.h	82;"	d
+SYSCALL_PS	include/os/syscall_number.h	40;"	d
+SYSCALL_READ	include/os/syscall_number.h	57;"	d
+SYSCALL_READ_SHELL_BUFF	include/os/syscall_number.h	62;"	d
+SYSCALL_REFLUSH	include/os/syscall_number.h	59;"	d
+SYSCALL_SCREENSCROLL	include/os/syscall_number.h	76;"	d
+SYSCALL_SCREEN_CLEAR	include/os/syscall_number.h	63;"	d
+SYSCALL_SEMBROADCAST	include/os/syscall_number.h	70;"	d
+SYSCALL_SEMGET	include/os/syscall_number.h	43;"	d
+SYSCALL_SEMSIGNAL	include/os/syscall_number.h	69;"	d
+SYSCALL_SEMWAIT	include/os/syscall_number.h	68;"	d
+SYSCALL_SERIAL_READ	include/os/syscall_number.h	60;"	d
+SYSCALL_SERIAL_WRITE	include/os/syscall_number.h	61;"	d
+SYSCALL_SHMPDT	include/os/syscall_number.h	53;"	d
+SYSCALL_SHMPGET	include/os/syscall_number.h	52;"	d
+SYSCALL_SHOW_EXEC	include/os/syscall_number.h	79;"	d
+SYSCALL_SLEEP	include/os/syscall_number.h	37;"	d
+SYSCALL_SPAWN	include/os/syscall_number.h	35;"	d
+SYSCALL_TASKSET	include/os/syscall_number.h	77;"	d
+SYSCALL_WAITPID	include/os/syscall_number.h	39;"	d
+SYSCALL_WRITE	include/os/syscall_number.h	56;"	d
+SYSCALL_YIELD	include/os/syscall_number.h	42;"	d
+SendHandler	drivers/emacps/xemacps.h	/^	XEmacPs_Handler SendHandler;$/;"	m	struct:XEmacPs_Instance
+SendRef	drivers/emacps/xemacps.h	/^	void *SendRef;$/;"	m	struct:XEmacPs_Instance
+Separation	drivers/emacps/xemacps_bdring.h	/^	u32 Separation;	 \/**< Number of bytes between the starting address$/;"	m	struct:__anon3
+SunQuan	test/test_project3/test_sanguo.c	/^void SunQuan(void)$/;"	f
+TASK_BLOCKED	include/os/sched.h	/^    TASK_BLOCKED,$/;"	e	enum:__anon12
+TASK_EXITED	include/os/sched.h	/^    TASK_EXITED,$/;"	e	enum:__anon12
+TASK_READY	include/os/sched.h	/^    TASK_READY,$/;"	e	enum:__anon12
+TASK_RUNNING	include/os/sched.h	/^    TASK_RUNNING,$/;"	e	enum:__anon12
+TIMEBASE	arch/riscv/include/sbi.h	/^    TIMEBASE,$/;"	e	enum:SBI_READY_FDT_TYPE
+TIMEIN	init/main.c	52;"	d	file:
+TIMER_INTERVAL	include/os/irq.h	63;"	d
+TIME_H	tiny_libc/include/time.h	2;"	d
+TRUE	drivers/emacps/xbasic_types.h	76;"	d
+TRUE	drivers/emacps/xil_types.h	195;"	d
+TRUE	drivers/emacps/xil_types.h	65;"	d
+TRUE	include/type.h	34;"	d
+TRUE	tiny_libc/include/stdbool.h	5;"	d
+TXBD_CNT	drivers/emacps/xemacps_example.h	98;"	d
+TXBD_CNT	drivers/emacps/xemacps_main.c	130;"	d	file:
+TXBD_SPACE_BYTES	drivers/emacps/xemacps_main.c	171;"	d	file:
+TestMultiCoreArg	test/test_project3/test_multicore.c	/^struct TestMultiCoreArg$/;"	s	file:
+TimerCallback	include/os/time.h	/^typedef void (*TimerCallback)(void *parameter);$/;"	t
+TxBdRing	drivers/emacps/xemacps.h	/^	XEmacPs_BdRing TxBdRing;	\/* Transmit BD ring *\/$/;"	m	struct:XEmacPs_Instance
+TxBdSpacePtr	drivers/emacps/xemacps_main.c	/^u8 *TxBdSpacePtr;$/;"	v
+TxFrame	drivers/emacps/xemacps_main.c	/^EthernetFrame TxFrame; \/* Transmit buffer *\/$/;"	v
+TxFrameLength	drivers/emacps/xemacps_main.c	/^u32 TxFrameLength;$/;"	v
+UINT16_C	tiny_libc/include/stdint.h	141;"	d
+UINT16_MAX	include/type.h	78;"	d
+UINT16_MAX	tiny_libc/include/stdint.h	81;"	d
+UINT32_C	tiny_libc/include/stdint.h	142;"	d
+UINT32_MAX	include/type.h	79;"	d
+UINT32_MAX	tiny_libc/include/stdint.h	82;"	d
+UINT64_C	tiny_libc/include/stdint.h	143;"	d
+UINT64_MAX	include/type.h	80;"	d
+UINT64_MAX	tiny_libc/include/stdint.h	83;"	d
+UINT8_C	tiny_libc/include/stdint.h	140;"	d
+UINT8_MAX	include/type.h	77;"	d
+UINT8_MAX	tiny_libc/include/stdint.h	80;"	d
+UINTMAX_C	tiny_libc/include/stdint.h	147;"	d
+UINTMAX_MAX	tiny_libc/include/stdint.h	131;"	d
+UINTPTR	drivers/emacps/xil_types.h	/^typedef uintptr_t UINTPTR;$/;"	t
+UINTPTR_MAX	tiny_libc/include/stdint.h	123;"	d
+UINT_FAST16_MAX	tiny_libc/include/stdint.h	115;"	d
+UINT_FAST32_MAX	tiny_libc/include/stdint.h	116;"	d
+UINT_FAST64_MAX	tiny_libc/include/stdint.h	117;"	d
+UINT_FAST8_MAX	tiny_libc/include/stdint.h	114;"	d
+UINT_LEAST16_MAX	tiny_libc/include/stdint.h	98;"	d
+UINT_LEAST32_MAX	tiny_libc/include/stdint.h	99;"	d
+UINT_LEAST64_MAX	tiny_libc/include/stdint.h	100;"	d
+UINT_LEAST8_MAX	tiny_libc/include/stdint.h	97;"	d
+ULONG	drivers/emacps/xil_types.h	/^typedef unsigned long ULONG;$/;"	t
+ULONG64_HI_MASK	drivers/emacps/xil_types.h	151;"	d
+ULONG64_LO_MASK	drivers/emacps/xil_types.h	152;"	d
+UNLOCKED	include/os/lock.h	/^    UNLOCKED,$/;"	e	enum:__anon14
+UPPER_32_BITS	drivers/emacps/xil_types.h	180;"	d
+USER_CFLAGS	Makefile	/^USER_CFLAGS = -O0 -nostdlib -T user_riscv.lds -Wall -mcmodel=medany -Itest -Itiny_libc\/include -Iinclude -nostdinc -g -fvar-tracking$/;"	m
+USER_LDFLAGS	Makefile	/^USER_LDFLAGS = -L.\/ -ltiny_libc$/;"	m
+USER_PROCESS	include/os/sched.h	/^    USER_PROCESS,$/;"	e	enum:__anon13
+USER_STACK_ADDR	include/os/mm.h	38;"	d
+USER_THREAD	include/os/sched.h	/^    USER_THREAD,$/;"	e	enum:__anon13
+Upper	drivers/emacps/xbasic_types.h	/^	Xuint32 Upper;$/;"	m	struct:__anon4
+Upper	drivers/emacps/xil_types.h	/^	u32 Upper;$/;"	m	struct:__anon7
+VA_MASK	arch/riscv/include/pgtable.h	93;"	d
+Version	drivers/emacps/xemacps.h	/^	u32 Version;$/;"	m	struct:XEmacPs_Instance
+XASSERT_NONE	drivers/emacps/xbasic_types.h	102;"	d
+XASSERT_NONVOID	drivers/emacps/xbasic_types.h	241;"	d
+XASSERT_NONVOID	drivers/emacps/xbasic_types.h	297;"	d
+XASSERT_NONVOID_ALWAYS	drivers/emacps/xbasic_types.h	285;"	d
+XASSERT_NONVOID_ALWAYS	drivers/emacps/xbasic_types.h	298;"	d
+XASSERT_OCCURRED	drivers/emacps/xbasic_types.h	103;"	d
+XASSERT_VOID	drivers/emacps/xbasic_types.h	212;"	d
+XASSERT_VOID	drivers/emacps/xbasic_types.h	295;"	d
+XASSERT_VOID_ALWAYS	drivers/emacps/xbasic_types.h	267;"	d
+XASSERT_VOID_ALWAYS	drivers/emacps/xbasic_types.h	296;"	d
+XAssertCallback	drivers/emacps/xbasic_types.h	/^typedef void (*XAssertCallback) (char *FilenamePtr, int LineNumber);$/;"	t
+XBASIC_TYPES_H	drivers/emacps/xbasic_types.h	61;"	d
+XCOMPONENT_IS_READY	drivers/emacps/xbasic_types.h	93;"	d
+XCOMPONENT_IS_STARTED	drivers/emacps/xbasic_types.h	94;"	d
+XEMACPS_1588_ADJ_OFFSET	drivers/emacps/xemacps_hw.h	272;"	d
+XEMACPS_1588_INC_OFFSET	drivers/emacps/xemacps_hw.h	274;"	d
+XEMACPS_1588_NANOSEC_OFFSET	drivers/emacps/xemacps_hw.h	271;"	d
+XEMACPS_1588_SEC_OFFSET	drivers/emacps/xemacps_hw.h	270;"	d
+XEMACPS_16BYTE_BURST	drivers/emacps/xemacps.h	488;"	d
+XEMACPS_4BYTE_BURST	drivers/emacps/xemacps.h	486;"	d
+XEMACPS_8BYTE_BURST	drivers/emacps/xemacps.h	487;"	d
+XEMACPS_BDRING_H	drivers/emacps/xemacps_bdring.h	54;"	d
+XEMACPS_BD_ADDR_HI_OFFSET	drivers/emacps/xemacps_hw.h	536;"	d
+XEMACPS_BD_ADDR_OFFSET	drivers/emacps/xemacps_hw.h	534;"	d
+XEMACPS_BD_ALIGNMENT	drivers/emacps/xemacps_hw.h	84;"	d
+XEMACPS_BD_H	drivers/emacps/xemacps_bd.h	77;"	d
+XEMACPS_BD_NUM_WORDS	drivers/emacps/xemacps_bd.h	93;"	d
+XEMACPS_BD_STAT_OFFSET	drivers/emacps/xemacps_hw.h	535;"	d
+XEMACPS_BROADCAST_OPTION	drivers/emacps/xemacps.h	417;"	d
+XEMACPS_DEFAULT_OPTIONS	drivers/emacps/xemacps.h	436;"	d
+XEMACPS_DEVICE_DESC	drivers/emacps/xemacps.h	359;"	d
+XEMACPS_DEVICE_NAME	drivers/emacps/xemacps.h	358;"	d
+XEMACPS_DMABD_MINIMUM_ALIGNMENT	drivers/emacps/xemacps_bd.h	92;"	d
+XEMACPS_DMACR_ADDR_WIDTH_64	drivers/emacps/xemacps_hw.h	400;"	d
+XEMACPS_DMACR_BLENGTH_MASK	drivers/emacps/xemacps_hw.h	412;"	d
+XEMACPS_DMACR_ENDIAN_MASK	drivers/emacps/xemacps_hw.h	411;"	d
+XEMACPS_DMACR_INCR16_AHB_BURST	drivers/emacps/xemacps_hw.h	416;"	d
+XEMACPS_DMACR_INCR4_AHB_BURST	drivers/emacps/xemacps_hw.h	414;"	d
+XEMACPS_DMACR_INCR8_AHB_BURST	drivers/emacps/xemacps_hw.h	415;"	d
+XEMACPS_DMACR_OFFSET	drivers/emacps/xemacps_hw.h	132;"	d
+XEMACPS_DMACR_RXBUF_MASK	drivers/emacps/xemacps_hw.h	403;"	d
+XEMACPS_DMACR_RXBUF_SHIFT	drivers/emacps/xemacps_hw.h	405;"	d
+XEMACPS_DMACR_RXEXTEND_MASK	drivers/emacps/xemacps_hw.h	402;"	d
+XEMACPS_DMACR_RXSIZE_MASK	drivers/emacps/xemacps_hw.h	410;"	d
+XEMACPS_DMACR_SINGLE_AHB_BURST	drivers/emacps/xemacps_hw.h	413;"	d
+XEMACPS_DMACR_TCPCKSUM_MASK	drivers/emacps/xemacps_hw.h	407;"	d
+XEMACPS_DMACR_TXEXTEND_MASK	drivers/emacps/xemacps_hw.h	401;"	d
+XEMACPS_DMACR_TXSIZE_MASK	drivers/emacps/xemacps_hw.h	409;"	d
+XEMACPS_EXAMPLE_H	drivers/emacps/xemacps_example.h	59;"	d
+XEMACPS_EXCESSCOLLCNT_OFFSET	drivers/emacps/xemacps_hw.h	210;"	d
+XEMACPS_FCS_INSERT_OPTION	drivers/emacps/xemacps.h	396;"	d
+XEMACPS_FCS_STRIP_OPTION	drivers/emacps/xemacps.h	391;"	d
+XEMACPS_FLOW_CONTROL_OPTION	drivers/emacps/xemacps.h	387;"	d
+XEMACPS_FRAME1536_OPTION	drivers/emacps/xemacps.h	379;"	d
+XEMACPS_H	drivers/emacps/xemacps.h	338;"	d
+XEMACPS_HANDLER_DMARECV	drivers/emacps/xemacps.h	457;"	d
+XEMACPS_HANDLER_DMASEND	drivers/emacps/xemacps.h	456;"	d
+XEMACPS_HANDLER_ERROR	drivers/emacps/xemacps.h	458;"	d
+XEMACPS_HASHH_OFFSET	drivers/emacps/xemacps_hw.h	152;"	d
+XEMACPS_HASHL_OFFSET	drivers/emacps/xemacps_hw.h	151;"	d
+XEMACPS_HDR_SIZE	drivers/emacps/xemacps.h	473;"	d
+XEMACPS_HDR_SIZE	tiny_libc/include/os.h	31;"	d
+XEMACPS_HDR_VLAN_SIZE	drivers/emacps/xemacps.h	474;"	d
+XEMACPS_HDR_VLAN_SIZE	tiny_libc/include/os.h	32;"	d
+XEMACPS_HW_H	drivers/emacps/xemacps_hw.h	67;"	d
+XEMACPS_IDR_OFFSET	drivers/emacps/xemacps_hw.h	140;"	d
+XEMACPS_IER_OFFSET	drivers/emacps/xemacps_hw.h	139;"	d
+XEMACPS_IMR_OFFSET	drivers/emacps/xemacps_hw.h	141;"	d
+XEMACPS_INTQ1SR_TXCOMPL_MASK	drivers/emacps/xemacps_hw.h	458;"	d
+XEMACPS_INTQ1SR_TXERR_MASK	drivers/emacps/xemacps_hw.h	459;"	d
+XEMACPS_INTQ1_IDR_OFFSET	drivers/emacps/xemacps_hw.h	305;"	d
+XEMACPS_INTQ1_IER_OFFSET	drivers/emacps/xemacps_hw.h	303;"	d
+XEMACPS_INTQ1_IMR_OFFSET	drivers/emacps/xemacps_hw.h	307;"	d
+XEMACPS_INTQ1_IXR_ALL_MASK	drivers/emacps/xemacps_hw.h	461;"	d
+XEMACPS_INTQ1_STS_OFFSET	drivers/emacps/xemacps_hw.h	293;"	d
+XEMACPS_ISR_OFFSET	drivers/emacps/xemacps_hw.h	138;"	d
+XEMACPS_IXR_ALL_MASK	drivers/emacps/xemacps_hw.h	497;"	d
+XEMACPS_IXR_FRAMERX_MASK	drivers/emacps/xemacps_hw.h	495;"	d
+XEMACPS_IXR_HRESPNOK_MASK	drivers/emacps/xemacps_hw.h	486;"	d
+XEMACPS_IXR_MGMNT_MASK	drivers/emacps/xemacps_hw.h	496;"	d
+XEMACPS_IXR_PAUSENZERO_MASK	drivers/emacps/xemacps_hw.h	485;"	d
+XEMACPS_IXR_PAUSETX_MASK	drivers/emacps/xemacps_hw.h	482;"	d
+XEMACPS_IXR_PAUSEZERO_MASK	drivers/emacps/xemacps_hw.h	483;"	d
+XEMACPS_IXR_PTPDRRX_MASK	drivers/emacps/xemacps_hw.h	480;"	d
+XEMACPS_IXR_PTPDRTX_MASK	drivers/emacps/xemacps_hw.h	478;"	d
+XEMACPS_IXR_PTPPDRRX_MASK	drivers/emacps/xemacps_hw.h	475;"	d
+XEMACPS_IXR_PTPPDRTX_MASK	drivers/emacps/xemacps_hw.h	473;"	d
+XEMACPS_IXR_PTPPSRX_MASK	drivers/emacps/xemacps_hw.h	474;"	d
+XEMACPS_IXR_PTPPSTX_MASK	drivers/emacps/xemacps_hw.h	472;"	d
+XEMACPS_IXR_PTPSRX_MASK	drivers/emacps/xemacps_hw.h	479;"	d
+XEMACPS_IXR_PTPSTX_MASK	drivers/emacps/xemacps_hw.h	477;"	d
+XEMACPS_IXR_RETRY_MASK	drivers/emacps/xemacps_hw.h	491;"	d
+XEMACPS_IXR_RXOVR_MASK	drivers/emacps/xemacps_hw.h	487;"	d
+XEMACPS_IXR_RXUSED_MASK	drivers/emacps/xemacps_hw.h	494;"	d
+XEMACPS_IXR_RX_ERR_MASK	drivers/emacps/xemacps_hw.h	504;"	d
+XEMACPS_IXR_TXCOMPL_MASK	drivers/emacps/xemacps_hw.h	488;"	d
+XEMACPS_IXR_TXEXH_MASK	drivers/emacps/xemacps_hw.h	489;"	d
+XEMACPS_IXR_TXUSED_MASK	drivers/emacps/xemacps_hw.h	493;"	d
+XEMACPS_IXR_TX_ERR_MASK	drivers/emacps/xemacps_hw.h	499;"	d
+XEMACPS_IXR_URUN_MASK	drivers/emacps/xemacps_hw.h	492;"	d
+XEMACPS_JUMBOMAXLEN_OFFSET	drivers/emacps/xemacps_hw.h	147;"	d
+XEMACPS_JUMBO_ENABLE_OPTION	drivers/emacps/xemacps.h	433;"	d
+XEMACPS_LADDR1H_OFFSET	drivers/emacps/xemacps_hw.h	155;"	d
+XEMACPS_LADDR1L_OFFSET	drivers/emacps/xemacps_hw.h	154;"	d
+XEMACPS_LADDR2H_OFFSET	drivers/emacps/xemacps_hw.h	157;"	d
+XEMACPS_LADDR2L_OFFSET	drivers/emacps/xemacps_hw.h	156;"	d
+XEMACPS_LADDR3H_OFFSET	drivers/emacps/xemacps_hw.h	159;"	d
+XEMACPS_LADDR3L_OFFSET	drivers/emacps/xemacps_hw.h	158;"	d
+XEMACPS_LADDR4H_OFFSET	drivers/emacps/xemacps_hw.h	161;"	d
+XEMACPS_LADDR4L_OFFSET	drivers/emacps/xemacps_hw.h	160;"	d
+XEMACPS_LADDR_MACH_MASK	drivers/emacps/xemacps_hw.h	392;"	d
+XEMACPS_LAST_OFFSET	drivers/emacps/xemacps_hw.h	267;"	d
+XEMACPS_LATECOLLCNT_OFFSET	drivers/emacps/xemacps_hw.h	212;"	d
+XEMACPS_LENTYPE_ERR_OPTION	drivers/emacps/xemacps.h	400;"	d
+XEMACPS_MAC_ADDR_SIZE	drivers/emacps/xemacps.h	469;"	d
+XEMACPS_MAC_ADDR_SIZE	tiny_libc/include/os.h	27;"	d
+XEMACPS_MATCH1_OFFSET	drivers/emacps/xemacps_hw.h	163;"	d
+XEMACPS_MATCH2_OFFSET	drivers/emacps/xemacps_hw.h	164;"	d
+XEMACPS_MATCH3_OFFSET	drivers/emacps/xemacps_hw.h	165;"	d
+XEMACPS_MATCH4_OFFSET	drivers/emacps/xemacps_hw.h	166;"	d
+XEMACPS_MAX_FRAME_SIZE	drivers/emacps/xemacps.h	476;"	d
+XEMACPS_MAX_FRAME_SIZE	tiny_libc/include/os.h	34;"	d
+XEMACPS_MAX_HASH_BITS	drivers/emacps/xemacps_hw.h	122;"	d
+XEMACPS_MAX_MAC_ADDR	drivers/emacps/xemacps_hw.h	80;"	d
+XEMACPS_MAX_RXBD	drivers/emacps/xemacps_hw.h	119;"	d
+XEMACPS_MAX_TXBD	drivers/emacps/xemacps_hw.h	120;"	d
+XEMACPS_MAX_TYPE_ID	drivers/emacps/xemacps_hw.h	82;"	d
+XEMACPS_MAX_VLAN_FRAME_SIZE	drivers/emacps/xemacps.h	478;"	d
+XEMACPS_MAX_VLAN_FRAME_SIZE	tiny_libc/include/os.h	36;"	d
+XEMACPS_MAX_VLAN_FRAME_SIZE_JUMBO	drivers/emacps/xemacps.h	480;"	d
+XEMACPS_MAX_VLAN_FRAME_SIZE_JUMBO	tiny_libc/include/os.h	38;"	d
+XEMACPS_MDIO_DIV_DFT	drivers/emacps/xemacps.h	464;"	d
+XEMACPS_MSBBUF_RXQBASE_OFFSET	drivers/emacps/xemacps_hw.h	301;"	d
+XEMACPS_MSBBUF_TXQBASE_OFFSET	drivers/emacps/xemacps_hw.h	299;"	d
+XEMACPS_MTU	drivers/emacps/xemacps.h	471;"	d
+XEMACPS_MTU	tiny_libc/include/os.h	29;"	d
+XEMACPS_MTU_JUMBO	drivers/emacps/xemacps.h	472;"	d
+XEMACPS_MTU_JUMBO	tiny_libc/include/os.h	30;"	d
+XEMACPS_MULTICAST_OPTION	drivers/emacps/xemacps.h	421;"	d
+XEMACPS_MULTICOLLCNT_OFFSET	drivers/emacps/xemacps_hw.h	208;"	d
+XEMACPS_NWCFG_1000_MASK	drivers/emacps/xemacps_hw.h	363;"	d
+XEMACPS_NWCFG_100_MASK	drivers/emacps/xemacps_hw.h	377;"	d
+XEMACPS_NWCFG_1536RXEN_MASK	drivers/emacps/xemacps_hw.h	364;"	d
+XEMACPS_NWCFG_BADPREAMBEN_MASK	drivers/emacps/xemacps_hw.h	339;"	d
+XEMACPS_NWCFG_BCASTDI_MASK	drivers/emacps/xemacps_hw.h	370;"	d
+XEMACPS_NWCFG_COPYALLEN_MASK	drivers/emacps/xemacps_hw.h	372;"	d
+XEMACPS_NWCFG_DWIDTH_64_MASK	drivers/emacps/xemacps_hw.h	350;"	d
+XEMACPS_NWCFG_FCSIGNORE_MASK	drivers/emacps/xemacps_hw.h	343;"	d
+XEMACPS_NWCFG_FCSREM_MASK	drivers/emacps/xemacps_hw.h	353;"	d
+XEMACPS_NWCFG_FDEN_MASK	drivers/emacps/xemacps_hw.h	376;"	d
+XEMACPS_NWCFG_HDRXEN_MASK	drivers/emacps/xemacps_hw.h	345;"	d
+XEMACPS_NWCFG_IPDSTRETCH_MASK	drivers/emacps/xemacps_hw.h	341;"	d
+XEMACPS_NWCFG_JUMBO_MASK	drivers/emacps/xemacps_hw.h	373;"	d
+XEMACPS_NWCFG_LENERRDSCRD_MASK	drivers/emacps/xemacps_hw.h	355;"	d
+XEMACPS_NWCFG_MCASTHASHEN_MASK	drivers/emacps/xemacps_hw.h	368;"	d
+XEMACPS_NWCFG_MDCCLKDIV_MASK	drivers/emacps/xemacps_hw.h	352;"	d
+XEMACPS_NWCFG_MDC_SHIFT_MASK	drivers/emacps/xemacps_hw.h	351;"	d
+XEMACPS_NWCFG_NVLANDISC_MASK	drivers/emacps/xemacps_hw.h	374;"	d
+XEMACPS_NWCFG_OFFSET	drivers/emacps/xemacps_hw.h	129;"	d
+XEMACPS_NWCFG_PAUSECOPYDI_MASK	drivers/emacps/xemacps_hw.h	348;"	d
+XEMACPS_NWCFG_PAUSEEN_MASK	drivers/emacps/xemacps_hw.h	358;"	d
+XEMACPS_NWCFG_PCSSEL_MASK	drivers/emacps/xemacps_hw.h	362;"	d
+XEMACPS_NWCFG_RESET_MASK	drivers/emacps/xemacps_hw.h	378;"	d
+XEMACPS_NWCFG_RETRYTESTEN_MASK	drivers/emacps/xemacps_hw.h	359;"	d
+XEMACPS_NWCFG_RXCHKSUMEN_MASK	drivers/emacps/xemacps_hw.h	346;"	d
+XEMACPS_NWCFG_RXOFFS_MASK	drivers/emacps/xemacps_hw.h	357;"	d
+XEMACPS_NWCFG_SGMIIEN_MASK	drivers/emacps/xemacps_hw.h	342;"	d
+XEMACPS_NWCFG_UCASTHASHEN_MASK	drivers/emacps/xemacps_hw.h	366;"	d
+XEMACPS_NWCFG_XTADDMACHEN_MASK	drivers/emacps/xemacps_hw.h	360;"	d
+XEMACPS_NWCTRL_FLUSH_DPRAM_MASK	drivers/emacps/xemacps_hw.h	315;"	d
+XEMACPS_NWCTRL_HALTTX_MASK	drivers/emacps/xemacps_hw.h	320;"	d
+XEMACPS_NWCTRL_LOOPEN_MASK	drivers/emacps/xemacps_hw.h	333;"	d
+XEMACPS_NWCTRL_MDEN_MASK	drivers/emacps/xemacps_hw.h	330;"	d
+XEMACPS_NWCTRL_OFFSET	drivers/emacps/xemacps_hw.h	128;"	d
+XEMACPS_NWCTRL_PAUSETX_MASK	drivers/emacps/xemacps_hw.h	319;"	d
+XEMACPS_NWCTRL_RXEN_MASK	drivers/emacps/xemacps_hw.h	332;"	d
+XEMACPS_NWCTRL_STARTTX_MASK	drivers/emacps/xemacps_hw.h	322;"	d
+XEMACPS_NWCTRL_STATCLR_MASK	drivers/emacps/xemacps_hw.h	328;"	d
+XEMACPS_NWCTRL_STATINC_MASK	drivers/emacps/xemacps_hw.h	326;"	d
+XEMACPS_NWCTRL_STATWEN_MASK	drivers/emacps/xemacps_hw.h	324;"	d
+XEMACPS_NWCTRL_TXEN_MASK	drivers/emacps/xemacps_hw.h	331;"	d
+XEMACPS_NWCTRL_ZEROPAUSETX_MASK	drivers/emacps/xemacps_hw.h	317;"	d
+XEMACPS_NWSR_MDIOIDLE_MASK	drivers/emacps/xemacps_hw.h	384;"	d
+XEMACPS_NWSR_MDIO_MASK	drivers/emacps/xemacps_hw.h	385;"	d
+XEMACPS_NWSR_OFFSET	drivers/emacps/xemacps_hw.h	130;"	d
+XEMACPS_OCTRXH_OFFSET	drivers/emacps/xemacps_hw.h	221;"	d
+XEMACPS_OCTRXL_OFFSET	drivers/emacps/xemacps_hw.h	219;"	d
+XEMACPS_OCTTXH_OFFSET	drivers/emacps/xemacps_hw.h	172;"	d
+XEMACPS_OCTTXL_OFFSET	drivers/emacps/xemacps_hw.h	170;"	d
+XEMACPS_PHYMNTNC_ADDR_MASK	drivers/emacps/xemacps_hw.h	516;"	d
+XEMACPS_PHYMNTNC_DATA_MASK	drivers/emacps/xemacps_hw.h	518;"	d
+XEMACPS_PHYMNTNC_OFFSET	drivers/emacps/xemacps_hw.h	143;"	d
+XEMACPS_PHYMNTNC_OP_MASK	drivers/emacps/xemacps_hw.h	513;"	d
+XEMACPS_PHYMNTNC_OP_R_MASK	drivers/emacps/xemacps_hw.h	514;"	d
+XEMACPS_PHYMNTNC_OP_W_MASK	drivers/emacps/xemacps_hw.h	515;"	d
+XEMACPS_PHYMNTNC_PHAD_SHFT_MSK	drivers/emacps/xemacps_hw.h	519;"	d
+XEMACPS_PHYMNTNC_PREG_SHFT_MSK	drivers/emacps/xemacps_hw.h	520;"	d
+XEMACPS_PHYMNTNC_REG_MASK	drivers/emacps/xemacps_hw.h	517;"	d
+XEMACPS_PHYS_TO_VIRT	drivers/emacps/xemacps_bdring.c	85;"	d	file:
+XEMACPS_PROMISC_OPTION	drivers/emacps/xemacps.h	375;"	d
+XEMACPS_PTPP_RXNANOSEC_OFFSET	drivers/emacps/xemacps_hw.h	290;"	d
+XEMACPS_PTPP_RXSEC_OFFSET	drivers/emacps/xemacps_hw.h	288;"	d
+XEMACPS_PTPP_TXNANOSEC_OFFSET	drivers/emacps/xemacps_hw.h	286;"	d
+XEMACPS_PTPP_TXSEC_OFFSET	drivers/emacps/xemacps_hw.h	284;"	d
+XEMACPS_PTP_RXNANOSEC_OFFSET	drivers/emacps/xemacps_hw.h	282;"	d
+XEMACPS_PTP_RXSEC_OFFSET	drivers/emacps/xemacps_hw.h	280;"	d
+XEMACPS_PTP_TXNANOSEC_OFFSET	drivers/emacps/xemacps_hw.h	278;"	d
+XEMACPS_PTP_TXSEC_OFFSET	drivers/emacps/xemacps_hw.h	276;"	d
+XEMACPS_RECEIVER_ENABLE_OPTION	drivers/emacps/xemacps.h	413;"	d
+XEMACPS_RECV	drivers/emacps/xemacps_hw.h	99;"	d
+XEMACPS_RING_SEEKAHEAD	drivers/emacps/xemacps_bdring.c	115;"	d	file:
+XEMACPS_RING_SEEKBACK	drivers/emacps/xemacps_bdring.c	143;"	d	file:
+XEMACPS_RX1024CNT_OFFSET	drivers/emacps/xemacps_hw.h	242;"	d
+XEMACPS_RX128CNT_OFFSET	drivers/emacps/xemacps_hw.h	236;"	d
+XEMACPS_RX1519CNT_OFFSET	drivers/emacps/xemacps_hw.h	244;"	d
+XEMACPS_RX256CNT_OFFSET	drivers/emacps/xemacps_hw.h	238;"	d
+XEMACPS_RX512CNT_OFFSET	drivers/emacps/xemacps_hw.h	240;"	d
+XEMACPS_RX64CNT_OFFSET	drivers/emacps/xemacps_hw.h	232;"	d
+XEMACPS_RX65CNT_OFFSET	drivers/emacps/xemacps_hw.h	234;"	d
+XEMACPS_RXALIGNCNT_OFFSET	drivers/emacps/xemacps_hw.h	257;"	d
+XEMACPS_RXBROADCNT_OFFSET	drivers/emacps/xemacps_hw.h	226;"	d
+XEMACPS_RXBUF_ADD_MASK	drivers/emacps/xemacps_hw.h	594;"	d
+XEMACPS_RXBUF_AMATCH_MASK	drivers/emacps/xemacps_hw.h	579;"	d
+XEMACPS_RXBUF_BCAST_MASK	drivers/emacps/xemacps_hw.h	575;"	d
+XEMACPS_RXBUF_CFI_MASK	drivers/emacps/xemacps_hw.h	586;"	d
+XEMACPS_RXBUF_EOF_MASK	drivers/emacps/xemacps_hw.h	587;"	d
+XEMACPS_RXBUF_EXH_MASK	drivers/emacps/xemacps_hw.h	578;"	d
+XEMACPS_RXBUF_IDFOUND_MASK	drivers/emacps/xemacps_hw.h	581;"	d
+XEMACPS_RXBUF_IDMATCH_MASK	drivers/emacps/xemacps_hw.h	582;"	d
+XEMACPS_RXBUF_LEN_JUMBO_MASK	drivers/emacps/xemacps_hw.h	590;"	d
+XEMACPS_RXBUF_LEN_MASK	drivers/emacps/xemacps_hw.h	589;"	d
+XEMACPS_RXBUF_MULTIHASH_MASK	drivers/emacps/xemacps_hw.h	576;"	d
+XEMACPS_RXBUF_NEW_MASK	drivers/emacps/xemacps_hw.h	593;"	d
+XEMACPS_RXBUF_PRI_MASK	drivers/emacps/xemacps_hw.h	584;"	d
+XEMACPS_RXBUF_SOF_MASK	drivers/emacps/xemacps_hw.h	588;"	d
+XEMACPS_RXBUF_UNIHASH_MASK	drivers/emacps/xemacps_hw.h	577;"	d
+XEMACPS_RXBUF_VLAN_MASK	drivers/emacps/xemacps_hw.h	583;"	d
+XEMACPS_RXBUF_VPRI_MASK	drivers/emacps/xemacps_hw.h	585;"	d
+XEMACPS_RXBUF_WRAP_MASK	drivers/emacps/xemacps_hw.h	592;"	d
+XEMACPS_RXCNT_OFFSET	drivers/emacps/xemacps_hw.h	224;"	d
+XEMACPS_RXFCSCNT_OFFSET	drivers/emacps/xemacps_hw.h	252;"	d
+XEMACPS_RXIPCCNT_OFFSET	drivers/emacps/xemacps_hw.h	261;"	d
+XEMACPS_RXJABCNT_OFFSET	drivers/emacps/xemacps_hw.h	250;"	d
+XEMACPS_RXLENGTHCNT_OFFSET	drivers/emacps/xemacps_hw.h	254;"	d
+XEMACPS_RXMULTICNT_OFFSET	drivers/emacps/xemacps_hw.h	228;"	d
+XEMACPS_RXORCNT_OFFSET	drivers/emacps/xemacps_hw.h	260;"	d
+XEMACPS_RXOVRCNT_OFFSET	drivers/emacps/xemacps_hw.h	248;"	d
+XEMACPS_RXPAUSECNT_OFFSET	drivers/emacps/xemacps_hw.h	230;"	d
+XEMACPS_RXPAUSE_OFFSET	drivers/emacps/xemacps_hw.h	144;"	d
+XEMACPS_RXQ1BASE_OFFSET	drivers/emacps/xemacps_hw.h	297;"	d
+XEMACPS_RXQBASE_OFFSET	drivers/emacps/xemacps_hw.h	134;"	d
+XEMACPS_RXRESERRCNT_OFFSET	drivers/emacps/xemacps_hw.h	258;"	d
+XEMACPS_RXSR_BUFFNA_MASK	drivers/emacps/xemacps_hw.h	447;"	d
+XEMACPS_RXSR_ERROR_MASK	drivers/emacps/xemacps_hw.h	449;"	d
+XEMACPS_RXSR_FRAMERX_MASK	drivers/emacps/xemacps_hw.h	446;"	d
+XEMACPS_RXSR_HRESPNOK_MASK	drivers/emacps/xemacps_hw.h	444;"	d
+XEMACPS_RXSR_OFFSET	drivers/emacps/xemacps_hw.h	136;"	d
+XEMACPS_RXSR_RXOVR_MASK	drivers/emacps/xemacps_hw.h	445;"	d
+XEMACPS_RXSYMBCNT_OFFSET	drivers/emacps/xemacps_hw.h	256;"	d
+XEMACPS_RXTCPCCNT_OFFSET	drivers/emacps/xemacps_hw.h	263;"	d
+XEMACPS_RXUDPCCNT_OFFSET	drivers/emacps/xemacps_hw.h	265;"	d
+XEMACPS_RXUNDRCNT_OFFSET	drivers/emacps/xemacps_hw.h	246;"	d
+XEMACPS_RXWATERMARK_OFFSET	drivers/emacps/xemacps_hw.h	149;"	d
+XEMACPS_RXWM_HIGH_MASK	drivers/emacps/xemacps_hw.h	526;"	d
+XEMACPS_RXWM_LOW_MASK	drivers/emacps/xemacps_hw.h	527;"	d
+XEMACPS_RXWM_LOW_SHFT_MSK	drivers/emacps/xemacps_hw.h	528;"	d
+XEMACPS_RX_BUF_ALIGNMENT	drivers/emacps/xemacps_hw.h	87;"	d
+XEMACPS_RX_BUF_SIZE	drivers/emacps/xemacps_hw.h	112;"	d
+XEMACPS_RX_BUF_SIZE_JUMBO	drivers/emacps/xemacps_hw.h	114;"	d
+XEMACPS_RX_BUF_UNIT	drivers/emacps/xemacps_hw.h	116;"	d
+XEMACPS_RX_CHKSUM_ENABLE_OPTION	drivers/emacps/xemacps.h	425;"	d
+XEMACPS_SEND	drivers/emacps/xemacps_hw.h	98;"	d
+XEMACPS_SGMII_ENABLE_OPTION	drivers/emacps/xemacps.h	434;"	d
+XEMACPS_SINGLE_BURST	drivers/emacps/xemacps.h	485;"	d
+XEMACPS_SNGLCOLLCNT_OFFSET	drivers/emacps/xemacps_hw.h	206;"	d
+XEMACPS_STRETCH_OFFSET	drivers/emacps/xemacps_hw.h	168;"	d
+XEMACPS_TRANSMITTER_ENABLE_OPTION	drivers/emacps/xemacps.h	409;"	d
+XEMACPS_TRL_SIZE	drivers/emacps/xemacps.h	475;"	d
+XEMACPS_TRL_SIZE	tiny_libc/include/os.h	33;"	d
+XEMACPS_TX1024CNT_OFFSET	drivers/emacps/xemacps_hw.h	197;"	d
+XEMACPS_TX128CNT_OFFSET	drivers/emacps/xemacps_hw.h	188;"	d
+XEMACPS_TX1519CNT_OFFSET	drivers/emacps/xemacps_hw.h	200;"	d
+XEMACPS_TX256CNT_OFFSET	drivers/emacps/xemacps_hw.h	191;"	d
+XEMACPS_TX512CNT_OFFSET	drivers/emacps/xemacps_hw.h	194;"	d
+XEMACPS_TX64CNT_OFFSET	drivers/emacps/xemacps_hw.h	183;"	d
+XEMACPS_TX65CNT_OFFSET	drivers/emacps/xemacps_hw.h	185;"	d
+XEMACPS_TXBCCNT_OFFSET	drivers/emacps/xemacps_hw.h	177;"	d
+XEMACPS_TXBUF_EXH_MASK	drivers/emacps/xemacps_hw.h	555;"	d
+XEMACPS_TXBUF_LAST_MASK	drivers/emacps/xemacps_hw.h	558;"	d
+XEMACPS_TXBUF_LEN_MASK	drivers/emacps/xemacps_hw.h	559;"	d
+XEMACPS_TXBUF_NOCRC_MASK	drivers/emacps/xemacps_hw.h	557;"	d
+XEMACPS_TXBUF_RETRY_MASK	drivers/emacps/xemacps_hw.h	553;"	d
+XEMACPS_TXBUF_TCP_MASK	drivers/emacps/xemacps_hw.h	556;"	d
+XEMACPS_TXBUF_URUN_MASK	drivers/emacps/xemacps_hw.h	554;"	d
+XEMACPS_TXBUF_USED_MASK	drivers/emacps/xemacps_hw.h	551;"	d
+XEMACPS_TXBUF_WRAP_MASK	drivers/emacps/xemacps_hw.h	552;"	d
+XEMACPS_TXCNT_OFFSET	drivers/emacps/xemacps_hw.h	175;"	d
+XEMACPS_TXCSENSECNT_OFFSET	drivers/emacps/xemacps_hw.h	216;"	d
+XEMACPS_TXDEFERCNT_OFFSET	drivers/emacps/xemacps_hw.h	214;"	d
+XEMACPS_TXMCCNT_OFFSET	drivers/emacps/xemacps_hw.h	179;"	d
+XEMACPS_TXPAUSECNT_OFFSET	drivers/emacps/xemacps_hw.h	181;"	d
+XEMACPS_TXPAUSE_OFFSET	drivers/emacps/xemacps_hw.h	145;"	d
+XEMACPS_TXQ1BASE_OFFSET	drivers/emacps/xemacps_hw.h	295;"	d
+XEMACPS_TXQBASE_OFFSET	drivers/emacps/xemacps_hw.h	135;"	d
+XEMACPS_TXSR_BUFEXH_MASK	drivers/emacps/xemacps_hw.h	425;"	d
+XEMACPS_TXSR_ERROR_MASK	drivers/emacps/xemacps_hw.h	432;"	d
+XEMACPS_TXSR_FRAMERX_MASK	drivers/emacps/xemacps_hw.h	429;"	d
+XEMACPS_TXSR_HRESPNOK_MASK	drivers/emacps/xemacps_hw.h	422;"	d
+XEMACPS_TXSR_OFFSET	drivers/emacps/xemacps_hw.h	133;"	d
+XEMACPS_TXSR_RXOVR_MASK	drivers/emacps/xemacps_hw.h	428;"	d
+XEMACPS_TXSR_TXCOMPL_MASK	drivers/emacps/xemacps_hw.h	424;"	d
+XEMACPS_TXSR_TXGO_MASK	drivers/emacps/xemacps_hw.h	427;"	d
+XEMACPS_TXSR_URUN_MASK	drivers/emacps/xemacps_hw.h	423;"	d
+XEMACPS_TXSR_USEDREAD_MASK	drivers/emacps/xemacps_hw.h	430;"	d
+XEMACPS_TXURUNCNT_OFFSET	drivers/emacps/xemacps_hw.h	203;"	d
+XEMACPS_TX_CHKSUM_ENABLE_OPTION	drivers/emacps/xemacps.h	429;"	d
+XEMACPS_VIRT_TO_PHYS	drivers/emacps/xemacps_bdring.c	97;"	d	file:
+XEMACPS_VLAN_OPTION	drivers/emacps/xemacps.h	383;"	d
+XEmacPs	drivers/emacps/xemacps.h	/^} XEmacPs;$/;"	t	typeref:struct:XEmacPs_Instance
+XEmacPsClkSetup	drivers/emacps/xemacps_main.c	/^void XEmacPsClkSetup(XEmacPs *EmacPsInstancePtr)$/;"	f
+XEmacPsDetectPHY	drivers/emacps/xemacps_example_util.c	/^u32 XEmacPsDetectPHY(XEmacPs * EmacPsInstancePtr)$/;"	f
+XEmacPsErrorHandler	drivers/emacps/xemacps_main.c	/^static void XEmacPsErrorHandler(void *Callback, u8 Direction, u32 ErrorWord)$/;"	f	file:
+XEmacPsRecvHandler	drivers/emacps/xemacps_main.c	/^static void XEmacPsRecvHandler(void *Callback)$/;"	f	file:
+XEmacPsSendHandler	drivers/emacps/xemacps_main.c	/^static void XEmacPsSendHandler(void *Callback)$/;"	f	file:
+XEmacPs_Bd	drivers/emacps/xemacps_bd.h	/^typedef u32 XEmacPs_Bd[XEMACPS_BD_NUM_WORDS];$/;"	t
+XEmacPs_BdClear	drivers/emacps/xemacps_bd.h	117;"	d
+XEmacPs_BdClearLast	drivers/emacps/xemacps_bd.h	383;"	d
+XEmacPs_BdClearRxNew	drivers/emacps/xemacps_bd.h	491;"	d
+XEmacPs_BdClearRxWrap	drivers/emacps/xemacps_bd.h	400;"	d
+XEmacPs_BdClearTxNoCRC	drivers/emacps/xemacps_bd.h	656;"	d
+XEmacPs_BdClearTxUsed	drivers/emacps/xemacps_bd.h	546;"	d
+XEmacPs_BdGetBufAddr	drivers/emacps/xemacps_bd.h	259;"	d
+XEmacPs_BdGetBufAddr	drivers/emacps/xemacps_bd.h	263;"	d
+XEmacPs_BdGetLength	drivers/emacps/xemacps_bd.h	307;"	d
+XEmacPs_BdGetStatus	drivers/emacps/xemacps_bd.h	243;"	d
+XEmacPs_BdIsLast	drivers/emacps/xemacps_bd.h	348;"	d
+XEmacPs_BdIsRxBcast	drivers/emacps/xemacps_bd.h	673;"	d
+XEmacPs_BdIsRxCFI	drivers/emacps/xemacps_bd.h	755;"	d
+XEmacPs_BdIsRxEOF	drivers/emacps/xemacps_bd.h	771;"	d
+XEmacPs_BdIsRxMultiHash	drivers/emacps/xemacps_bd.h	689;"	d
+XEmacPs_BdIsRxNew	drivers/emacps/xemacps_bd.h	508;"	d
+XEmacPs_BdIsRxPri	drivers/emacps/xemacps_bd.h	738;"	d
+XEmacPs_BdIsRxSOF	drivers/emacps/xemacps_bd.h	787;"	d
+XEmacPs_BdIsRxUniHash	drivers/emacps/xemacps_bd.h	705;"	d
+XEmacPs_BdIsRxVlan	drivers/emacps/xemacps_bd.h	721;"	d
+XEmacPs_BdIsRxWrap	drivers/emacps/xemacps_bd.h	437;"	d
+XEmacPs_BdIsTxExh	drivers/emacps/xemacps_bd.h	613;"	d
+XEmacPs_BdIsTxRetry	drivers/emacps/xemacps_bd.h	579;"	d
+XEmacPs_BdIsTxUrun	drivers/emacps/xemacps_bd.h	596;"	d
+XEmacPs_BdIsTxUsed	drivers/emacps/xemacps_bd.h	563;"	d
+XEmacPs_BdIsTxWrap	drivers/emacps/xemacps_bd.h	472;"	d
+XEmacPs_BdRead	drivers/emacps/xemacps_bd.h	135;"	d
+XEmacPs_BdRing	drivers/emacps/xemacps_bdring.h	/^} XEmacPs_BdRing;$/;"	t	typeref:struct:__anon3
+XEmacPs_BdRingAlloc	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingAlloc(XEmacPs_BdRing * RingPtr, u32 NumBd,$/;"	f
+XEmacPs_BdRingCheck	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingCheck(XEmacPs_BdRing * RingPtr, u8 Direction)$/;"	f
+XEmacPs_BdRingClone	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingClone(XEmacPs_BdRing * RingPtr, XEmacPs_Bd * SrcBdPtr,$/;"	f
+XEmacPs_BdRingCntCalc	drivers/emacps/xemacps_bdring.h	110;"	d
+XEmacPs_BdRingCreate	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingCreate(XEmacPs_BdRing * RingPtr, UINTPTR PhysAddr,$/;"	f
+XEmacPs_BdRingFree	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingFree(XEmacPs_BdRing * RingPtr, u32 NumBd,$/;"	f
+XEmacPs_BdRingFromHwRx	drivers/emacps/xemacps_bdring.c	/^u32 XEmacPs_BdRingFromHwRx(XEmacPs_BdRing * RingPtr, u32 BdLimit,$/;"	f
+XEmacPs_BdRingFromHwTx	drivers/emacps/xemacps_bdring.c	/^u32 XEmacPs_BdRingFromHwTx(XEmacPs_BdRing * RingPtr, u32 BdLimit,$/;"	f
+XEmacPs_BdRingGetCnt	drivers/emacps/xemacps_bdring.h	148;"	d
+XEmacPs_BdRingGetFreeCnt	drivers/emacps/xemacps_bdring.h	164;"	d
+XEmacPs_BdRingMemCalc	drivers/emacps/xemacps_bdring.h	131;"	d
+XEmacPs_BdRingNext	drivers/emacps/xemacps_bdring.h	181;"	d
+XEmacPs_BdRingPrev	drivers/emacps/xemacps_bdring.h	201;"	d
+XEmacPs_BdRingPtrReset	drivers/emacps/xemacps_bdring.c	/^void XEmacPs_BdRingPtrReset(XEmacPs_BdRing * RingPtr, void *virtaddrloc)$/;"	f
+XEmacPs_BdRingToHw	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingToHw($/;"	f
+XEmacPs_BdRingUnAlloc	drivers/emacps/xemacps_bdring.c	/^LONG XEmacPs_BdRingUnAlloc(XEmacPs_BdRing * RingPtr, u32 NumBd,$/;"	f
+XEmacPs_BdSetAddressRx	drivers/emacps/xemacps_bd.h	197;"	d
+XEmacPs_BdSetAddressRx	drivers/emacps/xemacps_bd.h	204;"	d
+XEmacPs_BdSetAddressTx	drivers/emacps/xemacps_bd.h	171;"	d
+XEmacPs_BdSetAddressTx	drivers/emacps/xemacps_bd.h	177;"	d
+XEmacPs_BdSetLast	drivers/emacps/xemacps_bd.h	365;"	d
+XEmacPs_BdSetLength	drivers/emacps/xemacps_bd.h	281;"	d
+XEmacPs_BdSetRxWrap	drivers/emacps/xemacps_bdring.c	/^void XEmacPs_BdSetRxWrap(UINTPTR BdPtr)$/;"	f
+XEmacPs_BdSetStatus	drivers/emacps/xemacps_bd.h	223;"	d
+XEmacPs_BdSetTxNoCRC	drivers/emacps/xemacps_bd.h	634;"	d
+XEmacPs_BdSetTxUsed	drivers/emacps/xemacps_bd.h	527;"	d
+XEmacPs_BdSetTxWrap	drivers/emacps/xemacps_bdring.c	/^static void XEmacPs_BdSetTxWrap(UINTPTR BdPtr)$/;"	f	file:
+XEmacPs_BdWrite	drivers/emacps/xemacps_bd.h	154;"	d
+XEmacPs_CfgInitialize	drivers/emacps/xemacps.c	/^LONG XEmacPs_CfgInitialize(XEmacPs *InstancePtr, XEmacPs_Config * CfgPtr,$/;"	f
+XEmacPs_ClearHash	drivers/emacps/xemacps_control.c	/^void XEmacPs_ClearHash(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_ClearOptions	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_ClearOptions(XEmacPs *InstancePtr, u32 Options)$/;"	f
+XEmacPs_Config	drivers/emacps/xemacps.h	/^} XEmacPs_Config;$/;"	t	typeref:struct:__anon6
+XEmacPs_DMABLengthUpdate	drivers/emacps/xemacps_control.c	/^void XEmacPs_DMABLengthUpdate(XEmacPs *InstancePtr, s32 BLength)$/;"	f
+XEmacPs_DeleteHash	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_DeleteHash(XEmacPs *InstancePtr, void *AddressPtr)$/;"	f
+XEmacPs_ErrHandler	drivers/emacps/xemacps.h	/^typedef void (*XEmacPs_ErrHandler) (void *CallBackRef, u8 Direction,$/;"	t
+XEmacPs_GetHash	drivers/emacps/xemacps_control.c	/^void XEmacPs_GetHash(XEmacPs *InstancePtr, void *AddressPtr)$/;"	f
+XEmacPs_GetMacAddress	drivers/emacps/xemacps_control.c	/^void XEmacPs_GetMacAddress($/;"	f
+XEmacPs_GetOperatingSpeed	drivers/emacps/xemacps_control.c	/^u16 XEmacPs_GetOperatingSpeed(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_GetOptions	drivers/emacps/xemacps_control.c	/^u32 XEmacPs_GetOptions(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_GetRXWatermark	drivers/emacps/xemacps.h	792;"	d
+XEmacPs_GetRxFrameSize	drivers/emacps/xemacps_bd.h	331;"	d
+XEmacPs_GetRxRing	drivers/emacps/xemacps.h	598;"	d
+XEmacPs_GetTxRing	drivers/emacps/xemacps.h	582;"	d
+XEmacPs_Handler	drivers/emacps/xemacps.h	/^typedef void (*XEmacPs_Handler) (void *CallBackRef);$/;"	t
+XEmacPs_In32	drivers/emacps/xemacps_hw.h	604;"	d
+XEmacPs_Instance	drivers/emacps/xemacps.h	/^typedef struct XEmacPs_Instance {$/;"	s
+XEmacPs_IntDisable	drivers/emacps/xemacps.h	637;"	d
+XEmacPs_IntEnable	drivers/emacps/xemacps.h	616;"	d
+XEmacPs_IntQ1Disable	drivers/emacps/xemacps.h	679;"	d
+XEmacPs_IntQ1Enable	drivers/emacps/xemacps.h	658;"	d
+XEmacPs_IntrHandler	drivers/emacps/xemacps_intr.c	/^void XEmacPs_IntrHandler(void *XEmacPsPtr)$/;"	f
+XEmacPs_IsRxCsum	drivers/emacps/xemacps.h	722;"	d
+XEmacPs_IsTxCsum	drivers/emacps/xemacps.h	745;"	d
+XEmacPs_MdcDiv	drivers/emacps/xemacps_hw.h	/^} XEmacPs_MdcDiv;$/;"	t	typeref:enum:__anon5
+XEmacPs_Out32	drivers/emacps/xemacps_hw.h	605;"	d
+XEmacPs_PhyRead	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_PhyRead($/;"	f
+XEmacPs_PhyWrite	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_PhyWrite($/;"	f
+XEmacPs_ReadReg	drivers/emacps/xemacps_hw.h	623;"	d
+XEmacPs_Reset	drivers/emacps/xemacps.c	/^void XEmacPs_Reset(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_ResetHw	drivers/emacps/xemacps_hw.c	/^void XEmacPs_ResetHw(u32 BaseAddr)$/;"	f
+XEmacPs_SendPausePacket	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_SendPausePacket(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_SetHandler	drivers/emacps/xemacps_intr.c	/^LONG XEmacPs_SetHandler(XEmacPs *InstancePtr, u32 HandlerType,$/;"	f
+XEmacPs_SetHash	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_SetHash(XEmacPs *InstancePtr, void *AddressPtr)$/;"	f
+XEmacPs_SetMacAddress	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_SetMacAddress($/;"	f
+XEmacPs_SetMdioDivisor	drivers/emacps/xemacps_control.c	/^void XEmacPs_SetMdioDivisor($/;"	f
+XEmacPs_SetOperatingSpeed	drivers/emacps/xemacps_control.c	/^void XEmacPs_SetOperatingSpeed(XEmacPs *InstancePtr, u16 Speed)$/;"	f
+XEmacPs_SetOptions	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_SetOptions(XEmacPs *InstancePtr, u32 Options)$/;"	f
+XEmacPs_SetQueuePtr	drivers/emacps/xemacps.c	/^void XEmacPs_SetQueuePtr(XEmacPs *InstancePtr, UINTPTR QPtr, u8 QueueNum,$/;"	f
+XEmacPs_SetRXWatermark	drivers/emacps/xemacps.h	772;"	d
+XEmacPs_SetTypeIdCheck	drivers/emacps/xemacps_control.c	/^LONG XEmacPs_SetTypeIdCheck($/;"	f
+XEmacPs_Start	drivers/emacps/xemacps.c	/^void XEmacPs_Start(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_Stop	drivers/emacps/xemacps.c	/^void XEmacPs_Stop(XEmacPs *InstancePtr)$/;"	f
+XEmacPs_StubHandler	drivers/emacps/xemacps.c	/^void XEmacPs_StubHandler(void)$/;"	f
+XEmacPs_Transmit	drivers/emacps/xemacps.h	698;"	d
+XEmacPs_WriteReg	drivers/emacps/xemacps_hw.h	644;"	d
+XExceptionHandler	drivers/emacps/xbasic_types.h	/^typedef void (*XExceptionHandler) (void *InstancePtr);$/;"	t
+XExceptionHandler	drivers/emacps/xil_types.h	/^typedef void (*XExceptionHandler) (void *InstancePtr);$/;"	t
+XFALSE	drivers/emacps/xbasic_types.h	90;"	d
+XIL_COMPONENT_IS_READY	drivers/emacps/xil_types.h	76;"	d
+XIL_COMPONENT_IS_STARTED	drivers/emacps/xil_types.h	80;"	d
+XIL_TYPES_H	drivers/emacps/xil_types.h	54;"	d
+XIL_UTILS_H	drivers/emacps/xil_utils.h	2;"	d
+XInterruptHandler	drivers/emacps/xbasic_types.h	/^typedef void (*XInterruptHandler) (void *InstancePtr);$/;"	t
+XInterruptHandler	drivers/emacps/xil_types.h	/^typedef void (*XInterruptHandler) (void *InstancePtr);$/;"	t
+XNULL	drivers/emacps/xbasic_types.h	88;"	d
+XPARAMETERS_H	drivers/emacps/xparameters.h	49;"	d
+XPAR_EMAC_0_BASEADDR	drivers/emacps/xparameters.h	73;"	d
+XPAR_EMAC_0_DEVICE_ID	drivers/emacps/xparameters.h	72;"	d
+XPAR_EMAC_0_DMA_PRESENT	drivers/emacps/xparameters.h	74;"	d
+XPAR_EMAC_0_ERR_COUNT_EXIST	drivers/emacps/xparameters.h	75;"	d
+XPAR_EMAC_0_MII_EXIST	drivers/emacps/xparameters.h	76;"	d
+XPAR_PS7_ETHERNET_0_DEVICE_ID	drivers/emacps/xparameters.h	80;"	d
+XPAR_PS7_ETHERNET_0_ENET_CLK_FREQ_HZ	drivers/emacps/xparameters.h	81;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_1000MBPS_DIV0	drivers/emacps/xparameters.h	82;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_1000MBPS_DIV1	drivers/emacps/xparameters.h	83;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_100MBPS_DIV0	drivers/emacps/xparameters.h	84;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_100MBPS_DIV1	drivers/emacps/xparameters.h	85;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_10MBPS_DIV0	drivers/emacps/xparameters.h	86;"	d
+XPAR_PS7_ETHERNET_0_ENET_SLCR_10MBPS_DIV1	drivers/emacps/xparameters.h	87;"	d
+XPAR_PS7_ETHERNET_0_ENET_TSU_CLK_FREQ_HZ	drivers/emacps/xparameters.h	88;"	d
+XPAR_XEMACPS_NUM_INSTANCES	drivers/emacps/xparameters.h	70;"	d
+XPS_SYS_CTRL_BASEADDR	drivers/emacps/xemacps_main.c	/^uintptr_t XPS_SYS_CTRL_BASEADDR;$/;"	v
+XSTATUS_H	drivers/emacps/xstatus.h	42;"	d
+XST_ATMC_ERROR_COUNT_MAX	drivers/emacps/xstatus.h	253;"	d
+XST_BUFFER_TOO_SMALL	drivers/emacps/xstatus.h	77;"	d
+XST_DATA_LOST	drivers/emacps/xstatus.h	102;"	d
+XST_DEVICE_BLOCK_NOT_FOUND	drivers/emacps/xstatus.h	59;"	d
+XST_DEVICE_BUSY	drivers/emacps/xstatus.h	93;"	d
+XST_DEVICE_IS_STARTED	drivers/emacps/xstatus.h	61;"	d
+XST_DEVICE_IS_STOPPED	drivers/emacps/xstatus.h	62;"	d
+XST_DEVICE_NOT_FOUND	drivers/emacps/xstatus.h	58;"	d
+XST_DMA_BD_ERROR	drivers/emacps/xstatus.h	165;"	d
+XST_DMA_ERROR	drivers/emacps/xstatus.h	70;"	d
+XST_DMA_RESET_REGISTER_ERROR	drivers/emacps/xstatus.h	131;"	d
+XST_DMA_SG_BD_LOCKED	drivers/emacps/xstatus.h	141;"	d
+XST_DMA_SG_BD_NOT_COMMITTED	drivers/emacps/xstatus.h	156;"	d
+XST_DMA_SG_COUNT_EXCEEDED	drivers/emacps/xstatus.h	148;"	d
+XST_DMA_SG_IS_STARTED	drivers/emacps/xstatus.h	136;"	d
+XST_DMA_SG_IS_STOPPED	drivers/emacps/xstatus.h	137;"	d
+XST_DMA_SG_LIST_EMPTY	drivers/emacps/xstatus.h	133;"	d
+XST_DMA_SG_LIST_ERROR	drivers/emacps/xstatus.h	163;"	d
+XST_DMA_SG_LIST_EXISTS	drivers/emacps/xstatus.h	152;"	d
+XST_DMA_SG_LIST_FULL	drivers/emacps/xstatus.h	138;"	d
+XST_DMA_SG_NOTHING_TO_COMMIT	drivers/emacps/xstatus.h	145;"	d
+XST_DMA_SG_NO_DATA	drivers/emacps/xstatus.h	159;"	d
+XST_DMA_SG_NO_LIST	drivers/emacps/xstatus.h	154;"	d
+XST_DMA_TRANSFER_ERROR	drivers/emacps/xstatus.h	129;"	d
+XST_EMAC_COLLISION_ERROR	drivers/emacps/xstatus.h	211;"	d
+XST_EMAC_MEMORY_ALLOC_ERROR	drivers/emacps/xstatus.h	206;"	d
+XST_EMAC_MEMORY_SIZE_ERROR	drivers/emacps/xstatus.h	203;"	d
+XST_EMAC_MII_BUSY	drivers/emacps/xstatus.h	208;"	d
+XST_EMAC_MII_READ_ERROR	drivers/emacps/xstatus.h	207;"	d
+XST_EMAC_OUT_OF_BUFFERS	drivers/emacps/xstatus.h	209;"	d
+XST_EMAC_PARSE_ERROR	drivers/emacps/xstatus.h	210;"	d
+XST_ERROR_COUNT_MAX	drivers/emacps/xstatus.h	94;"	d
+XST_FAILURE	drivers/emacps/xstatus.h	57;"	d
+XST_FIFO_ERROR	drivers/emacps/xstatus.h	63;"	d
+XST_FIFO_NO_ROOM	drivers/emacps/xstatus.h	75;"	d
+XST_FLASH_ADDRESS_ERROR	drivers/emacps/xstatus.h	277;"	d
+XST_FLASH_ALIGNMENT_ERROR	drivers/emacps/xstatus.h	279;"	d
+XST_FLASH_BLOCKING_CALL_ERROR	drivers/emacps/xstatus.h	280;"	d
+XST_FLASH_BUSY	drivers/emacps/xstatus.h	260;"	d
+XST_FLASH_CFI_QUERY_ERROR	drivers/emacps/xstatus.h	284;"	d
+XST_FLASH_ERASE_SUSPENDED	drivers/emacps/xstatus.h	267;"	d
+XST_FLASH_ERROR	drivers/emacps/xstatus.h	263;"	d
+XST_FLASH_NOT_SUPPORTED	drivers/emacps/xstatus.h	273;"	d
+XST_FLASH_PART_NOT_SUPPORTED	drivers/emacps/xstatus.h	271;"	d
+XST_FLASH_READY	drivers/emacps/xstatus.h	262;"	d
+XST_FLASH_TIMEOUT_ERROR	drivers/emacps/xstatus.h	275;"	d
+XST_FLASH_TOO_MANY_REGIONS	drivers/emacps/xstatus.h	274;"	d
+XST_FLASH_WRITE_SUSPENDED	drivers/emacps/xstatus.h	269;"	d
+XST_FR_BUF_LOCKED	drivers/emacps/xstatus.h	361;"	d
+XST_FR_NO_BUF	drivers/emacps/xstatus.h	362;"	d
+XST_FR_TX_BUSY	drivers/emacps/xstatus.h	360;"	d
+XST_FR_TX_ERROR	drivers/emacps/xstatus.h	359;"	d
+XST_HWICAP_WRITE_DONE	drivers/emacps/xstatus.h	374;"	d
+XST_IIC_ADR_READBACK_ERROR	drivers/emacps/xstatus.h	245;"	d
+XST_IIC_BUS_BUSY	drivers/emacps/xstatus.h	228;"	d
+XST_IIC_CR_READBACK_ERROR	drivers/emacps/xstatus.h	239;"	d
+XST_IIC_DRR_READBACK_ERROR	drivers/emacps/xstatus.h	243;"	d
+XST_IIC_DTR_READBACK_ERROR	drivers/emacps/xstatus.h	241;"	d
+XST_IIC_GENERAL_CALL_ADDRESS	drivers/emacps/xstatus.h	229;"	d
+XST_IIC_NOT_SLAVE	drivers/emacps/xstatus.h	249;"	d
+XST_IIC_RX_FIFO_REG_RESET_ERROR	drivers/emacps/xstatus.h	235;"	d
+XST_IIC_SELFTEST_FAILED	drivers/emacps/xstatus.h	227;"	d
+XST_IIC_STAND_REG_RESET_ERROR	drivers/emacps/xstatus.h	231;"	d
+XST_IIC_TBA_READBACK_ERROR	drivers/emacps/xstatus.h	247;"	d
+XST_IIC_TBA_REG_RESET_ERROR	drivers/emacps/xstatus.h	237;"	d
+XST_IIC_TX_FIFO_REG_RESET_ERROR	drivers/emacps/xstatus.h	233;"	d
+XST_INTC_CONNECT_ERROR	drivers/emacps/xstatus.h	327;"	d
+XST_INTC_FAIL_SELFTEST	drivers/emacps/xstatus.h	326;"	d
+XST_INVALID_PARAM	drivers/emacps/xstatus.h	82;"	d
+XST_INVALID_VERSION	drivers/emacps/xstatus.h	60;"	d
+XST_IPIF_DEVICE_ACK_ERROR	drivers/emacps/xstatus.h	177;"	d
+XST_IPIF_DEVICE_ENABLE_ERROR	drivers/emacps/xstatus.h	180;"	d
+XST_IPIF_DEVICE_ID_ERROR	drivers/emacps/xstatus.h	194;"	d
+XST_IPIF_DEVICE_PENDING_ERROR	drivers/emacps/xstatus.h	191;"	d
+XST_IPIF_DEVICE_STATUS_ERROR	drivers/emacps/xstatus.h	174;"	d
+XST_IPIF_ERROR	drivers/emacps/xstatus.h	197;"	d
+XST_IPIF_IP_ACK_ERROR	drivers/emacps/xstatus.h	186;"	d
+XST_IPIF_IP_ENABLE_ERROR	drivers/emacps/xstatus.h	188;"	d
+XST_IPIF_IP_STATUS_ERROR	drivers/emacps/xstatus.h	183;"	d
+XST_IPIF_REG_WIDTH_ERROR	drivers/emacps/xstatus.h	170;"	d
+XST_IPIF_RESET_REGISTER_ERROR	drivers/emacps/xstatus.h	172;"	d
+XST_IS_STARTED	drivers/emacps/xstatus.h	96;"	d
+XST_IS_STOPPED	drivers/emacps/xstatus.h	99;"	d
+XST_LOOPBACK_ERROR	drivers/emacps/xstatus.h	86;"	d
+XST_MEMTEST_FAILED	drivers/emacps/xstatus.h	111;"	d
+XST_NAND_ADDRESS_ERROR	drivers/emacps/xstatus.h	400;"	d
+XST_NAND_ALIGNMENT_ERROR	drivers/emacps/xstatus.h	403;"	d
+XST_NAND_BUSY	drivers/emacps/xstatus.h	383;"	d
+XST_NAND_CACHE_ERROR	drivers/emacps/xstatus.h	408;"	d
+XST_NAND_ERROR	drivers/emacps/xstatus.h	388;"	d
+XST_NAND_OPT_NOT_SUPPORTED	drivers/emacps/xstatus.h	394;"	d
+XST_NAND_PARAM_PAGE_ERROR	drivers/emacps/xstatus.h	405;"	d
+XST_NAND_PART_NOT_SUPPORTED	drivers/emacps/xstatus.h	391;"	d
+XST_NAND_READY	drivers/emacps/xstatus.h	386;"	d
+XST_NAND_TIMEOUT_ERROR	drivers/emacps/xstatus.h	396;"	d
+XST_NAND_WRITE_PROTECTED	drivers/emacps/xstatus.h	411;"	d
+XST_NOT_ENABLED	drivers/emacps/xstatus.h	105;"	d
+XST_NOT_INTERRUPT	drivers/emacps/xstatus.h	91;"	d
+XST_NOT_POLLED	drivers/emacps/xstatus.h	73;"	d
+XST_NOT_SGDMA	drivers/emacps/xstatus.h	84;"	d
+XST_NO_CALLBACK	drivers/emacps/xstatus.h	87;"	d
+XST_NO_DATA	drivers/emacps/xstatus.h	79;"	d
+XST_NO_FEATURE	drivers/emacps/xstatus.h	89;"	d
+XST_OPB2PLB_FAIL_SELFTEST	drivers/emacps/xstatus.h	347;"	d
+XST_OPBARB_INVALID_PRIORITY	drivers/emacps/xstatus.h	306;"	d
+XST_OPBARB_NOT_FIXED_PRIORITY	drivers/emacps/xstatus.h	319;"	d
+XST_OPBARB_NOT_SUSPENDED	drivers/emacps/xstatus.h	311;"	d
+XST_OPBARB_PARK_NOT_ENABLED	drivers/emacps/xstatus.h	316;"	d
+XST_PCI_INVALID_ADDRESS	drivers/emacps/xstatus.h	355;"	d
+XST_PFIFO_BAD_REG_VALUE	drivers/emacps/xstatus.h	120;"	d
+XST_PFIFO_DEADLOCK	drivers/emacps/xstatus.h	123;"	d
+XST_PFIFO_ERROR	drivers/emacps/xstatus.h	122;"	d
+XST_PFIFO_LACK_OF_DATA	drivers/emacps/xstatus.h	118;"	d
+XST_PFIFO_NO_ROOM	drivers/emacps/xstatus.h	119;"	d
+XST_PLB2OPB_FAIL_SELFTEST	drivers/emacps/xstatus.h	343;"	d
+XST_PLBARB_FAIL_SELFTEST	drivers/emacps/xstatus.h	339;"	d
+XST_RECV_ERROR	drivers/emacps/xstatus.h	103;"	d
+XST_REGISTER_ERROR	drivers/emacps/xstatus.h	80;"	d
+XST_RESET_ERROR	drivers/emacps/xstatus.h	68;"	d
+XST_SEND_ERROR	drivers/emacps/xstatus.h	104;"	d
+XST_SPI_COMMAND_ERROR	drivers/emacps/xstatus.h	302;"	d
+XST_SPI_MODE_FAULT	drivers/emacps/xstatus.h	288;"	d
+XST_SPI_NOT_MASTER	drivers/emacps/xstatus.h	295;"	d
+XST_SPI_NO_SLAVE	drivers/emacps/xstatus.h	292;"	d
+XST_SPI_RECEIVE_NOT_EMPTY	drivers/emacps/xstatus.h	300;"	d
+XST_SPI_RECEIVE_OVERRUN	drivers/emacps/xstatus.h	291;"	d
+XST_SPI_SLAVE_MODE	drivers/emacps/xstatus.h	299;"	d
+XST_SPI_SLAVE_MODE_FAULT	drivers/emacps/xstatus.h	298;"	d
+XST_SPI_SLAVE_ONLY	drivers/emacps/xstatus.h	296;"	d
+XST_SPI_TOO_MANY_SLAVES	drivers/emacps/xstatus.h	293;"	d
+XST_SPI_TRANSFER_DONE	drivers/emacps/xstatus.h	289;"	d
+XST_SPI_TRANSMIT_UNDERRUN	drivers/emacps/xstatus.h	290;"	d
+XST_SUCCESS	drivers/emacps/xstatus.h	56;"	d
+XST_SYSACE_NO_LOCK	drivers/emacps/xstatus.h	351;"	d
+XST_TMRCTR_TIMER_FAILED	drivers/emacps/xstatus.h	331;"	d
+XST_UART	drivers/emacps/xstatus.h	215;"	d
+XST_UART_BAUD_ERROR	drivers/emacps/xstatus.h	221;"	d
+XST_UART_BAUD_RANGE	drivers/emacps/xstatus.h	222;"	d
+XST_UART_CONFIG_ERROR	drivers/emacps/xstatus.h	219;"	d
+XST_UART_INIT_ERROR	drivers/emacps/xstatus.h	217;"	d
+XST_UART_START_ERROR	drivers/emacps/xstatus.h	218;"	d
+XST_UART_TEST_FAIL	drivers/emacps/xstatus.h	220;"	d
+XST_USB_ALREADY_CONFIGURED	drivers/emacps/xstatus.h	366;"	d
+XST_USB_BUF_ALIGN_ERROR	drivers/emacps/xstatus.h	367;"	d
+XST_USB_BUF_TOO_BIG	drivers/emacps/xstatus.h	369;"	d
+XST_USB_NO_BUF	drivers/emacps/xstatus.h	370;"	d
+XST_USB_NO_DESC_AVAILABLE	drivers/emacps/xstatus.h	368;"	d
+XST_VDMA_MISMATCH_ERROR	drivers/emacps/xstatus.h	379;"	d
+XST_WDTTB_TIMER_FAILED	drivers/emacps/xstatus.h	335;"	d
+XStatus	drivers/emacps/xstatus.h	/^typedef int XStatus;$/;"	t
+XTEST_FAILED	drivers/emacps/xbasic_types.h	100;"	d
+XTEST_PASSED	drivers/emacps/xbasic_types.h	99;"	d
+XTRUE	drivers/emacps/xbasic_types.h	89;"	d
+XUINT64_LSW	drivers/emacps/xbasic_types.h	192;"	d
+XUINT64_LSW	drivers/emacps/xil_types.h	126;"	d
+XUINT64_MSW	drivers/emacps/xbasic_types.h	179;"	d
+XUINT64_MSW	drivers/emacps/xil_types.h	115;"	d
+Xboolean	drivers/emacps/xbasic_types.h	/^typedef uint32_t	Xboolean;	\/**< boolean (XTRUE or XFALSE) *\/$/;"	t
+Xfloat32	drivers/emacps/xbasic_types.h	/^typedef float		Xfloat32;	\/**< 32-bit floating point *\/$/;"	t
+Xfloat64	drivers/emacps/xbasic_types.h	/^typedef double		Xfloat64;	\/**< 64-bit double precision FP *\/$/;"	t
+Xil_AssertNonvoid	drivers/emacps/xil_utils.h	71;"	d
+Xil_AssertVoid	drivers/emacps/xil_utils.h	72;"	d
+Xil_AssertVoidAlways	drivers/emacps/xil_utils.h	73;"	d
+Xil_DCacheFlushRange	drivers/emacps/xil_utils.h	/^static inline void Xil_DCacheFlushRange(uintptr_t addr, size_t size)$/;"	f
+Xil_DCacheInvalidateRange	drivers/emacps/xil_utils.h	/^static inline void  Xil_DCacheInvalidateRange(uintptr_t addr, size_t size)$/;"	f
+Xil_EndianSwap16	drivers/emacps/xil_utils.h	/^static inline u16 Xil_EndianSwap16(u16 Data)$/;"	f
+Xil_EndianSwap32	drivers/emacps/xil_utils.h	/^static inline u32 Xil_EndianSwap32(u32 Data)$/;"	f
+Xil_In32	drivers/emacps/xil_utils.h	/^static inline uint32_t Xil_In32(uintptr_t addr)$/;"	f
+Xil_Out32	drivers/emacps/xil_utils.h	/^static inline void Xil_Out32(uintptr_t addr, uint32_t val)$/;"	f
+Xint16	drivers/emacps/xbasic_types.h	/^typedef int16_t		Xint16;		\/**< signed 16-bit *\/$/;"	t
+Xint32	drivers/emacps/xbasic_types.h	/^typedef int32_t		Xint32;		\/**< signed 32-bit *\/$/;"	t
+Xint8	drivers/emacps/xbasic_types.h	/^typedef int8_t		Xint8;		\/**< signed 8-bit *\/$/;"	t
+Xuint16	drivers/emacps/xbasic_types.h	/^typedef uint16_t	Xuint16;	\/**< unsigned 16-bit *\/$/;"	t
+Xuint32	drivers/emacps/xbasic_types.h	/^typedef uint32_t	Xuint32;	\/**< unsigned 32-bit *\/$/;"	t
+Xuint64	drivers/emacps/xbasic_types.h	/^} Xuint64;$/;"	t	typeref:struct:__anon4
+Xuint64	drivers/emacps/xil_types.h	/^} Xuint64;$/;"	t	typeref:struct:__anon7
+Xuint8	drivers/emacps/xbasic_types.h	/^typedef uint8_t	Xuint8;		\/**< unsigned 8-bit *\/$/;"	t
+_ALLOCA_H	tiny_libc/include/alloca.h	19;"	d
+_ASM_RISCV_SBI_H	arch/riscv/include/sbi.h	15;"	d
+_ASM_SBI_DEF_H	arch/riscv/include/asm/sbidef.h	2;"	d
+_ELF_H	include/os/elf.h	2;"	d
+_PAGE_ACCESSED	arch/riscv/include/pgtable.h	86;"	d
+_PAGE_ACCESSED_OFFSET	arch/riscv/include/pgtable.h	78;"	d
+_PAGE_DIRTY	arch/riscv/include/pgtable.h	88;"	d
+_PAGE_EXEC	arch/riscv/include/pgtable.h	83;"	d
+_PAGE_GLOBAL	arch/riscv/include/pgtable.h	85;"	d
+_PAGE_PFN_SHIFT	arch/riscv/include/pgtable.h	91;"	d
+_PAGE_PRESENT	arch/riscv/include/pgtable.h	80;"	d
+_PAGE_READ	arch/riscv/include/pgtable.h	81;"	d
+_PAGE_SOFT	arch/riscv/include/pgtable.h	89;"	d
+_PAGE_USER	arch/riscv/include/pgtable.h	84;"	d
+_PAGE_WRITE	arch/riscv/include/pgtable.h	82;"	d
+_SBI_ASM_H	arch/riscv/include/asm/sbiasm.h	2;"	d
+_STDINT_H_	tiny_libc/include/stdint.h	26;"	d
+_VA_LIST	include/stdarg.h	31;"	d
+_VA_LIST	tiny_libc/include/stdarg.h	31;"	d
+__ASM_STR	drivers/plic.c	98;"	d	file:
+__GNUC_VA_LIST	include/stdarg.h	48;"	d
+__GNUC_VA_LIST	tiny_libc/include/stdarg.h	48;"	d
+__INT64_C	tiny_libc/include/stdint.h	63;"	d
+__STDARG_H	include/stdarg.h	27;"	d
+__STDARG_H	tiny_libc/include/stdarg.h	27;"	d
+__UINT64_C	tiny_libc/include/stdint.h	64;"	d
+__XUINT64__	drivers/emacps/xil_types.h	98;"	d
+__arch_getl	arch/riscv/include/io.h	12;"	d
+__arch_putl	arch/riscv/include/io.h	13;"	d
+__gnuc_va_list	include/stdarg.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
+__gnuc_va_list	tiny_libc/include/stdarg.h	/^typedef __builtin_va_list __gnuc_va_list;$/;"	t
+__iormb	arch/riscv/include/io.h	16;"	d
+__iowmb	arch/riscv/include/io.h	17;"	d
+__need_size_t	tiny_libc/include/alloca.h	21;"	d
+__va_copy	include/stdarg.h	40;"	d
+__va_copy	tiny_libc/include/stdarg.h	40;"	d
+_elf___test_consensus_elf	kernel/user_programs.c	/^unsigned char _elf___test_consensus_elf[] = {$/;"	v
+_elf___test_echo_elf	kernel/user_programs.c	/^unsigned char _elf___test_echo_elf[] = {$/;"	v
+_elf___test_fly_elf	kernel/user_programs.c	/^unsigned char _elf___test_fly_elf[] = {$/;"	v
+_elf___test_recv_elf	kernel/user_programs.c	/^unsigned char _elf___test_recv_elf[] = {$/;"	v
+_elf___test_rw_elf	kernel/user_programs.c	/^unsigned char _elf___test_rw_elf[] = {$/;"	v
+_elf___test_send_elf	kernel/user_programs.c	/^unsigned char _elf___test_send_elf[] = {$/;"	v
+_elf___test_swap_elf	kernel/user_programs.c	/^unsigned char _elf___test_swap_elf[] = {$/;"	v
+_elf___test_test_shell_elf	kernel/user_programs.c	/^unsigned char _elf___test_test_shell_elf[] = {$/;"	v
+_elf_main	payload.c	/^unsigned char _elf_main[] = {$/;"	v
+_length___test_consensus_elf	include/user_programs.h	/^int _length___test_consensus_elf;$/;"	v
+_length___test_consensus_elf	kernel/user_programs.c	/^int _length___test_consensus_elf = 65184;$/;"	v
+_length___test_echo_elf	include/user_programs.h	/^int _length___test_echo_elf;$/;"	v
+_length___test_echo_elf	kernel/user_programs.c	/^int _length___test_echo_elf = 53184;$/;"	v
+_length___test_fly_elf	include/user_programs.h	/^int _length___test_fly_elf;$/;"	v
+_length___test_fly_elf	kernel/user_programs.c	/^int _length___test_fly_elf = 45056;$/;"	v
+_length___test_recv_elf	include/user_programs.h	/^int _length___test_recv_elf;$/;"	v
+_length___test_recv_elf	kernel/user_programs.c	/^int _length___test_recv_elf = 46056;$/;"	v
+_length___test_rw_elf	include/user_programs.h	/^int _length___test_rw_elf;$/;"	v
+_length___test_rw_elf	kernel/user_programs.c	/^int _length___test_rw_elf = 49568;$/;"	v
+_length___test_send_elf	include/user_programs.h	/^int _length___test_send_elf;$/;"	v
+_length___test_send_elf	kernel/user_programs.c	/^int _length___test_send_elf = 49344;$/;"	v
+_length___test_swap_elf	include/user_programs.h	/^int _length___test_swap_elf;$/;"	v
+_length___test_swap_elf	kernel/user_programs.c	/^int _length___test_swap_elf = 45080;$/;"	v
+_length___test_test_shell_elf	include/user_programs.h	/^int _length___test_test_shell_elf;$/;"	v
+_length___test_test_shell_elf	kernel/user_programs.c	/^int _length___test_test_shell_elf = 54160;$/;"	v
+_length_main	payload.c	/^int _length_main = 743640;$/;"	v
+_list_add	include/os/list.h	/^static inline void _list_add($/;"	f
+_list_del	include/os/list.h	/^static inline void _list_del(list_node_t *prev, list_node_t *next)$/;"	f
+_panic	include/assert.h	/^static inline void _panic(const char* file_name,int lineno, const char* func_name)$/;"	f
+_panic	tiny_libc/include/assert.h	/^static inline void _panic(const char* file_name,int lineno, const char* func_name)$/;"	f
+_putc	libs/printk.c	/^static int _putc(int ch, struct mini_buff *b)$/;"	f	file:
+_putc	tiny_libc/printf.c	/^static int _putc(int ch, struct mini_buff *b)$/;"	f	file:
+_puts	libs/printk.c	/^static int _puts(char *s, unsigned int len, struct mini_buff *b)$/;"	f	file:
+_puts	tiny_libc/printf.c	/^static int _puts(char *s, unsigned int len, struct mini_buff *b)$/;"	f	file:
+_vprint	libs/printk.c	/^static int _vprint(const char* fmt, va_list _va,$/;"	f	file:
+add_task	test/test_project3/test_multicore.c	/^void add_task(struct TestMultiCoreArg* args)$/;"	f
+add_tick	include/os/sched.h	/^    uint64_t add_tick;$/;"	m	struct:pcb
+allocPage	kernel/mm/mm.c	/^ptr_t allocPage()$/;"	f
+alloc_page	arch/riscv/kernel/boot.c	/^uintptr_t alloc_page()$/;"	f
+alloc_page_helper	kernel/mm/mm.c	/^uintptr_t alloc_page_helper(uintptr_t va, uintptr_t pgdir, int mode)$/;"	f
+alloc_page_helper_user	init/main.c	/^uintptr_t alloc_page_helper_user(uintptr_t kva, uintptr_t pgdir)$/;"	f
+alloca	tiny_libc/include/alloca.h	25;"	d
+alloca	tiny_libc/include/alloca.h	31;"	d
+append_record	tools/generateMapping.c	/^void append_record(Records* self, char* varname)$/;"	f
+arg_num	test/test_shell.c	/^    int arg_num;$/;"	m	struct:__anon2	file:
+assert	include/assert.h	13;"	d
+assert	tiny_libc/include/assert.h	13;"	d
+atoi	tiny_libc/string.c	/^int atoi(char *s)$/;"	f
+atol	tiny_libc/atol.c	/^long int atol(const char* str)$/;"	f
+atomic_cmpxchg	arch/riscv/include/atomic.h	/^static inline uint32_t atomic_cmpxchg(uint32_t old_val, uint32_t new_val, ptr_t mem_addr)$/;"	f
+atomic_cmpxchg_d	arch/riscv/include/atomic.h	/^static inline uint64_t atomic_cmpxchg_d(uint64_t old_val, uint64_t new_val, ptr_t mem_addr)$/;"	f
+atomic_compare_exchange	tiny_libc/include/stdatomic.h	/^static inline int atomic_compare_exchange(volatile void* obj, int expected, int desired)$/;"	f
+atomic_compare_exchange_d	tiny_libc/include/stdatomic.h	/^static inline long atomic_compare_exchange_d(volatile void* obj, long expected, long desired)$/;"	f
+atomic_exchange	tiny_libc/include/stdatomic.h	/^static inline int atomic_exchange(volatile void* obj, int desired)$/;"	f
+atomic_exchange_d	tiny_libc/include/stdatomic.h	/^static inline long atomic_exchange_d(volatile void* obj, long desired)$/;"	f
+atomic_int	tiny_libc/include/stdatomic.h	/^typedef volatile int atomic_int;$/;"	t
+atomic_load	tiny_libc/include/stdatomic.h	/^static inline uint32_t atomic_load(volatile uint32_t* obj)$/;"	f
+atomic_load_d	tiny_libc/include/stdatomic.h	/^static inline uint64_t atomic_load_d(volatile uint64_t* obj)$/;"	f
+atomic_long	tiny_libc/include/stdatomic.h	/^typedef volatile long atomic_long;$/;"	t
+atomic_swap	arch/riscv/include/atomic.h	/^static inline uint32_t atomic_swap(uint32_t val, ptr_t mem_addr)$/;"	f
+atomic_swap_d	arch/riscv/include/atomic.h	/^static inline uint64_t atomic_swap_d(uint64_t val, ptr_t mem_addr)$/;"	f
+atomic_uint	tiny_libc/include/stdatomic.h	/^typedef volatile unsigned int atomic_uint;$/;"	t
+atomic_uint32_t	tiny_libc/include/stdatomic.h	/^typedef volatile uint32_t atomic_uint32_t;$/;"	t
+atomic_uint64_t	tiny_libc/include/stdatomic.h	/^typedef volatile uint64_t atomic_uint64_t;$/;"	t
+atomic_ulong	tiny_libc/include/stdatomic.h	/^typedef volatile unsigned long atomic_ulong;$/;"	t
+atsd	include/os/mm.h	/^    int atsd;$/;"	m	struct:__anon9
+available	test/echo.c	/^    atomic_long available;$/;"	m	struct:echo_shm_vars	file:
+barrier	test/consensus.c	/^    mthread_barrier_t barrier;$/;"	m	struct:consensus_vars	file:
+barrier	test/test_project3/test_barrier.c	/^static mthread_barrier_t barrier;$/;"	v	file:
+barrier_t	include/os/lock.h	/^typedef sem_t barrier_t;$/;"	t
+barrier_task	test/test_project3/test_barrier.c	/^void barrier_task(int print_location)$/;"	f
+barrier_wait	tiny_libc/syscall.c	/^void barrier_wait(int id, int count)$/;"	f
+bd_space	drivers/emacps/xemacps_main.c	/^u8 bd_space[0x200000] __attribute__((aligned(0x200000)));$/;"	v
+bid	kernel/irq/irq.c	/^int bid = 10000;$/;"	v
+binsem_t	include/os/lock.h	/^typedef sem_t binsem_t;$/;"	t
+binsemget	tiny_libc/syscall.c	/^int binsemget(int key)$/;"	f
+binsemop	tiny_libc/syscall.c	/^int binsemop(int binsem_id, int op)$/;"	f
+blank	test/fly.c	/^static char blank[] = {"                   "};$/;"	v	file:
+block	include/os/mm.h	/^    int block;$/;"	m	struct:__anon9
+block_queue	include/os/futex.h	/^    list_head block_queue;$/;"	m	struct:futex_node
+block_queue	include/os/lock.h	/^    list_head block_queue;$/;"	m	struct:mutex_lock
+block_queue	include/os/lock.h	/^    list_head block_queue;$/;"	m	struct:sem
+bool	drivers/plic.c	/^typedef int bool;$/;"	t	file:
+bool	tiny_libc/include/stdbool.h	/^typedef int bool;$/;"	t
+boot_kernel	arch/riscv/kernel/boot.c	/^int boot_kernel(unsigned long mhartid, uintptr_t riscv_dtb)$/;"	f
+buffer	include/os/lock.h	/^    char buffer[MSG_MAX_SIZE];$/;"	m	struct:mailbox
+buffer	libs/printk.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+buffer	tiny_libc/printf.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+buffer0	test/send-s.c	/^uint32_t buffer0[256] = {$/;"	v
+buffer0	test/send.c	/^uint32_t buffer0[256] = {$/;"	v
+buffer1	test/send-s.c	/^uint32_t buffer1[256] = {$/;"	v
+buffer1	test/send.c	/^uint32_t buffer1[256] = {$/;"	v
+buffer2	test/send-s.c	/^uint32_t buffer2[256] = {$/;"	v
+buffer2	test/send.c	/^uint32_t buffer2[256] = {$/;"	v
+buffer3	test/send-s.c	/^uint32_t buffer3[256] = {$/;"	v
+buffer3	test/send.c	/^uint32_t buffer3[256] = {$/;"	v
+buffer_len	libs/printk.c	/^    unsigned int buffer_len;$/;"	m	struct:mini_buff	file:
+buffer_len	tiny_libc/printf.c	/^    unsigned int buffer_len;$/;"	m	struct:mini_buff	file:
+bzero	tiny_libc/string.c	/^void bzero(void *dest, uint32_t len) { memset(dest, 0, len); }$/;"	f
+callback_func	include/os/time.h	/^    TimerCallback callback_func;$/;"	m	struct:timer
+cancel_id_mapping	init/main.c	/^void cancel_id_mapping()$/;"	f
+capicity	tools/generateMapping.c	/^    int capicity;$/;"	m	struct:Records	file:
+cc_task	test/test_project3/test_sanguo.c	/^static struct task_info cc_task = {(uintptr_t)&CaoCao, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+char8	drivers/emacps/xil_types.h	/^typedef char char8;$/;"	t
+check_duplicate	tools/generateMapping.c	/^int check_duplicate(Records* self, const char* str)$/;"	f
+check_page_helper	kernel/mm/mm.c	/^uintptr_t check_page_helper(uintptr_t va, uintptr_t pgdir)$/;"	f
+cited	include/os/lock.h	/^    int  cited;$/;"	m	struct:mailbox
+clear_bss	arch/riscv/crt0.S	/^clear_bss:$/;"	l
+clear_bss_done	arch/riscv/crt0.S	/^clear_bss_done:$/;"	l
+clear_pgdir	arch/riscv/include/pgtable.h	/^static inline void clear_pgdir(uintptr_t pgdir_addr)$/;"	f
+clock	tiny_libc/time.c	/^clock_t clock()$/;"	f
+clock_block	kernel/irq/irq.c	/^void clock_block(pcb_t *pcb)$/;"	f
+clock_t	tiny_libc/include/time.h	/^typedef uint64_t clock_t;$/;"	t
+clock_unblock	kernel/irq/irq.c	/^int clock_unblock(pcb_t *pcb, uintptr_t va)$/;"	f
+cmd_table	test/test_shell.c	/^} cmd_table [] = {$/;"	v	typeref:struct:__anon2	file:
+cond	arch/riscv/kernel/trap.S	/^cond:$/;"	l
+cond_t	include/os/lock.h	/^typedef sem_t cond_t;$/;"	t
+condition	test/test_project3/test_condition.c	/^static mthread_cond_t condition;$/;"	v	file:
+consensus	test/consensus.c	/^    atomic_long consensus;$/;"	m	struct:consensus_vars	file:
+consensus_vars	test/consensus.c	/^typedef struct consensus_vars {$/;"	s	file:
+consensus_vars_t	test/consensus.c	/^} consensus_vars_t;$/;"	t	typeref:struct:consensus_vars	file:
+consumer_task	test/test_project3/test_condition.c	/^void consumer_task(int print_location)$/;"	f
+copy	arch/riscv/boot/bootblock.S	/^copy:$/;"	l
+count	tiny_libc/include/mthread.h	/^    int count;$/;"	m	struct:mthread_barrier
+create_image	tools/createimage.c	/^static void create_image(int nfiles, char *files[])$/;"	f	file:
+csr_clear	drivers/plic.c	107;"	d	file:
+csr_set	drivers/plic.c	99;"	d	file:
+current_running	kernel/sched/sched.c	/^pcb_t ** volatile current_running;$/;"	v
+current_running_core0	init/main.c	/^pcb_t * volatile current_running_core0;$/;"	v
+current_running_core1	init/main.c	/^pcb_t * volatile current_running_core1;$/;"	v
+cursor_x	include/os/sched.h	/^    int cursor_x;$/;"	m	struct:pcb
+cursor_y	include/os/sched.h	/^    int cursor_y;$/;"	m	struct:pcb
+decide	test/consensus.c	/^pid_t decide(pid_t prev, pid_t mypid, atomic_long* consensus)$/;"	f
+dequeue	kernel/sched/sched.c	/^pcb_t *dequeue(list_head* queue)$/;"	f
+description	test/test_shell.c	/^    char *description;$/;"	m	struct:__anon2	file:
+directmap	arch/riscv/kernel/boot.c	/^uintptr_t directmap(uintptr_t kva, uintptr_t pgdir)$/;"	f
+disable_core1	arch/riscv/kernel/entry.S	/^disable_core1:$/;"	l
+disable_pre	arch/riscv/kernel/entry.S	/^disable_pre:$/;"	l
+disk2mem	kernel/irq/irq.c	/^void disk2mem(int block, int num, uintptr_t pa, uintptr_t va)$/;"	f
+dmb	arch/riscv/include/io.h	15;"	d
+do_block	kernel/sched/sched.c	/^void do_block(pcb_t *pcb_node, list_head *queue)$/;"	f
+do_enable	arch/riscv/kernel/entry.S	/^do_enable:$/;"	l
+do_exec	init/main.c	/^pid_t do_exec(const char *file_name, int argc, char* argv[], spawn_mode_t mode)$/;"	f
+do_exit	kernel/sched/sched.c	/^void do_exit()$/;"	f
+do_getpid	kernel/sched/sched.c	/^pid_t do_getpid()$/;"	f
+do_kill	kernel/sched/sched.c	/^int do_kill(pid_t pid)$/;"	f
+do_mutex_lock_acquire	kernel/locking/lock.c	/^void do_mutex_lock_acquire(mutex_lock_t *lock)$/;"	f
+do_mutex_lock_init	kernel/locking/lock.c	/^void do_mutex_lock_init(mutex_lock_t *lock)$/;"	f
+do_mutex_lock_release	kernel/locking/lock.c	/^void do_mutex_lock_release(mutex_lock_t *lock)$/;"	f
+do_net_irq_mode	drivers/net.c	/^void do_net_irq_mode(int mode)$/;"	f
+do_net_recv	drivers/net.c	/^long do_net_recv(uintptr_t addr, size_t length, int num_packet, size_t* frLength)$/;"	f
+do_net_send	drivers/net.c	/^void do_net_send(uintptr_t addr, size_t length)$/;"	f
+do_process_show	kernel/sched/sched.c	/^void do_process_show()$/;"	f
+do_scheduler	kernel/sched/sched.c	/^void do_scheduler(void)$/;"	f
+do_show_exec	init/main.c	/^void do_show_exec()$/;"	f
+do_sleep	kernel/sched/sched.c	/^void do_sleep(uint32_t sleep_time)$/;"	f
+do_unblock	kernel/sched/sched.c	/^void do_unblock(list_node_t *item)$/;"	f
+do_waitpid	kernel/sched/sched.c	/^int do_waitpid(pid_t pid)$/;"	f
+e_ehsize	include/os/elf.h	/^    Elf64_Half e_ehsize;$/;"	m	struct:elf64_hdr
+e_entry	include/os/elf.h	/^    Elf64_Addr e_entry; \/* Entry point virtual address *\/$/;"	m	struct:elf64_hdr
+e_flags	include/os/elf.h	/^    Elf64_Word e_flags;$/;"	m	struct:elf64_hdr
+e_ident	include/os/elf.h	/^    unsigned char e_ident[EI_NIDENT]; \/* ELF "magic number" *\/$/;"	m	struct:elf64_hdr
+e_machine	include/os/elf.h	/^    Elf64_Half e_machine;$/;"	m	struct:elf64_hdr
+e_phentsize	include/os/elf.h	/^    Elf64_Half e_phentsize;$/;"	m	struct:elf64_hdr
+e_phnum	include/os/elf.h	/^    Elf64_Half e_phnum;$/;"	m	struct:elf64_hdr
+e_phoff	include/os/elf.h	/^    Elf64_Off e_phoff;  \/* Program header table file offset *\/$/;"	m	struct:elf64_hdr
+e_shentsize	include/os/elf.h	/^    Elf64_Half e_shentsize;$/;"	m	struct:elf64_hdr
+e_shnum	include/os/elf.h	/^    Elf64_Half e_shnum;$/;"	m	struct:elf64_hdr
+e_shoff	include/os/elf.h	/^    Elf64_Off e_shoff;  \/* Section header table file offset *\/$/;"	m	struct:elf64_hdr
+e_shstrndx	include/os/elf.h	/^    Elf64_Half e_shstrndx;$/;"	m	struct:elf64_hdr
+e_type	include/os/elf.h	/^    Elf64_Half e_type;$/;"	m	struct:elf64_hdr
+e_version	include/os/elf.h	/^    Elf64_Word e_version;$/;"	m	struct:elf64_hdr
+echo_shm_vars	test/echo.c	/^typedef struct echo_shm_vars {$/;"	s	file:
+echo_shm_vars_t	test/echo.c	/^} echo_shm_vars_t;$/;"	t	typeref:struct:echo_shm_vars	file:
+elf64_hdr	include/os/elf.h	/^typedef struct elf64_hdr$/;"	s
+elf64_phdr	include/os/elf.h	/^typedef struct elf64_phdr$/;"	s
+elf_files	kernel/user_programs.c	/^ElfFile elf_files[8] = {$/;"	v
+empty_id	include/os/lock.h	/^    int  empty_id;$/;"	m	struct:mailbox
+enable_base	drivers/plic.c	/^	void		*enable_base;$/;"	m	struct:plic_handler	file:
+enable_core1	arch/riscv/kernel/entry.S	/^enable_core1:$/;"	l
+enable_pre	arch/riscv/kernel/entry.S	/^enable_pre:$/;"	l
+enable_vm	arch/riscv/kernel/boot.c	/^void enable_vm()$/;"	f
+enqueue	kernel/sched/sched.c	/^void enqueue(list_head* queue, pcb_t* item)$/;"	f
+enqueue_timer	kernel/sched/time.c	/^void enqueue_timer(list_head* queue, pcb_t* item)$/;"	f
+entry_point	include/os/sched.h	/^    ptr_t entry_point;$/;"	m	struct:task_info
+error	tools/createimage.c	/^static void error(char *fmt, ...)$/;"	f	file:
+error_syscall	init/main.c	/^void error_syscall(void){$/;"	f
+escaped_file_content	tools/elf2char.c	/^char *escaped_file_content(FILE *f, int *file_size)$/;"	f
+exc_table	kernel/irq/irq.c	/^handler_t exc_table[EXCC_COUNT];$/;"	v
+extend	tools/generateMapping.c	/^void extend(Records* self)$/;"	f
+extended	tools/createimage.c	/^    int extended;$/;"	m	struct:__anon1	file:
+f	Makefile	/^	dd if=\/dev\/zero of=image oflag=append conv=notrunc bs=512 count=65$/;"	m
+f	Makefile	/^	sudo dd if=image of=${DISK}2 conv=notrunc$/;"	m
+false	drivers/plic.c	26;"	d	file:
+false	tiny_libc/include/stdbool.h	10;"	d
+fetch_add	tiny_libc/include/stdatomic.h	/^static inline int fetch_add(volatile void* obj, int arg)$/;"	f
+fetch_sub	tiny_libc/include/stdatomic.h	/^static inline int fetch_sub(volatile void* obj, int arg)$/;"	f
+fifo_buffer	test/echo.c	/^    char fifo_buffer[FIFO_BUF_MAX];$/;"	m	struct:echo_shm_vars	file:
+file_content	include/user_programs.h	/^  unsigned char* file_content;$/;"	m	struct:ElfFile
+file_length	include/user_programs.h	/^  int* file_length;$/;"	m	struct:ElfFile
+file_name	include/user_programs.h	/^  char *file_name;$/;"	m	struct:ElfFile
+file_name_to_variable_name	tools/elf2char.c	/^char *file_name_to_variable_name(char *name)$/;"	f
+findnext	kernel/sched/sched.c	/^pcb_t *findnext(list_head *queue){$/;"	f
+findnext_core	kernel/sched/sched.c	/^pcb_t *findnext_core()$/;"	f
+findpid	init/main.c	/^int findpid()$/;"	f
+flush_icache_all	arch/riscv/include/pgtable.h	/^static inline void flush_icache_all(void)$/;"	f
+flush_tlb_all	arch/riscv/include/pgtable.h	/^static inline void flush_tlb_all(void)$/;"	f
+flush_tlb_page_all	arch/riscv/include/pgtable.h	/^static inline void flush_tlb_page_all(unsigned long addr)$/;"	f
+freePage	kernel/mm/mm.c	/^void freePage(ptr_t baseAddr)$/;"	f
+free_all_page	kernel/sched/sched.c	/^void free_all_page(pid_t pid)$/;"	f
+free_page_helper	kernel/mm/mm.c	/^uintptr_t free_page_helper(uintptr_t va, uintptr_t pgdir)$/;"	f
+from	test/test_project3/test_multicore.c	/^    int from;$/;"	m	struct:TestMultiCoreArg	file:
+full_id	include/os/lock.h	/^    int  full_id;$/;"	m	struct:mailbox
+func	test/test_shell.c	/^    function func;$/;"	m	struct:__anon2	file:
+function	test/test_shell.c	/^typedef void (*function)(void *arg0, void *arg1, void *arg2, void *arg3, void *arg4);$/;"	t	file:
+futex_bucket_t	include/os/futex.h	/^typedef list_head futex_bucket_t;$/;"	t
+futex_buckets	kernel/locking/futex.c	/^futex_bucket_t futex_buckets[FUTEX_BUCKETS];$/;"	v
+futex_hash	kernel/locking/futex.c	/^static int futex_hash(uint64_t x)$/;"	f	file:
+futex_key	include/os/futex.h	/^    futex_key_t futex_key;$/;"	m	struct:futex_node
+futex_key_t	include/os/futex.h	/^typedef uint64_t futex_key_t;$/;"	t
+futex_node	include/os/futex.h	/^typedef struct futex_node$/;"	s
+futex_node_t	include/os/futex.h	/^}futex_node_t;$/;"	t	typeref:struct:futex_node
+futex_wait	kernel/locking/futex.c	/^void futex_wait(volatile uint64_t *val_addr, uint64_t val)$/;"	f
+futex_wakeup	kernel/locking/futex.c	/^void futex_wakeup(volatile uint64_t *val_addr, int num_wakeup)$/;"	f
+get_attribute	arch/riscv/include/pgtable.h	/^static inline long get_attribute(PTE entry, uint64_t mask)$/;"	f
+get_elf_file	kernel/user_programs.c	/^int get_elf_file(const char *file_name, unsigned char **binary, int *length)$/;"	f
+get_kva_of	arch/riscv/include/pgtable.h	/^static inline uintptr_t get_kva_of(uintptr_t va, uintptr_t pgdir_va)$/;"	f
+get_node	kernel/locking/futex.c	/^static futex_node_t* get_node(volatile uint64_t *val_addr, int create)$/;"	f	file:
+get_pa	arch/riscv/include/pgtable.h	/^static inline uint64_t get_pa(PTE entry)$/;"	f
+get_pfn	arch/riscv/include/pgtable.h	/^static inline long get_pfn(PTE entry)$/;"	f
+get_ticks	kernel/sched/time.c	/^uint64_t get_ticks()$/;"	f
+get_time_base	kernel/sched/time.c	/^uint64_t get_time_base()$/;"	f
+get_timer	kernel/sched/time.c	/^uint64_t get_timer()$/;"	f
+getchar	tiny_libc/syscall.c	/^int getchar(){$/;"	f
+gethead_timer	kernel/sched/time.c	/^pcb_t *gethead_timer(list_head* queue)$/;"	f
+global_count	test/test_project3/test_semaphore.c	/^static int global_count = 0;$/;"	v	file:
+global_key	kernel/locking/lock.c	/^int global_key = 0;$/;"	v
+global_time	include/os/sched.h	/^int global_time;$/;"	v
+handle_inst_pagefault	kernel/irq/irq.c	/^void handle_inst_pagefault(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+handle_int	kernel/irq/irq.c	/^void handle_int(regs_context_t *regs, uint64_t interrupt, uint64_t cause)$/;"	f
+handle_irq	kernel/irq/irq.c	/^void handle_irq(regs_context_t *regs, int irq)$/;"	f
+handle_load_pagefault	kernel/irq/irq.c	/^void handle_load_pagefault(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+handle_other	kernel/irq/irq.c	/^void handle_other(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+handle_store_pagefault	kernel/irq/irq.c	/^void handle_store_pagefault(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+handle_syscall	kernel/syscall/syscall.c	/^void handle_syscall(regs_context_t *regs, uint64_t interrupt, uint64_t cause)$/;"	f
+handler_t	include/os/irq.h	/^typedef void (*handler_t)(regs_context_t*, uint64_t, uint64_t);$/;"	t
+hart_base	drivers/plic.c	/^	void		*hart_base;$/;"	m	struct:plic_handler	file:
+head	include/os/lock.h	/^    int  head, tail;$/;"	m	struct:mailbox
+heapCurr	kernel/mm/mm.c	/^ptr_t heapCurr = FREEHEAP;$/;"	v
+id	include/os/lock.h	/^    int  id;$/;"	m	struct:mailbox
+id	include/os/lock.h	/^    int id;$/;"	m	struct:sem
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_barrier
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_cond
+id	tiny_libc/include/mthread.h	/^    int id;$/;"	m	struct:mthread_mutex
+id_gen	kernel/locking/lock.c	/^int id_gen()$/;"	f
+init_all_stack	init/main.c	/^void init_all_stack()$/;"	f
+init_exception	kernel/irq/irq.c	/^void init_exception()$/;"	f
+init_list_head	include/os/list.h	/^static inline void init_list_head(list_head *list)$/;"	f
+init_pcb	init/main.c	/^pid_t init_pcb(task_info_t *task, void *arg, spawn_mode_t mode, uint8_t mask)$/;"	f
+init_pcb_stack	init/main.c	/^static void init_pcb_stack($/;"	f	file:
+init_screen	drivers/screen.c	/^void init_screen(void)$/;"	f
+init_shell	init/main.c	/^static void init_shell()$/;"	f	file:
+init_syscall	init/main.c	/^static void init_syscall(void)$/;"	f	file:
+init_system_futex	kernel/locking/futex.c	/^void init_system_futex()$/;"	f
+int16_t	include/type.h	/^typedef int      __attribute__((__mode__(HI))) int16_t;$/;"	t
+int16_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(HI))) int16_t;$/;"	t
+int32_t	include/type.h	/^typedef int      __attribute__((__mode__(SI))) int32_t;$/;"	t
+int32_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(SI))) int32_t;$/;"	t
+int64_t	include/type.h	/^typedef int      __attribute__((__mode__(DI))) int64_t;$/;"	t
+int64_t	tiny_libc/include/stdint.h	/^typedef int      __attribute__((__mode__(DI))) int64_t;$/;"	t
+int8_t	include/type.h	/^typedef unsigned __attribute__((__mode__(QI))) int8_t;$/;"	t
+int8_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(QI))) int8_t;$/;"	t
+int_fast16_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast16_t;$/;"	t
+int_fast32_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast32_t;$/;"	t
+int_fast64_t	tiny_libc/include/stdint.h	/^typedef int64_t int_fast64_t;$/;"	t
+int_fast8_t	tiny_libc/include/stdint.h	/^typedef int8_t int_fast8_t;$/;"	t
+int_least16_t	tiny_libc/include/stdint.h	/^typedef int16_t int_least16_t;$/;"	t
+int_least32_t	tiny_libc/include/stdint.h	/^typedef int32_t int_least32_t;$/;"	t
+int_least64_t	tiny_libc/include/stdint.h	/^typedef int64_t int_least64_t;$/;"	t
+int_least8_t	tiny_libc/include/stdint.h	/^typedef int8_t int_least8_t;$/;"	t
+integer_test_task	test/test_project3/test_affinity.c	/^void integer_test_task(int print_location)$/;"	f
+interrupt_helper	kernel/irq/irq.c	/^void interrupt_helper(regs_context_t *regs, uint64_t stval, uint64_t cause)$/;"	f
+intmax_t	tiny_libc/include/stdint.h	/^typedef int64_t intmax_t;$/;"	t
+intptr_t	include/type.h	/^typedef int64_t intptr_t;$/;"	t
+intptr_t	tiny_libc/include/stdint.h	/^typedef int64_t intptr_t;$/;"	t
+io_base	kernel/mm/ioremap.c	/^static uintptr_t io_base = IO_ADDR_START;$/;"	v	file:
+ioremap	kernel/mm/ioremap.c	/^void *ioremap(unsigned long phys_addr, unsigned long size)$/;"	f
+iounmap	kernel/mm/ioremap.c	/^void iounmap(void *io_addr)$/;"	f
+irq_mode	drivers/emacps/xemacps_main.c	/^int irq_mode = 0;$/;"	v
+irq_table	kernel/irq/irq.c	/^handler_t irq_table[IRQC_COUNT];$/;"	v
+is_elf_format	include/os/elf.h	/^static inline int is_elf_format(unsigned char *binary)$/;"	f
+is_first	test/consensus.c	/^int is_first(consensus_vars_t *vars)$/;"	f
+is_first	test/echo.c	/^int is_first(echo_shm_vars_t *vars)$/;"	f
+kbzero	libs/string.c	/^void kbzero(void *dest, uint32_t len) { kmemset(dest, 0, len); }$/;"	f
+kernel_barrier_wait	kernel/locking/lock.c	/^int kernel_barrier_wait(int id, int count)$/;"	f
+kernel_binsemop	kernel/locking/lock.c	/^int kernel_binsemop(int binsem_id, int op)$/;"	f
+kernel_entry_t	arch/riscv/kernel/boot.c	/^typedef void (*kernel_entry_t)(unsigned long, uintptr_t);$/;"	t	file:
+kernel_keygen	kernel/locking/lock.c	/^int kernel_keygen()$/;"	f
+kernel_lock	kernel/irq/irq.c	/^spin_lock_t kernel_lock;$/;"	v
+kernel_mbox_close	kernel/locking/lock.c	/^void kernel_mbox_close(mailbox_t mailbox)$/;"	f
+kernel_mbox_open	kernel/locking/lock.c	/^mailbox_t kernel_mbox_open(char *name)$/;"	f
+kernel_mbox_recv	kernel/locking/lock.c	/^void kernel_mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+kernel_mbox_send	kernel/locking/lock.c	/^void kernel_mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+kernel_screen_scroll_check	drivers/screen.c	/^void kernel_screen_scroll_check()$/;"	f
+kernel_sem_broadcast	kernel/locking/lock.c	/^int kernel_sem_broadcast(int sem_id)$/;"	f
+kernel_sem_signal	kernel/locking/lock.c	/^int kernel_sem_signal(int sem_id)$/;"	f
+kernel_sem_wait	kernel/locking/lock.c	/^int kernel_sem_wait(int sem_id, int lock_id)$/;"	f
+kernel_semget	kernel/locking/lock.c	/^int kernel_semget(int key)$/;"	f
+kernel_sp	include/os/sched.h	/^    reg_t kernel_sp;$/;"	m	struct:pcb
+kernel_stack	init/main.c	/^uint64_t kernel_stack[NUM_MAX_TASK];$/;"	v
+kernel_taskset	init/main.c	/^void kernel_taskset(uint8_t mask, pid_t pid)$/;"	f
+key	include/os/lock.h	/^    int key;$/;"	m	struct:sem
+key	kernel/mm/mm.c	/^    uint8_t  key;$/;"	m	struct:__anon8	file:
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_barrier
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_cond
+key	tiny_libc/include/mthread.h	/^    int key;$/;"	m	struct:mthread_mutex
+key_global	tiny_libc/mthread.c	/^int key_global = 4097;$/;"	v
+kmalloc	kernel/mm/mm.c	/^void *kmalloc(size_t size)$/;"	f
+kmemcpy	libs/string.c	/^void kmemcpy(uint8_t *dest, const uint8_t *src, uint32_t len)$/;"	f
+kmemset	libs/string.c	/^void kmemset(void *dest, uint8_t val, uint32_t len)$/;"	f
+kstrcat	libs/string.c	/^char *kstrcat(char *dest, const char *src)$/;"	f
+kstrcmp	libs/string.c	/^int kstrcmp(const char *str1, const char *str2)$/;"	f
+kstrcpy	libs/string.c	/^char *kstrcpy(char *dest, const char *src)$/;"	f
+kstrlen	libs/string.c	/^int kstrlen(const char *src)$/;"	f
+kv2p	include/os/mm.h	/^static inline uintptr_t kv2p(uintptr_t kva)$/;"	f
+kva2pa	arch/riscv/include/pgtable.h	/^static inline uintptr_t kva2pa(uintptr_t kva)$/;"	f
+latency	kernel/sched/time.c	/^void latency(uint64_t time)$/;"	f
+lb_task	test/test_project3/test_sanguo.c	/^static struct task_info lb_task = {(uintptr_t)&LiuBei, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+len	test/send-s.c	/^int len[4] = {88, 88, 88, 88};$/;"	v
+len	test/send.c	/^int len[4] = {88, 88, 88, 88};$/;"	v
+list	include/os/futex.h	/^    list_node_t list;$/;"	m	struct:futex_node
+list	include/os/mm.h	/^    list_node_t list;$/;"	m	struct:__anon9
+list	include/os/sched.h	/^    list_node_t list;$/;"	m	struct:pcb
+list_add	include/os/list.h	/^static inline void list_add(list_node_t *node, list_node_t *head)$/;"	f
+list_add_tail	include/os/list.h	/^static inline void list_add_tail($/;"	f
+list_del	include/os/list.h	/^static inline void list_del(list_node_t *entry)$/;"	f
+list_empty	include/os/list.h	/^static inline int list_empty(const list_head *head)$/;"	f
+list_entry	include/os/list.h	51;"	d
+list_head	include/os/list.h	/^typedef list_node_t list_head;$/;"	t
+list_move	include/os/list.h	/^static inline void list_move(list_node_t *node, list_head *head)$/;"	f
+list_node	include/os/list.h	/^typedef struct list_node$/;"	s
+list_node_t	include/os/list.h	/^} list_node_t;$/;"	t	typeref:struct:list_node
+load_elf	include/os/elf.h	/^static inline uintptr_t load_elf($/;"	f
+local_flush_dcache_all	arch/riscv/include/pgtable.h	/^static inline void local_flush_dcache_all(void)$/;"	f
+local_flush_icache_all	arch/riscv/include/pgtable.h	/^static inline void local_flush_icache_all(void)$/;"	f
+local_flush_tlb_all	arch/riscv/include/pgtable.h	/^static inline void local_flush_tlb_all(void)$/;"	f
+local_flush_tlb_page	arch/riscv/include/pgtable.h	/^static inline void local_flush_tlb_page(unsigned long addr)$/;"	f
+lock	include/os/lock.h	/^    spin_lock_t lock;$/;"	m	struct:mutex_lock
+lock	include/os/sched.h	/^    int lock[16];$/;"	m	struct:pcb
+lock1	test/test_project3/test_kill.c	/^mthread_mutex_t lock1;$/;"	v
+lock2	test/test_project3/test_kill.c	/^mthread_mutex_t lock2;$/;"	v
+lock_id	include/os/lock.h	/^    int  lock_id;$/;"	m	struct:mailbox
+lock_kernel	kernel/sched/smp.c	/^void lock_kernel()$/;"	f
+lock_num	include/os/sched.h	/^    int lock_num;$/;"	m	struct:pcb
+lock_status_t	include/os/lock.h	/^} lock_status_t;$/;"	t	typeref:enum:__anon14
+loop	arch/riscv/kernel/head.S	/^loop:$/;"	l
+loop	arch/riscv/kernel/start.S	/^loop:$/;"	l
+magic_number	test/consensus.c	/^    atomic_long magic_number;$/;"	m	struct:consensus_vars	file:
+magic_number	test/echo.c	/^    atomic_long magic_number;$/;"	m	struct:echo_shm_vars	file:
+mailbox	include/os/lock.h	/^typedef struct mailbox$/;"	s
+mailbox_t	include/os/lock.h	/^typedef int mailbox_t;$/;"	t
+mailbox_t	tiny_libc/include/mailbox.h	/^typedef int mailbox_t;$/;"	t
+main	arch/riscv/boot/bootblock.S	/^main:$/;"	l
+main	init/main.c	/^int main()$/;"	f
+main	test/consensus.c	/^int main(int argc, char* argv[])$/;"	f
+main	test/echo.c	/^int main(int argc, char *argv[])$/;"	f
+main	test/fly.c	/^int main()$/;"	f
+main	test/recv.c	/^int main(int argc, char *argv[])$/;"	f
+main	test/rw.c	/^int main(int argc, char* argv[])$/;"	f
+main	test/send.c	/^int main(int argc, char *argv[])$/;"	f
+main	test/swap.c	/^int main()$/;"	f
+main	test/test_shell.c	/^int main()$/;"	f
+main	tools/createimage.c	/^int main(int argc, char **argv)$/;"	f
+main	tools/elf2char.c	/^int main(int argc, char *argv[])$/;"	f
+main	tools/generateMapping.c	/^int main(int argc, char* argv[])$/;"	f
+man_match	test/test_shell.c	/^static int man_match(char *arg, int arg_num){$/;"	f	file:
+map_page	arch/riscv/kernel/boot.c	/^void map_page(uint64_t va, uint64_t pa, PTE *pgdir)$/;"	f
+mask	include/os/sched.h	/^    uint8_t mask;$/;"	m	struct:pcb
+match_elf	init/main.c	/^int match_elf(char *file_name)$/;"	f
+mb	arch/riscv/include/io.h	8;"	d
+mbox_close	tiny_libc/mailbox.c	/^void mbox_close(mailbox_t mailbox)$/;"	f
+mbox_list	kernel/locking/lock.c	/^mbox_t *mbox_list[MAX_NUM];$/;"	v
+mbox_open	tiny_libc/mailbox.c	/^mailbox_t mbox_open(char *name)$/;"	f
+mbox_recv	tiny_libc/mailbox.c	/^void mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+mbox_send	tiny_libc/mailbox.c	/^void mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+mbox_t	include/os/lock.h	/^}mbox_t;$/;"	t	typeref:struct:mailbox
+mem2disk	kernel/irq/irq.c	/^void mem2disk(int block, int num, uintptr_t pa, uintptr_t va)$/;"	f
+memCurr	kernel/mm/mm.c	/^ptr_t memCurr = FREEMEM;$/;"	v
+memcpy	libs/string.c	/^void memcpy(uint8_t *dest, const uint8_t *src, uint32_t len)$/;"	f
+memcpy	tiny_libc/string.c	/^void* memcpy(uint8_t *dest, const uint8_t *src, uint32_t len)$/;"	f
+memset	libs/string.c	/^void memset(void *dest, uint8_t val, uint32_t len)$/;"	f
+memset	tiny_libc/string.c	/^void* memset(void *dest, int val, size_t len)$/;"	f
+mini_buff	libs/printk.c	/^struct mini_buff$/;"	s	file:
+mini_buff	tiny_libc/printf.c	/^struct mini_buff$/;"	s	file:
+mini_itoa	libs/printk.c	/^static unsigned int mini_itoa($/;"	f	file:
+mini_itoa	tiny_libc/printf.c	/^static unsigned int mini_itoa($/;"	f	file:
+mini_strlen	libs/printk.c	/^static unsigned int mini_strlen(const char *s)$/;"	f	file:
+mini_vsnprintf	libs/printk.c	/^static int mini_vsnprintf($/;"	f	file:
+mini_vsnprintf	tiny_libc/printf.c	/^static int mini_vsnprintf($/;"	f	file:
+mode	include/os/sched.h	/^    spawn_mode_t mode;$/;"	m	struct:pcb
+msg	arch/riscv/boot/bootblock.S	/^msg : .string "CORE 0 S\\n\\r"$/;"	l
+msg2	arch/riscv/boot/bootblock.S	/^msg2: .string "CORE 1 S\\n\\r"$/;"	l
+mthread_barrier	tiny_libc/include/mthread.h	/^typedef struct mthread_barrier$/;"	s
+mthread_barrier_destroy	tiny_libc/mthread.c	/^int mthread_barrier_destroy(mthread_barrier_t *barrier)$/;"	f
+mthread_barrier_init	tiny_libc/mthread.c	/^int mthread_barrier_init(mthread_barrier_t * barrier, unsigned count)$/;"	f
+mthread_barrier_t	tiny_libc/include/mthread.h	/^} mthread_barrier_t;$/;"	t	typeref:struct:mthread_barrier
+mthread_barrier_wait	tiny_libc/mthread.c	/^int mthread_barrier_wait(mthread_barrier_t *barrier)$/;"	f
+mthread_cond	tiny_libc/include/mthread.h	/^typedef struct mthread_cond$/;"	s
+mthread_cond_broadcast	tiny_libc/mthread.c	/^int mthread_cond_broadcast(mthread_cond_t *cond)$/;"	f
+mthread_cond_destroy	tiny_libc/mthread.c	/^int mthread_cond_destroy(mthread_cond_t *cond) $/;"	f
+mthread_cond_init	tiny_libc/mthread.c	/^int mthread_cond_init(mthread_cond_t *cond)$/;"	f
+mthread_cond_signal	tiny_libc/mthread.c	/^int mthread_cond_signal(mthread_cond_t *cond)$/;"	f
+mthread_cond_t	tiny_libc/include/mthread.h	/^} mthread_cond_t;$/;"	t	typeref:struct:mthread_cond
+mthread_cond_wait	tiny_libc/mthread.c	/^int mthread_cond_wait(mthread_cond_t *cond, mthread_mutex_t *mutex)$/;"	f
+mthread_mutex	tiny_libc/include/mthread.h	/^typedef struct mthread_mutex$/;"	s
+mthread_mutex_destroy	tiny_libc/mthread.c	/^int mthread_mutex_destroy(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_init	tiny_libc/mthread.c	/^int mthread_mutex_init(mthread_mutex_t *lock)$/;"	f
+mthread_mutex_lock	tiny_libc/mthread.c	/^int mthread_mutex_lock(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_t	tiny_libc/include/mthread.h	/^} mthread_mutex_t;$/;"	t	typeref:struct:mthread_mutex
+mthread_mutex_trylock	tiny_libc/mthread.c	/^int mthread_mutex_trylock(mthread_mutex_t *lock) $/;"	f
+mthread_mutex_unlock	tiny_libc/mthread.c	/^int mthread_mutex_unlock(mthread_mutex_t *lock)$/;"	f
+mthread_semaphore	tiny_libc/include/mthread.h	/^typedef struct mthread_semaphore$/;"	s
+mthread_semaphore_destroy	tiny_libc/mthread.c	/^int mthread_semaphore_destroy(mthread_semaphore_t *sem)$/;"	f
+mthread_semaphore_down	tiny_libc/mthread.c	/^int mthread_semaphore_down(mthread_semaphore_t *sem)$/;"	f
+mthread_semaphore_init	tiny_libc/mthread.c	/^int mthread_semaphore_init(mthread_semaphore_t *sem, int val)$/;"	f
+mthread_semaphore_t	tiny_libc/include/mthread.h	/^} mthread_semaphore_t;$/;"	t	typeref:struct:mthread_semaphore
+mthread_semaphore_up	tiny_libc/mthread.c	/^int mthread_semaphore_up(mthread_semaphore_t *sem)$/;"	f
+mthread_spin_destroy	tiny_libc/mthread.c	/^int mthread_spin_destroy(mthread_spinlock_t *lock) {$/;"	f
+mthread_spin_init	tiny_libc/mthread.c	/^int mthread_spin_init(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_lock	tiny_libc/mthread.c	/^int mthread_spin_lock(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_trylock	tiny_libc/mthread.c	/^int mthread_spin_trylock(mthread_spinlock_t *lock)$/;"	f
+mthread_spin_unlock	tiny_libc/mthread.c	/^int mthread_spin_unlock(mthread_spinlock_t *lock)$/;"	f
+mthread_spinlock_t	tiny_libc/include/mthread.h	/^typedef atomic_int mthread_spinlock_t;$/;"	t
+mutex	test/test_project3/test_condition.c	/^static mthread_mutex_t mutex;$/;"	v	file:
+mutex_lock	include/os/lock.h	/^typedef struct mutex_lock$/;"	s
+mutex_lock_t	include/os/lock.h	/^} mutex_lock_t;$/;"	t	typeref:struct:mutex_lock
+name	include/os/lock.h	/^    char name[64];$/;"	m	struct:mailbox
+name	test/test_shell.c	/^    char *name;$/;"	m	struct:__anon2	file:
+net_poll_mode	drivers/net.c	/^int net_poll_mode;$/;"	v
+net_recv_queue	drivers/emacps/xemacps_main.c	/^LIST_HEAD(net_recv_queue);$/;"	v
+net_send_queue	drivers/emacps/xemacps_main.c	/^LIST_HEAD(net_send_queue);$/;"	v
+new_screen	drivers/screen.c	/^char new_screen[SCREEN_HEIGHT * SCREEN_WIDTH] = {0};$/;"	v
+next	include/os/list.h	/^    struct list_node *next, *prev;$/;"	m	struct:list_node	typeref:struct:list_node::list_node
+num_staff	test/test_project3/test_condition.c	/^static int num_staff = 0;$/;"	v	file:
+offsetof	include/os/list.h	50;"	d
+offsetof	tiny_libc/include/stddef.h	9;"	d
+old_screen	drivers/screen.c	/^char old_screen[SCREEN_HEIGHT * SCREEN_WIDTH] = {0};$/;"	v
+open_file_with_suffix	tools/generateMapping.c	/^FILE* open_file_with_suffix($/;"	f
+options	tools/createimage.c	/^} options;$/;"	v	typeref:struct:__anon1	file:
+p2kv	include/os/mm.h	/^static inline uintptr_t p2kv(uintptr_t pa)$/;"	f
+p_align	include/os/elf.h	/^    Elf64_Xword p_align;  \/* Segment alignment, file & memory *\/$/;"	m	struct:elf64_phdr
+p_filesz	include/os/elf.h	/^    Elf64_Xword p_filesz; \/* Segment size in file *\/$/;"	m	struct:elf64_phdr
+p_flags	include/os/elf.h	/^    Elf64_Word p_flags;$/;"	m	struct:elf64_phdr
+p_memsz	include/os/elf.h	/^    Elf64_Xword p_memsz;  \/* Segment size in memory *\/$/;"	m	struct:elf64_phdr
+p_offset	include/os/elf.h	/^    Elf64_Off p_offset;   \/* Segment file offset *\/$/;"	m	struct:elf64_phdr
+p_paddr	include/os/elf.h	/^    Elf64_Addr p_paddr;   \/* Segment physical address *\/$/;"	m	struct:elf64_phdr
+p_type	include/os/elf.h	/^    Elf64_Word p_type;$/;"	m	struct:elf64_phdr
+p_vaddr	include/os/elf.h	/^    Elf64_Addr p_vaddr;   \/* Segment virtual address *\/$/;"	m	struct:elf64_phdr
+pa	include/os/mm.h	/^    uintptr_t pa;$/;"	m	struct:__anon9
+pa2kva	arch/riscv/include/pgtable.h	/^static inline uintptr_t pa2kva(uintptr_t pa)$/;"	f
+paddr	kernel/mm/mm.c	/^    uint64_t paddr;$/;"	m	struct:__anon8	file:
+page_t	include/os/mm.h	/^}page_t;$/;"	t	typeref:struct:__anon9
+parameter	include/os/time.h	/^    void *parameter;$/;"	m	struct:timer
+parent	include/os/sched.h	/^    pid_t parent;$/;"	m	struct:pcb
+pbuffer	libs/printk.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+pbuffer	tiny_libc/printf.c	/^    char *buffer, *pbuffer;$/;"	m	struct:mini_buff	file:
+pcb	include/os/sched.h	/^typedef struct pcb$/;"	s
+pcb	kernel/sched/sched.c	/^pcb_t pcb[NUM_MAX_TASK];$/;"	v
+pcb_t	include/os/sched.h	/^} pcb_t;$/;"	t	typeref:struct:pcb
+pgdir	include/os/sched.h	/^    PTE *pgdir;$/;"	m	struct:pcb
+pid	include/os/sched.h	/^    pid_t pid;$/;"	m	struct:pcb
+pid0_pcb_core0	kernel/sched/sched.c	/^pcb_t pid0_pcb_core0 = {$/;"	v
+pid0_pcb_core1	kernel/sched/sched.c	/^pcb_t pid0_pcb_core1 = {$/;"	v
+pid0_stack_0	kernel/sched/sched.c	/^const ptr_t pid0_stack_0 = INIT_KERNEL_STACK + 2 * PAGE_SIZE;$/;"	v
+pid0_stack_1	kernel/sched/sched.c	/^const ptr_t pid0_stack_1 = INIT_KERNEL_STACK + 4 * PAGE_SIZE;$/;"	v
+pid_t	include/type.h	/^typedef int32_t pid_t;$/;"	t
+plane1	test/fly.c	/^static char plane1[] = {"    ___         _  "};$/;"	v	file:
+plane2	test/fly.c	/^static char plane2[] = {"| __\\\\_\\\\______\/_| "};$/;"	v	file:
+plane3	test/fly.c	/^static char plane3[] = {"<[___\\\\_\\\\_______| "};$/;"	v	file:
+plane4	test/fly.c	/^static char plane4[] = {"|  o'o             "};$/;"	v	file:
+plic_handle_irq	drivers/plic.c	/^void plic_handle_irq(regs_context_t *regs)$/;"	f
+plic_handler	drivers/plic.c	/^struct plic_handler {$/;"	s	file:
+plic_handlers	drivers/plic.c	/^} plic_handlers;$/;"	v	typeref:struct:plic_handler
+plic_init	drivers/plic.c	/^int plic_init(uintptr_t plic_regs_addr, u32 nr_irqs)$/;"	f
+plic_irq_eoi	drivers/plic.c	/^void plic_irq_eoi(int hwirq)$/;"	f
+plic_irq_mask	drivers/plic.c	/^static void plic_irq_mask(int hwirq)$/;"	f	file:
+plic_irq_unmask	drivers/plic.c	/^static void plic_irq_unmask(int hwirq)$/;"	f	file:
+plic_regs	drivers/plic.c	/^static void *plic_regs;$/;"	v	file:
+plic_toggle	drivers/plic.c	/^static inline void plic_toggle(struct plic_handler *handler,$/;"	f	file:
+plist	include/os/sched.h	/^    list_head plist;$/;"	m	struct:pcb
+pnum	include/os/sched.h	/^    int pnum; \/\/ less than 4$/;"	m	struct:pcb
+port_write	arch/riscv/sbi/common.c	/^void port_write(char *str)$/;"	f
+port_write_ch	arch/riscv/sbi/common.c	/^void port_write_ch(char ch)$/;"	f
+preempt_count	include/os/sched.h	/^    reg_t preempt_count;$/;"	m	struct:pcb
+present	drivers/plic.c	/^	bool			present;$/;"	m	struct:plic_handler	file:
+prev	include/os/list.h	/^    struct list_node *next, *prev;$/;"	m	struct:list_node	typeref:struct:list_node::
+print_location	test/test_project3/test_multicore.c	/^    int print_location;$/;"	m	struct:TestMultiCoreArg	file:
+printf	tiny_libc/printf.c	/^int printf(const char *fmt, ...)$/;"	f
+printk	libs/printk.c	/^int printk(const char *fmt, ...)$/;"	f
+prints	libs/printk.c	/^int prints(const char *fmt, ...)$/;"	f
+priority	include/os/sched.h	/^    priority_t priority;$/;"	m	struct:pcb
+priority_t	include/os/sched.h	/^typedef enum {P_1, P_2, P_3, P_4} priority_t;$/;"	t	typeref:enum:__anon11
+process_id	kernel/sched/sched.c	/^pid_t process_id = 1;$/;"	v
+producer_task	test/test_project3/test_condition.c	/^void producer_task(void)$/;"	f
+pte	include/os/mm.h	/^    uintptr_t pte;$/;"	m	struct:__anon9
+ptr_t	include/type.h	/^typedef uint64_t ptr_t;$/;"	t
+ptrdiff_t	include/type.h	/^typedef uintptr_t ptrdiff_t;$/;"	t
+putchar	tiny_libc/syscall.c	/^void putchar(int ch)$/;"	f
+puts	tiny_libc/printf.c	/^int puts(const char *str)$/;"	f
+rand	libs/string.c	/^int rand()$/;"	f
+rand	tiny_libc/rand.c	/^int rand()$/;"	f
+read_ehdr	tools/createimage.c	/^static void read_ehdr(Elf64_Ehdr * ehdr, FILE * fp)$/;"	f	file:
+read_phdr	tools/createimage.c	/^static void read_phdr(Elf64_Phdr * phdr, FILE * fp, int ph,$/;"	f	file:
+read_reg	arch/riscv/include/io.h	/^static inline uint32_t read_reg($/;"	f
+readl	arch/riscv/include/io.h	/^static inline uint32_t readl(const volatile void *addr)$/;"	f
+ready_queue	kernel/sched/sched.c	/^LIST_HEAD(ready_queue);$/;"	v
+ready_to_exit_task	test/test_project3/test_kill.c	/^void ready_to_exit_task()$/;"	f
+record	tools/generateMapping.c	/^    char*** record;$/;"	m	struct:Records	file:
+recv_buffer	test/echo.c	/^char recv_buffer[MAX_RECV_CNT * sizeof(EthernetFrame)];$/;"	v
+recv_buffer	test/recv-s.c	/^char recv_buffer[MAX_RECV_CNT * sizeof(EthernetFrame)];$/;"	v
+recv_buffer	test/recv.c	/^char recv_buffer[MAX_RECV_CNT * sizeof(EthernetFrame)];$/;"	v
+recv_length	test/echo.c	/^size_t recv_length[MAX_RECV_CNT] = {0};$/;"	v
+recv_length	test/recv-s.c	/^size_t recv_length[MAX_RECV_CNT];$/;"	v
+recv_length	test/recv.c	/^size_t recv_length[MAX_RECV_CNT];$/;"	v
+recv_s	test/recv-s.c	/^int recv_s(int argc, char *argv[])$/;"	f
+reg_t	include/type.h	/^typedef uint64_t reg_t;$/;"	t
+regs	arch/riscv/include/context.h	/^    reg_t regs[14];$/;"	m	struct:switchto_context
+regs	arch/riscv/include/context.h	/^    reg_t regs[32];$/;"	m	struct:regs_context
+regs	include/os/sched.h	/^    reg_t regs[14];$/;"	m	struct:switchto_context
+regs	include/os/sched.h	/^    reg_t regs[32];$/;"	m	struct:regs_context
+regs_context	arch/riscv/include/context.h	/^typedef struct regs_context$/;"	s
+regs_context	include/os/sched.h	/^typedef struct regs_context$/;"	s
+regs_context_t	arch/riscv/include/context.h	/^} regs_context_t;$/;"	t	typeref:struct:regs_context
+regs_context_t	include/os/sched.h	/^} regs_context_t;$/;"	t	typeref:struct:regs_context
+reset_irq_timer	kernel/irq/irq.c	/^void reset_irq_timer()$/;"	f
+response	test/echo.c	/^const char response[] = "Response: ";$/;"	v
+result	test/test_project3/test_multicore.c	/^    int* result;$/;"	m	struct:TestMultiCoreArg	file:
+riscv_dtb	kernel/irq/irq.c	/^uintptr_t riscv_dtb;$/;"	v
+rmb	arch/riscv/include/io.h	9;"	d
+round	test/consensus.c	/^    atomic_int round;$/;"	m	struct:consensus_vars	file:
+rx_buffers	drivers/net.c	/^EthernetFrame rx_buffers[RXBD_CNT];$/;"	v
+rx_curr	drivers/net.c	/^volatile int rx_curr = 0, rx_tail = 0;$/;"	v
+rx_len	drivers/net.c	/^uint32_t rx_len[RXBD_CNT];$/;"	v
+rx_tail	drivers/net.c	/^volatile int rx_curr = 0, rx_tail = 0;$/;"	v
+s16	drivers/emacps/xil_types.h	/^typedef int16_t s16;$/;"	t
+s32	drivers/emacps/xil_types.h	/^typedef int32_t s32;$/;"	t
+s64	drivers/emacps/xil_types.h	/^typedef int64_t s64;$/;"	t
+s8	drivers/emacps/xil_types.h	/^typedef int8_t s8;$/;"	t
+s8	include/type.h	/^typedef uint8_t  s8;$/;"	t
+sbadaddr	arch/riscv/include/context.h	/^    reg_t sbadaddr;$/;"	m	struct:regs_context
+sbadaddr	include/os/sched.h	/^    reg_t sbadaddr;$/;"	m	struct:regs_context
+sbi_clear_ipi	arch/riscv/include/sbi.h	/^static inline void sbi_clear_ipi(void)$/;"	f
+sbi_console_getchar	arch/riscv/include/sbi.h	/^static inline int sbi_console_getchar(void)$/;"	f
+sbi_console_putchar	arch/riscv/include/sbi.h	/^static inline void sbi_console_putchar(int ch)$/;"	f
+sbi_console_putstr	arch/riscv/include/sbi.h	/^static inline void sbi_console_putstr(char *str)$/;"	f
+sbi_read_fdt	arch/riscv/include/sbi.h	/^static inline uint32_t sbi_read_fdt(enum SBI_READY_FDT_TYPE type)$/;"	f
+sbi_remote_fence_i	arch/riscv/include/sbi.h	/^static inline void sbi_remote_fence_i($/;"	f
+sbi_remote_sfence_vma	arch/riscv/include/sbi.h	/^static inline void sbi_remote_sfence_vma($/;"	f
+sbi_remote_sfence_vma_asid	arch/riscv/include/sbi.h	/^static inline void sbi_remote_sfence_vma_asid($/;"	f
+sbi_sd_read	arch/riscv/include/sbi.h	/^static inline uintptr_t sbi_sd_read($/;"	f
+sbi_sd_write	arch/riscv/include/sbi.h	/^static inline uintptr_t sbi_sd_write($/;"	f
+sbi_send_ipi	arch/riscv/include/sbi.h	/^static inline void sbi_send_ipi(const unsigned long *hart_mask)$/;"	f
+sbi_set_timer	arch/riscv/include/sbi.h	/^static inline void sbi_set_timer(uint64_t stime_value)$/;"	f
+sbi_shutdown	arch/riscv/include/sbi.h	/^static inline void sbi_shutdown(void) { SBI_CALL_0(SBI_SHUTDOWN); }$/;"	f
+scause	arch/riscv/include/context.h	/^    reg_t scause;$/;"	m	struct:regs_context
+scause	include/os/sched.h	/^    reg_t scause;$/;"	m	struct:regs_context
+score	kernel/sched/sched.c	/^uint16_t score(priority_t p, uint64_t time){$/;"	f
+screen_clear	drivers/screen.c	/^void screen_clear(void)$/;"	f
+screen_move_cursor	drivers/screen.c	/^void screen_move_cursor(int x, int y)$/;"	f
+screen_reflush	drivers/screen.c	/^void screen_reflush(void)$/;"	f
+screen_scroll	drivers/screen.c	/^void screen_scroll(int line1, int line2)$/;"	f
+screen_write	drivers/screen.c	/^void screen_write(char *buff)$/;"	f
+screen_write_ch	drivers/screen.c	/^void screen_write_ch(char ch)$/;"	f
+secondary	arch/riscv/boot/bootblock.S	/^secondary:$/;"	l
+sem	include/os/lock.h	/^typedef struct sem {$/;"	s
+sem_broadcast	tiny_libc/syscall.c	/^void sem_broadcast(int id)$/;"	f
+sem_list	kernel/locking/lock.c	/^sem_t *sem_list[MAX_BINSEM];$/;"	v
+sem_signal	tiny_libc/syscall.c	/^void sem_signal(int id)$/;"	f
+sem_t	include/os/lock.h	/^} sem_t;$/;"	t	typeref:struct:sem
+sem_wait	tiny_libc/syscall.c	/^void sem_wait(int id, int lock_id)$/;"	f
+semaphore	test/test_project3/test_semaphore.c	/^static mthread_semaphore_t semaphore;$/;"	v	file:
+semaphore_add_task1	test/test_project3/test_semaphore.c	/^void semaphore_add_task1(void)$/;"	f
+semaphore_add_task2	test/test_project3/test_semaphore.c	/^void semaphore_add_task2(void)$/;"	f
+semaphore_add_task3	test/test_project3/test_semaphore.c	/^void semaphore_add_task3(void)$/;"	f
+send_s	test/send-s.c	/^int send_s()$/;"	f
+sepc	arch/riscv/include/context.h	/^    reg_t sepc;$/;"	m	struct:regs_context
+sepc	include/os/sched.h	/^    reg_t sepc;$/;"	m	struct:regs_context
+serial_getchar	drivers/screen.c	/^int serial_getchar()$/;"	f
+serial_putchar	drivers/screen.c	/^void serial_putchar(int ch)$/;"	f
+set_attribute	arch/riscv/include/pgtable.h	/^static inline void set_attribute(PTE *entry, uint64_t bits)$/;"	f
+set_irq_mode	drivers/emacps/xemacps_main.c	/^LONG set_irq_mode(XEmacPs *EmacPsInstancePtr, int mode)$/;"	f
+set_pfn	arch/riscv/include/pgtable.h	/^static inline void set_pfn(PTE *entry, uint64_t pfn)$/;"	f
+set_satp	arch/riscv/include/pgtable.h	/^static inline void set_satp($/;"	f
+setup_core0	arch/riscv/kernel/start.S	/^setup_core0:$/;"	l
+setup_core1	arch/riscv/kernel/start.S	/^setup_core1:$/;"	l
+setup_ethernet	init/main.c	/^void setup_ethernet()$/;"	f
+setup_finish	arch/riscv/kernel/start.S	/^setup_finish:$/;"	l
+setup_shm_page	kernel/mm/mm.c	/^void setup_shm_page(uintptr_t va, uintptr_t pa, uintptr_t pgdir)$/;"	f
+setup_vm	arch/riscv/kernel/boot.c	/^void setup_vm()$/;"	f
+share_pgtable	kernel/mm/mm.c	/^void share_pgtable(uintptr_t dest_pgdir, uintptr_t src_pgdir)$/;"	f
+shell_clear	test/test_shell.c	/^static void shell_clear()$/;"	f	file:
+shell_exec	test/test_shell.c	/^static pid_t shell_exec(char *proc, char *arg1, char *arg2, char* arg3, char *arg4)$/;"	f	file:
+shell_exit	test/test_shell.c	/^static void shell_exit()$/;"	f	file:
+shell_help	test/test_shell.c	/^static void shell_help()$/;"	f	file:
+shell_kill	test/test_shell.c	/^static void shell_kill(char *pid)$/;"	f	file:
+shell_ls	test/test_shell.c	/^static void shell_ls()$/;"	f	file:
+shell_ps	test/test_shell.c	/^static void shell_ps()$/;"	f	file:
+shell_taskset	test/test_shell.c	/^static void shell_taskset(char *arg0, char *arg1, char *arg2)$/;"	f	file:
+shm_page_dt	kernel/mm/mm.c	/^void shm_page_dt(uintptr_t addr)$/;"	f
+shm_page_get	kernel/mm/mm.c	/^uintptr_t shm_page_get(int key)$/;"	f
+shm_page_t	kernel/mm/mm.c	/^} shm_page_t;$/;"	t	typeref:struct:__anon8	file:
+shm_read	test/echo.c	/^void shm_read(char* shmbuf, atomic_long *_available, char* buf, size_t size)$/;"	f
+shm_write	test/echo.c	/^void shm_write(char* shmbuf, atomic_long *_available, char* buf, size_t size)$/;"	f
+shmpagedt	tiny_libc/syscall.c	/^void shmpagedt(void *addr)$/;"	f
+shmpageget	tiny_libc/syscall.c	/^void* shmpageget(int key)$/;"	f
+simplify	tools/generateMapping.c	/^char* simplify(Records* self, char* varname)$/;"	f
+simplify_filter	tools/generateMapping.c	/^void simplify_filter(char* dest, char* src, const char* pattern)$/;"	f
+sint32	drivers/emacps/xil_types.h	/^typedef int sint32;$/;"	t
+size	tools/generateMapping.c	/^    int size;$/;"	m	struct:Records	file:
+size_t	include/type.h	/^typedef uint64_t size_t;$/;"	t
+size_t	tiny_libc/include/stddef.h	/^typedef uint64_t size_t;$/;"	t
+sleep_add_core	include/os/sched.h	/^    uint8_t sleep_add_core;$/;"	m	struct:pcb
+sleep_queue	kernel/sched/time.c	/^LIST_HEAD(sleep_queue);$/;"	v
+smp_init	kernel/sched/smp.c	/^void smp_init()$/;"	f
+spage	kernel/mm/mm.c	/^shm_page_t spage[16];$/;"	v
+spawn_mode_t	include/os/sched.h	/^} spawn_mode_t;$/;"	t	typeref:enum:__anon10
+spin_lock	include/os/lock.h	/^typedef struct spin_lock$/;"	s
+spin_lock_acquire	kernel/locking/lock.c	/^volatile void spin_lock_acquire(spin_lock_t *lock)$/;"	f
+spin_lock_init	kernel/locking/lock.c	/^void spin_lock_init(spin_lock_t *lock)$/;"	f
+spin_lock_release	kernel/locking/lock.c	/^void spin_lock_release(spin_lock_t *lock)$/;"	f
+spin_lock_t	include/os/lock.h	/^} spin_lock_t;$/;"	t	typeref:struct:spin_lock
+spin_lock_try_acquire	kernel/locking/lock.c	/^int spin_lock_try_acquire(spin_lock_t *lock)$/;"	f
+sq_task	test/test_project3/test_sanguo.c	/^static struct task_info sq_task = {(uintptr_t)&SunQuan, USER_PROCESS};$/;"	v	typeref:struct:task_info	file:
+srand	libs/string.c	/^void srand(unsigned seed)$/;"	f
+srand	tiny_libc/rand.c	/^void srand(unsigned seed)$/;"	f
+sstatus	arch/riscv/include/context.h	/^    reg_t sstatus;$/;"	m	struct:regs_context
+sstatus	include/os/sched.h	/^    reg_t sstatus;$/;"	m	struct:regs_context
+start_kernel	arch/riscv/kernel/boot.c	/^kernel_entry_t start_kernel = NULL;$/;"	v
+start_with	tools/generateMapping.c	/^int start_with(const char* str, const char* start)$/;"	f
+status	include/os/lock.h	/^    int status;$/;"	m	struct:sem
+status	include/os/lock.h	/^    volatile lock_status_t status;$/;"	m	struct:spin_lock
+status	include/os/sched.h	/^    task_status_t status;$/;"	m	struct:pcb
+stop	arch/riscv/boot/bootblock.S	/^stop:$/;"	l
+strcat	tiny_libc/string.c	/^char *strcat(char *dest, const char *src)$/;"	f
+strcmp	tiny_libc/string.c	/^int strcmp(const char *str1, const char *str2)$/;"	f
+strcpy	tiny_libc/string.c	/^char *strcpy(char *dest, const char *src)$/;"	f
+strlen	tiny_libc/string.c	/^size_t strlen(const char *src)$/;"	f
+strtok	tiny_libc/string.c	/^char *strtok(char *substr, char *str, const char delim)$/;"	f
+switchto_context	arch/riscv/include/context.h	/^typedef struct switchto_context$/;"	s
+switchto_context	include/os/sched.h	/^typedef struct switchto_context$/;"	s
+switchto_context_t	arch/riscv/include/context.h	/^} switchto_context_t;$/;"	t	typeref:struct:switchto_context
+switchto_context_t	include/os/sched.h	/^} switchto_context_t;$/;"	t	typeref:struct:switchto_context
+sys_block	tiny_libc/syscall.c	/^void sys_block(pcb_t *pcb_node, list_head *queue)$/;"	f
+sys_clear	tiny_libc/syscall.c	/^void sys_clear(){$/;"	f
+sys_exec	tiny_libc/syscall.c	/^pid_t sys_exec(const char *file_name, int argc, char* argv[], spawn_mode_t mode)$/;"	f
+sys_exit	tiny_libc/syscall.c	/^void sys_exit()$/;"	f
+sys_get_tick	tiny_libc/syscall.c	/^long sys_get_tick()$/;"	f
+sys_get_timebase	tiny_libc/syscall.c	/^long sys_get_timebase()$/;"	f
+sys_getpid	tiny_libc/syscall.c	/^pid_t sys_getpid()$/;"	f
+sys_kill	tiny_libc/syscall.c	/^int sys_kill(pid_t pid)$/;"	f
+sys_mbox_close	tiny_libc/syscall.c	/^void sys_mbox_close(mailbox_t mailbox)$/;"	f
+sys_mbox_open	tiny_libc/syscall.c	/^mailbox_t sys_mbox_open(char *name)$/;"	f
+sys_mbox_recv	tiny_libc/syscall.c	/^void sys_mbox_recv(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+sys_mbox_send	tiny_libc/syscall.c	/^void sys_mbox_send(mailbox_t mailbox, void *msg, int msg_length)$/;"	f
+sys_move_cursor	tiny_libc/syscall.c	/^void sys_move_cursor(int x, int y)$/;"	f
+sys_net_irq_mode	tiny_libc/syscall.c	/^void sys_net_irq_mode(int mode)$/;"	f
+sys_net_recv	tiny_libc/syscall.c	/^long sys_net_recv(uintptr_t addr, size_t length, int num_packet, size_t* frLength)$/;"	f
+sys_net_send	tiny_libc/syscall.c	/^void sys_net_send(uintptr_t addr, size_t length)$/;"	f
+sys_ps	tiny_libc/syscall.c	/^void sys_ps(){$/;"	f
+sys_reflush	tiny_libc/syscall.c	/^void sys_reflush()$/;"	f
+sys_scheduler	tiny_libc/syscall.c	/^void sys_scheduler()$/;"	f
+sys_scroll	tiny_libc/syscall.c	/^void sys_scroll()$/;"	f
+sys_show_exec	tiny_libc/syscall.c	/^void sys_show_exec()$/;"	f
+sys_sleep	tiny_libc/syscall.c	/^void sys_sleep(uint32_t time)$/;"	f
+sys_spawn	tiny_libc/syscall.c	/^pid_t sys_spawn(task_info_t *info, void* arg, spawn_mode_t mode,uint8_t mask){$/;"	f
+sys_taskset	tiny_libc/syscall.c	/^void sys_taskset(uint8_t mask, pid_t pid)$/;"	f
+sys_unblock	tiny_libc/syscall.c	/^void sys_unblock(list_node_t *item)$/;"	f
+sys_waitpid	tiny_libc/syscall.c	/^int sys_waitpid(pid_t pid)$/;"	f
+sys_write	tiny_libc/syscall.c	/^void sys_write(char *buff)$/;"	f
+syscall	kernel/syscall/syscall.c	/^long (*syscall[NUM_SYSCALLS])();$/;"	v
+tail	include/os/lock.h	/^    int  head, tail;$/;"	m	struct:mailbox
+task_info	include/os/sched.h	/^typedef struct task_info$/;"	s
+task_info_t	include/os/sched.h	/^} task_info_t;$/;"	t	typeref:struct:task_info
+task_status_t	include/os/sched.h	/^} task_status_t;$/;"	t	typeref:enum:__anon12
+task_type_t	include/os/sched.h	/^} task_type_t;$/;"	t	typeref:enum:__anon13
+test_affinity	test/test_project3/test_affinity.c	/^void test_affinity(void)$/;"	f
+test_barrier	test/test_project3/test_barrier.c	/^void test_barrier(void)$/;"	f
+test_condition	test/test_project3/test_condition.c	/^void test_condition(void)$/;"	f
+test_multicore	test/test_project3/test_multicore.c	/^void test_multicore(void)$/;"	f
+time_base	kernel/sched/time.c	/^uint32_t time_base = 0;$/;"	v
+time_elapsed	kernel/sched/time.c	/^uint64_t time_elapsed = 0;$/;"	v
+timeout_tick	include/os/time.h	/^    uint64_t timeout_tick;$/;"	m	struct:timer
+timer	include/os/sched.h	/^    timer_t timer;$/;"	m	struct:pcb
+timer	include/os/time.h	/^typedef struct timer$/;"	s
+timer_check	kernel/sched/time.c	/^void timer_check()$/;"	f
+timer_create	kernel/sched/time.c	/^void timer_create(TimerCallback func, void* parameter, uint64_t tick)$/;"	f
+timer_t	include/os/time.h	/^}timer_t;$/;"	t	typeref:struct:timer
+to	test/test_project3/test_multicore.c	/^    int to;$/;"	m	struct:TestMultiCoreArg	file:
+to_hex	tools/elf2char.c	/^static inline char to_hex(int num)$/;"	f	file:
+true	drivers/plic.c	25;"	d	file:
+true	tiny_libc/include/stdbool.h	9;"	d
+tx_buffer	drivers/net.c	/^EthernetFrame tx_buffer;$/;"	v
+type	include/os/sched.h	/^    task_type_t type;$/;"	m	struct:pcb
+type	include/os/sched.h	/^    task_type_t type;$/;"	m	struct:task_info
+u16	drivers/emacps/xbasic_types.h	/^typedef Xuint16         u16;$/;"	t
+u16	drivers/emacps/xil_types.h	/^typedef uint16_t u16;$/;"	t
+u16	include/type.h	/^typedef uint16_t u16;$/;"	t
+u32	drivers/emacps/xbasic_types.h	/^typedef Xuint32         u32;$/;"	t
+u32	drivers/emacps/xil_types.h	/^typedef uint32_t u32;$/;"	t
+u32	include/type.h	/^typedef uint32_t u32;$/;"	t
+u64	drivers/emacps/xil_types.h	/^typedef uint64_t u64;$/;"	t
+u64	include/type.h	/^typedef uint64_t u64;$/;"	t
+u8	drivers/emacps/xbasic_types.h	/^typedef Xuint8          u8;$/;"	t
+u8	drivers/emacps/xil_types.h	/^typedef uint8_t u8;$/;"	t
+u8	include/type.h	/^typedef uint8_t  u8;$/;"	t
+uint16_t	include/type.h	/^typedef unsigned __attribute__((__mode__(HI))) uint16_t;$/;"	t
+uint16_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(HI))) uint16_t;$/;"	t
+uint32_t	include/type.h	/^typedef unsigned __attribute__((__mode__(SI))) uint32_t;$/;"	t
+uint32_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(SI))) uint32_t;$/;"	t
+uint64_t	include/type.h	/^typedef unsigned __attribute__((__mode__(DI))) uint64_t;$/;"	t
+uint64_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(DI))) uint64_t;$/;"	t
+uint8_t	include/type.h	/^typedef unsigned __attribute__((__mode__(QI))) uint8_t;$/;"	t
+uint8_t	tiny_libc/include/stdint.h	/^typedef unsigned __attribute__((__mode__(QI))) uint8_t;$/;"	t
+uint_fast16_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast16_t;$/;"	t
+uint_fast32_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast32_t;$/;"	t
+uint_fast64_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_fast64_t;$/;"	t
+uint_fast8_t	tiny_libc/include/stdint.h	/^typedef uint8_t  uint_fast8_t;$/;"	t
+uint_least16_t	tiny_libc/include/stdint.h	/^typedef uint16_t uint_least16_t;$/;"	t
+uint_least32_t	tiny_libc/include/stdint.h	/^typedef uint32_t uint_least32_t;$/;"	t
+uint_least64_t	tiny_libc/include/stdint.h	/^typedef uint64_t uint_least64_t;$/;"	t
+uint_least8_t	tiny_libc/include/stdint.h	/^typedef uint8_t uint_least8_t;$/;"	t
+uintmax_t	tiny_libc/include/stdint.h	/^typedef uint64_t uintmax_t;$/;"	t
+uintptr_t	include/type.h	/^typedef uint64_t uintptr_t;$/;"	t
+uintptr_t	tiny_libc/include/stdint.h	/^typedef uint64_t uintptr_t;$/;"	t
+unlock_kernel	kernel/sched/smp.c	/^void unlock_kernel()$/;"	f
+usage	test/test_shell.c	/^    char *usage;$/;"	m	struct:__anon2	file:
+used_size	include/os/lock.h	/^    int  used_size;$/;"	m	struct:mailbox
+user_sp	include/os/sched.h	/^    reg_t user_sp;$/;"	m	struct:pcb
+user_stack	init/main.c	/^uint64_t user_stack[NUM_MAX_TASK];$/;"	v
+uva2pa	kernel/mm/mm.c	/^uintptr_t uva2pa(uintptr_t va, uintptr_t pgdir)$/;"	f
+va	include/os/mm.h	/^    uintptr_t va;$/;"	m	struct:__anon9
+va_arg	include/stdarg.h	35;"	d
+va_arg	tiny_libc/include/stdarg.h	35;"	d
+va_copy	include/stdarg.h	43;"	d
+va_copy	tiny_libc/include/stdarg.h	43;"	d
+va_end	include/stdarg.h	34;"	d
+va_end	tiny_libc/include/stdarg.h	34;"	d
+va_list	include/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_list	tiny_libc/include/stdarg.h	/^typedef __builtin_va_list va_list;$/;"	t
+va_start	include/stdarg.h	33;"	d
+va_start	tiny_libc/include/stdarg.h	33;"	d
+vaddr	kernel/mm/mm.c	/^    uint64_t vaddr[16];$/;"	m	struct:__anon8	file:
+valid	kernel/mm/mm.c	/^    uint8_t  valid;$/;"	m	struct:__anon8	file:
+variable_name	tools/generateMapping.c	/^char* variable_name(const char* buffer)$/;"	f
+vm	tools/createimage.c	/^    int vm;$/;"	m	struct:__anon1	file:
+vprintf	tiny_libc/printf.c	/^int vprintf(const char *fmt, va_list _va)$/;"	f
+vprintk	libs/printk.c	/^int vprintk(const char *fmt, va_list _va)$/;"	f
+vprints	libs/printk.c	/^int vprints(const char *fmt, va_list _va)$/;"	f
+vt100_clear	drivers/screen.c	/^static void vt100_clear()$/;"	f	file:
+vt100_hidden_cursor	drivers/screen.c	/^static void vt100_hidden_cursor()$/;"	f	file:
+vt100_move_cursor	drivers/screen.c	/^void vt100_move_cursor(int x, int y)$/;"	f
+wait_exit_task	test/test_project3/test_kill.c	/^void wait_exit_task()$/;"	f
+wait_for_wakeup	arch/riscv/boot/bootblock.S	/^wait_for_wakeup:$/;"	l
+wait_lock_task	test/test_project3/test_kill.c	/^void wait_lock_task(long other_pid)$/;"	f
+wait_queue	kernel/sched/sched.c	/^LIST_HEAD(wait_queue);$/;"	v
+waited_task	test/test_project3/test_wait.c	/^void waited_task(void)$/;"	f
+waiting_task1	test/test_project3/test_wait.c	/^void waiting_task1(void)$/;"	f
+waiting_task2	test/test_project3/test_wait.c	/^void waiting_task2(void)$/;"	f
+wakeup_other_hart	kernel/sched/smp.c	/^void wakeup_other_hart()$/;"	f
+wmb	arch/riscv/include/io.h	10;"	d
+write_os_size	tools/createimage.c	/^static void write_os_size(int nbytes, FILE * img)$/;"	f	file:
+write_reg	arch/riscv/include/io.h	/^static inline void write_reg($/;"	f
+write_segment	tools/createimage.c	/^static void write_segment(Elf64_Ehdr ehdr, Elf64_Phdr phdr, FILE * fp,$/;"	f	file:
+write_to_file	tools/generateMapping.c	/^void write_to_file(Records* self, FILE* header, FILE* source)$/;"	f
+writel	arch/riscv/include/io.h	/^static inline void writel(uint32_t val, volatile void *addr)$/;"	f
+x	libs/string.c	/^int x;$/;"	v
+x	tiny_libc/rand.c	/^int x;$/;"	v
+xemacps_config	drivers/emacps/xemacps_main.c	/^XEmacPs_Config xemacps_config;$/;"	v
+xemacps_example_main	drivers/emacps/xemacps_main.c	/^int xemacps_example_main(void)$/;"	f
+xil_printf	drivers/emacps/xemacps.h	846;"	d
+zombie_check	kernel/sched/sched.c	/^void zombie_check(pid_t pid)$/;"	f
